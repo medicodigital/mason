@@ -14,22 +14,37 @@ const Clinic = styled.div`
         width: 100%;
     }
 `
-
-const ContactWrapper = styled.div`
-    background: #86ab45;
-    color: #fff;
-    padding-bottom: 10px;
-    text-align: center;
-    >h1 {
+const AddressHolder = styled.div`
+    display: block;
+    margin: 0 10%;
+    > h1 {
         border-bottom: 2px solid white;
         font-weight: 400;
         margin: 20px 10%;
         padding-bottom: 5px;    
     }
-    >h3 {
-        font-weight: 400;
-        margin: 5px 10%;
+    > h2 {
+        margin-top: 5px;
     }
+    > h3 {
+        font-weight: 400;
+        margin: 0;
+        @media (min-width: 600px) {
+           display: inline; 
+           margin: 0;
+        }
+    }
+`
+
+const ContactWrapper = styled.div`
+    background: #86ab45;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    text-align: center;
+    
+    
 `
 
 const FacebookLink = styled.div`
@@ -61,13 +76,19 @@ const Contact = () => (
         <Clinic>
             <img src={clinic} alt="Mason Clinic exterior" />
         </Clinic>
+        <AddressHolder>
         <h1>Contact us</h1>
-        <h3>The Mason Clinic,<br></br> The Hollies,<br></br> 1B Cornwallis Avenue, Chatham, Kent <br></br>ME4 6JT</h3>
-        <h3>01634 842583</h3>
+            <h3>The Mason Clinic, </h3> 
+            <h3>The Hollies, </h3> 
+            <h3>1B Cornwallis Avenue, </h3> 
+            <h3>Chatham, </h3> 
+            <h3>Kent ME4 6JT</h3>
+        <h2><a href="tel:01634842583">01634 842583</a></h2>
         <FacebookLink>
             <Icon size={ 35 } icon={ facebookOfficial } />
             <h3>Find us on Facebook</h3>
         </FacebookLink>
+        </AddressHolder>
         <MapContainer>
             <Map />
         </MapContainer>

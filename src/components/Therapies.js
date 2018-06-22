@@ -33,11 +33,10 @@ const TherapiesWrapper = styled.div`
     @media (min-width: 900px) {
         align-items: center;
         flex-direction: row;
-        // justify-content: center;
-        padding: 20px 0;
+        padding: 40px 0;
     }
     @media (min-width: 1200px) {
-        height: 70vh;
+        padding: 60px 0;
     }
     `
     
@@ -84,6 +83,7 @@ const TherapyBlurb = styled.div`
     margin: 10px 10% 40px;
     text-align: left;
     @media (min-width: 900px) {
+        font-size: 1.2rem;
         height: 400px;
         margin: 0 20px;
         max-width: 600px;
