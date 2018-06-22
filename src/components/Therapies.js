@@ -12,7 +12,6 @@ const TherapyBoy = styled.div`
       width: 100%;
   }
   @media (min-width: 900px) {
-    margin: 5vh 20vh 5vh 5vh; 
     order: 3;
   }
 `
@@ -40,9 +39,6 @@ const TherapyList = styled.div`
         margin: 20px 10%;
         padding-bottom: 5px;
     }
-    @media (min-width: 900px) {
-        margin: 5vh 5vh 5vh 20vh;
-    }
 `
 
 const TherapyLink = styled.div`
@@ -62,9 +58,6 @@ const TherapyBlurb = styled.div`
     font-size: 1.15rem;
     margin: 10px 10% 40px;
     text-align: left;
-    @media (min-width: 900px) {
-        margin: 5vh;
-    }
 `
 
 const Therapies = () => (
