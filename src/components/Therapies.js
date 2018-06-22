@@ -8,11 +8,18 @@ import boy from '../images/boy.jpeg'
 const TherapyBoy = styled.div`
   margin: 0 auto;
   width: 100vw;
-  >img {
-      width: 100%;
-  }
   @media (min-width: 900px) {
+    height: 400px;
+    margin-right: 40px;
     order: 3;
+  }
+  @media (min-width: 1200px) {
+    margin-right: 60px;
+  }
+  >img {
+    height: 100%;
+    object-fit: cover;  
+    width: 100%;
   }
 `
 
@@ -26,18 +33,33 @@ const TherapiesWrapper = styled.div`
     @media (min-width: 900px) {
         align-items: center;
         flex-direction: row;
-        justify-content: center;
+        // justify-content: center;
+        padding: 20px 0;
     }
-`
-
+    @media (min-width: 1200px) {
+        height: 70vh;
+    }
+    `
+    
 const TherapyList = styled.div`
     display: flex;
     flex-direction: column;
+    @media (min-width: 900px) {
+        margin-left: 40px;
+        height: 400px;
+        width: 250px;
+    }
+    @media (min-width: 1200px) {
+        margin-left: 60px;
+    }
     >h1 {
         border-bottom: 2px solid white;
         font-weight: 400;
         margin: 20px 10%;
         padding-bottom: 5px;
+        @media (min-width: 900px) {
+            margin: 0 0 20px 0;
+        }
     }
 `
 
@@ -45,6 +67,9 @@ const TherapyLink = styled.div`
     display: flex;
     justify-content: flex-start;
     margin: 5px 10%;
+    @media (min-width: 900px) {
+        margin: 3px 0;
+    }
     >h2 {
         font-weight: 400;
         margin-left: 10px;
@@ -58,6 +83,16 @@ const TherapyBlurb = styled.div`
     font-size: 1.15rem;
     margin: 10px 10% 40px;
     text-align: left;
+    @media (min-width: 900px) {
+        height: 400px;
+        margin: 0 20px;
+        max-width: 600px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 1.35rem;
+        margin: 0 40px;
+        width: 650px;
+    }
 `
 
 const Therapies = () => (
