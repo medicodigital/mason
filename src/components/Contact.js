@@ -15,17 +15,9 @@ const Clinic = styled.div`
     }
 `
 
-const ContactContainer = styled.div`
-    display: flex;
-    justify-content: center;
-`
-
 const AddressContainer = styled.div`
     display: block;
     margin: 0 10%;
-    @media (min-width: 900px) {
-        margin: 0;
-    }  
     > h1 {
         border-bottom: 2px solid white;
         font-weight: 400;
@@ -58,17 +50,16 @@ const ContactWrapper = styled.div`
 `
 
 const FacebookLink = styled.div`
-    display: flex;
-    justify-content: center;
-    margin: 0 10% 10px;
-    @media (min-width: 900px) {
-        margin: 0;
-    }  
-    >h3 {
-        font-weight: 400;
-        margin: 0 0 0 5px;
+    > a {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        >h3 {
+            font-weight: 400;
+            margin: 0;
+        }
     }
-
 `
 const MapContainer = styled.div`
     color: #d80000;
@@ -95,18 +86,19 @@ const Contact = () => (
         <Clinic>
             <img src={clinic} alt="Mason Clinic exterior" />
         </Clinic>
-        <ContactContainer>
             <AddressContainer>
                 <h1>Contact us</h1>
-                    <h3>The Mason Clinic, </h3> 
-                    <h3>The Hollies, </h3> 
-                    <h3>1B Cornwallis Avenue, </h3> 
-                    <h3>Chatham, </h3> 
-                    <h3>Kent ME4 6JT</h3>
+                <h3>The Mason Clinic, </h3> 
+                <h3>The Hollies, </h3> 
+                <h3>1B Cornwallis Avenue, </h3> 
+                <h3>Chatham, </h3> 
+                <h3>Kent ME4 6JT</h3>
                 <h2><a href="tel:01634842583">01634 842583</a></h2>
                 <FacebookLink>
+                <a href="https://www.facebook.com/The-Mason-Clinic-643641389021284/">
                     <Icon size={ 35 } icon={ facebookOfficial } />
                     <h3>Find us on Facebook</h3>
+                    </a>
                 </FacebookLink>
             </AddressContainer>
             <MapContainer>
@@ -115,7 +107,6 @@ const Contact = () => (
             <ContactBlurb>
                 <p>A doctor’s referral is not necessary and you may be  seen the day of your call. Appointments are usually from     8:30am to 5:30pm, but early and late appointments can be    made by arrangement. We offer late appointments on Monday,  Tuesday, Wednesday and Thursday as well as Saturday     appointments.</p>
             </ContactBlurb>
-        </ContactContainer>
     </ContactWrapper>
 )
 
