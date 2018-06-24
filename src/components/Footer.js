@@ -5,34 +5,50 @@ import { arrowUpThin } from 'react-icons-kit/metrize/arrowUpThin'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const FooterWrapper = styled.div`
-    align-items: center;
     background: #142c14;
     color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    // display: flex;
     margin: 0 auto;
-    padding: 5% 5%;
-    >p {
-        font-size: 10px;
+    max-height: 50px;
+    padding: 15px 0;
+    `
+    
+const FirstLine = styled.div`
+    align-items: center;
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+    margin: 0 10%;
+    > p {
         margin: 0;
     }
-`
+    @media (min-width: 600px) {
+        font-size: 12px;
+    }
+    `
+const SecondLine = FirstLine.extend`
+    justify-content: flex-start;
+    margin-top: 2px;
+    `
 
 const WhiteWrapper = styled.div`
     color: #fff;
-`
+    `
 
 const Footer = () => (
     <FooterWrapper>
-        <p>&copy; The Mason Clinic 2018</p>
-        <AnchorLink offset="100" href="#top">
-            <WhiteWrapper>
-                <Icon size={25} icon={arrowUpThin} />
-            </WhiteWrapper>
-        </AnchorLink>
-        <p>Made with &hearts; by Big Tent</p>
-        <p>PRIVACY STATEMENT</p>
+        <FirstLine>
+            <p>&copy; The Mason Clinic 2018</p>
+            <AnchorLink offset="100" href="#top">
+                <WhiteWrapper>
+                    <Icon size={25} icon={arrowUpThin} />
+                </WhiteWrapper>
+            </AnchorLink>
+            <p>Made with &hearts; by Big Tent</p>
+        </FirstLine>
+        <SecondLine>
+            <p>PRIVACY STATEMENT</p>
+        </SecondLine>
     </FooterWrapper>
 )
 

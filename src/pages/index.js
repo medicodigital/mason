@@ -9,6 +9,10 @@ import Therapies from '../components/Therapies'
 import Contact from '../components/Contact'
 import Fees from '../components/Fees'
 
+import clinic from '../images/clinic.jpeg'
+import bottles from '../images/bottles.jpeg'
+
+
 const IndexWrapper = styled.div`
   align-items: flex-start;
   background: #ddeaf6;
@@ -71,6 +75,24 @@ const StickyHolder = styled.div`
   z-index: 1;
 `
 
+const Clinic = styled.div`
+  background: #86ab45;
+  margin: 0 auto;
+  width: 100%;
+  >img {
+    width: 100%;
+  }
+`
+
+const Bottles = styled.div`
+  background: #276277;
+  margin: 0 auto;
+  width: 100%;
+  >img {
+      width: 100%;
+  }
+`
+
 const IndexPage = () => (
   <IndexWrapper>
     <Header />
@@ -97,9 +119,15 @@ const IndexPage = () => (
     <section id="therapies">
       <Therapies />
     </section>
+    <Clinic>
+      <img src={clinic} alt="Mason Clinic exterior" />
+    </Clinic>
     <section id="contact">
       <Contact />
     </section>
+    <Bottles>
+      <img src={ bottles } alt="bottles on shelf" />
+    </Bottles>
     <section id="fees">
       <Fees />
     </section>

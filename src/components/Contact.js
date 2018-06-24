@@ -5,15 +5,6 @@ import {facebookOfficial} from 'react-icons-kit/fa/facebookOfficial'
 
 import Map from '../components/Map'
 
-import clinic from '../images/clinic.jpeg'
-
-const Clinic = styled.div`
-    margin: 0 auto;
-    width: 100%;
-    >img {
-        width: 100%;
-    }
-`
 
 const AddressContainer = styled.div`
     display: block;
@@ -45,7 +36,7 @@ const ContactWrapper = styled.div`
     color: #fff;
     display: flex;
     flex-direction: column;
-    padding-bottom: 10px;
+    padding: 30px 0;
     text-align: center;
 `
 
@@ -83,9 +74,6 @@ const ContactBlurb = styled.div`
 
 const Contact = () => (
     <ContactWrapper>
-        <Clinic>
-            <img src={clinic} alt="Mason Clinic exterior" />
-        </Clinic>
             <AddressContainer>
                 <h1>Contact us</h1>
                 <h3>The Mason Clinic, </h3> 
