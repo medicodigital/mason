@@ -5,17 +5,54 @@ import {facebookOfficial} from 'react-icons-kit/fa/facebookOfficial'
 
 import Map from '../components/Map'
 
+const ContactWrapper = styled.div`
+background: #86ab45;
+color: #fff;
+display: flex;
+flex-direction: column;
+padding: 40px 0;
+text-align: center;
+width: 100vw;
+@media (min-width: 900px) {
+    flex-direction: row;
+    padding: 100px 0;
+}
+`
+
+const MapContainer = styled.div`
+    color: #d80000;
+    height: 50vh;
+    margin: 0 auto;
+    width: 80%;
+    @media (min-width: 900px) {
+        height: 500px;
+        margin-left: 60px;
+        width: 3000px;
+    }
+`
+
+const WordsWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 900px) {
+        margin-left: 30px;
+        margin-right: 60px;
+    }
+`
 
 const AddressContainer = styled.div`
     display: block;
     margin: 0 10%;
+    @media (min-width: 900px) {
+        margin: 0;
+    }
     > h1 {
         border-bottom: 2px solid white;
         font-weight: 400;
         margin: 20px 10%;
         padding-bottom: 5px;  
         @media (min-width: 900px) {
-            margin: 0;
+            margin: 0 0 10px 0;
         }  
     }
     > h2 {
@@ -26,39 +63,22 @@ const AddressContainer = styled.div`
         margin: 0;
         @media (min-width: 600px) {
            display: inline; 
+           font-size: 1.5rem;
            margin: 0;
         }
     }
-`
-
-const ContactWrapper = styled.div`
-    background: #86ab45;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    padding: 30px 0;
-    text-align: center;
 `
 
 const FacebookLink = styled.div`
     > a {
         align-items: center;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         margin-bottom: 10px;
         >h3 {
             font-weight: 400;
-            margin: 0;
+            margin: 0 0 0 10px;
         }
-    }
-`
-const MapContainer = styled.div`
-    color: #d80000;
-    height: 50vh;
-    margin: 0 auto;
-    width: 80%;
-    @media (min-width: 900px) {
-        order: 1;
     }
 `
 
@@ -68,12 +88,17 @@ const ContactBlurb = styled.div`
     margin: 20px 10%;
     text-align: left;
     @media (min-width: 900px) {
+        font-size: 1.25rem;
         margin: 0;
     }
-`
+    `
 
 const Contact = () => (
     <ContactWrapper>
+            <MapContainer>
+                <Map />
+            </MapContainer>
+            <WordsWrapper>
             <AddressContainer>
                 <h1>Contact us</h1>
                 <h3>The Mason Clinic, </h3> 
@@ -89,12 +114,10 @@ const Contact = () => (
                     </a>
                 </FacebookLink>
             </AddressContainer>
-            <MapContainer>
-                <Map />
-            </MapContainer>
             <ContactBlurb>
-                <p>A doctor’s referral is not necessary and you may be  seen the day of your call. Appointments are usually from     8:30am to 5:30pm, but early and late appointments can be    made by arrangement. We offer late appointments on Monday,  Tuesday, Wednesday and Thursday as well as Saturday     appointments.</p>
+                <p>A doctor’s referral is not necessary and you may be seen the day of your call. Appointments are usually from 8:30am to 5:30pm, but early and late appointments can be made by arrangement. We offer late appointments on Monday, Tuesday, Wednesday and Thursday as well as Saturday appointments.</p>
             </ContactBlurb>
+            </WordsWrapper>
     </ContactWrapper>
 )
 

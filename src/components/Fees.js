@@ -5,16 +5,19 @@ import styled from 'styled-components'
 const FeesWrapper = styled.div`
     background: #276277;
     color: #fff;
-    padding: 30px 0;
+    padding: 40px 0;
     text-align: center;
     width: 100vw;
+    @media (min-width: 900px) {
+        padding: 80px 0;
+    }
     `
     
     const FeesColumns = styled.div`
     >h1 {
         border-bottom: 2px solid white;
         font-weight: 400;
-        margin: 0 10%;
+        margin: 0 10% 25px;
         padding-bottom: 5px;    
     }
     >h3 {
@@ -65,11 +68,6 @@ const Fees = () => (
                 <p>New and continuing patients</p>
                 <p>£45</p>
             </FeesLine>
-            <h3>CHIROPODY/PODIATRY</h3>
-            <FeesLine>
-                <p>General treatment</p>
-                <p>£38</p>
-            </FeesLine>
             <h3>HOMEOPATHY</h3>
             <FeesLine>
                 <p>Adult first consultation</p>
@@ -86,6 +84,11 @@ const Fees = () => (
             <FeesLine>
                 <p>Under-16 follow-up</p>
                 <p>£35</p>
+            </FeesLine>
+            <h3>CHIROPODY/PODIATRY</h3>
+            <FeesLine>
+                <p>General treatment</p>
+                <p>£38</p>
             </FeesLine>
             <h3>ALLERGY TESTING</h3>
             <FeesLine>

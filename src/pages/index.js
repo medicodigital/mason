@@ -11,6 +11,7 @@ import Fees from '../components/Fees'
 
 import clinic from '../images/clinic.jpeg'
 import bottles from '../images/bottles.jpeg'
+import flowers from '../images/flowers.jpeg'
 
 
 const IndexWrapper = styled.div`
@@ -83,13 +84,28 @@ const Clinic = styled.div`
     width: 100%;
   }
 `
+const PicWrapper = styled.div`
+  display: flex;
+  width: 100vw;
+`
 
 const Bottles = styled.div`
   background: #276277;
   margin: 0 auto;
   width: 100%;
+  @media (min-width: 900px) {
+    width: 50%;
+  }
   >img {
-      width: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+  `
+const Flowers = Bottles.extend`
+  display: none;
+  width: 50%;
+  @media (min-width: 900px) {
+    display: block;
   }
 `
 
@@ -125,9 +141,14 @@ const IndexPage = () => (
     <section id="contact">
       <Contact />
     </section>
-    <Bottles>
-      <img src={ bottles } alt="bottles on shelf" />
-    </Bottles>
+    <PicWrapper>
+      <Bottles>
+        <img src={ bottles } alt="bottles on shelf" />
+      </Bottles>
+      <Flowers>
+        <img src={ flowers } alt="Flowers on shelf" />
+      </Flowers>
+    </PicWrapper>
     <section id="fees">
       <Fees />
     </section>

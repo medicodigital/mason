@@ -33,10 +33,10 @@ const TherapiesWrapper = styled.div`
     @media (min-width: 900px) {
         align-items: center;
         flex-direction: row;
-        padding: 40px 0;
+        padding: 60px 0;
     }
     @media (min-width: 1200px) {
-        padding: 60px 0;
+        padding: 100px 0;
     }
     `
     
