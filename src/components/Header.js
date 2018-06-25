@@ -56,12 +56,6 @@ const HeaderContainer = styled.div`
 
 const Header = () => (
   <HeaderWrapper>
-    {/* <Link
-          to="/"
-          style={{
-            textDecoration: 'none',
-          }}
-        > */}
     <HeaderContainer>
         <h1>The Mason Clinic</h1>
         <div>Complementary Healthcare</div>
