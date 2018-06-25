@@ -10,7 +10,7 @@ const LinksWrapper = styled.div`
     justify-content: space-around;
     padding: 3% 0;
     width: 100vw;
-    @media (min-width: 900px) {
+    @media (min-width: 600px) {
         justify-content: center;
         padding: 5px 0;
     }
@@ -23,10 +23,13 @@ const LinksLeft = styled.div`
     flex-direction: column;
     > h2, h4 {
         margin: 0;
-        @media (min-width: 900px) {
+        @media (min-width: 600px) {
             margin: 10px;
-            font-size: 2vw;
+            font-size: 2.5vw;
             font-weight: 100;
+        }
+        @media (min-width: 900px) {
+            font-size: 2vw;
         }
     }
     > h4 {
