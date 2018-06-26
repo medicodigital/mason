@@ -60,7 +60,6 @@ const Header = () => (
         <h1>The Mason Clinic</h1>
         <div>Complementary Healthcare</div>
     </HeaderContainer>
-    {/* </Link> */}
     <section id="top">
       <Hero>
         <img src={hero} alt="Hands on back" />

@@ -7,7 +7,6 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 const FooterWrapper = styled.div`
     background: #142c14;
     color: #fff;
-    // display: flex;
     margin: 0 auto;
     max-height: 50px;
     padding: 15px 0;
@@ -18,7 +17,7 @@ const FirstLine = styled.div`
     display: flex;
     font-size: 10px;
     justify-content: space-between;
-    margin: 0 10%;
+    margin: 0 5%;
     > p {
         margin: 0;
     }
@@ -26,9 +25,8 @@ const FirstLine = styled.div`
         font-size: 12px;
     }
     `
-const SecondLine = FirstLine.extend`
-    justify-content: flex-start;
-    margin-top: 2px;
+const RightLink = styled.div`
+    text-align: right;
     `
 
 const WhiteWrapper = styled.div`
@@ -38,17 +36,16 @@ const WhiteWrapper = styled.div`
 const Footer = () => (
     <FooterWrapper>
         <FirstLine>
-            <p>&copy; The Mason Clinic 2018</p>
+            <p>&copy; The Mason Clinic 2018<br></br>PRIVACY STATEMENT</p>
             <AnchorLink offset="100" href="#top">
                 <WhiteWrapper>
-                    <Icon size={25} icon={arrowUpThin} />
+                    <Icon size={35} icon={arrowUpThin} />
                 </WhiteWrapper>
             </AnchorLink>
-            <p>Made with &hearts; by Big Tent</p>
+            <RightLink>
+                <p>Made with &hearts;<br></br>by Big Tent</p>
+            </RightLink>
         </FirstLine>
-        <SecondLine>
-            <p>PRIVACY STATEMENT</p>
-        </SecondLine>
     </FooterWrapper>
 )
 

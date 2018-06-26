@@ -113,11 +113,11 @@ const IndexPage = () => (
   <IndexWrapper>
     <Header />
     <ButtonContainer>
-      <BlueButton>
         <AnchorLink offset="70" href="#therapies">
-        Therapies
+          <BlueButton>
+            Therapies
+          </BlueButton>
         </AnchorLink>
-      </BlueButton>
       <GreenButton>
         <AnchorLink offset="70" href="#contact">
         Contact us
