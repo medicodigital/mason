@@ -2,7 +2,6 @@ module.exports = {
   siteMetadata: {
     title: 'The Mason Clinic'
   },
-  pathPrefix: '/masonclinic.github.io',
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',

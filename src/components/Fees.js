@@ -112,7 +112,7 @@ const Fees = () => (
                 <p>60 minutes</p>
                 <p>£45</p>
             </FeesLine>
-            <h3>MASSAGE</h3>
+            <h3>SPORTS & REMEDIAL MASSAGE</h3>
             <FeesLine>
                 <p>90 minutes</p>
                 <p>£55</p>
