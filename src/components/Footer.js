@@ -12,7 +12,7 @@ const FooterWrapper = styled.div`
     padding: 15px 0;
     `
     
-const FirstLine = styled.div`
+const FooterContainer = styled.div`
     align-items: center;
     display: flex;
     font-size: 10px;
@@ -20,6 +20,7 @@ const FirstLine = styled.div`
     margin: 0 5%;
     > p {
         margin: 0;
+        min-width: 120px;
     }
     @media (min-width: 600px) {
         font-size: 12px;
@@ -27,6 +28,7 @@ const FirstLine = styled.div`
     `
 const RightLink = styled.div`
     text-align: right;
+    min-width: 120px;
     `
 
 const WhiteWrapper = styled.div`
@@ -35,7 +37,7 @@ const WhiteWrapper = styled.div`
 
 const Footer = () => (
     <FooterWrapper>
-        <FirstLine>
+        <FooterContainer>
             <p>&copy; The Mason Clinic 2018<br></br>PRIVACY STATEMENT</p>
             <AnchorLink offset="100" href="#top">
                 <WhiteWrapper>
@@ -43,9 +45,9 @@ const Footer = () => (
                 </WhiteWrapper>
             </AnchorLink>
             <RightLink>
-                <p>Made with &hearts;<br></br>by Big Tent</p>
+                <p>Made with &hearts; by Big Tent</p>
             </RightLink>
-        </FirstLine>
+        </FooterContainer>
     </FooterWrapper>
 )
 

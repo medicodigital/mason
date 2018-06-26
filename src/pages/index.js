@@ -46,12 +46,14 @@ const BlueButton = styled.button`
   font-size: 35px;
   margin: 0 auto;
   padding: 10px;
-  width: 100%;
+  width: 100vw;
   :hover {
     background: #69a2d3;
   }
   @media (min-width: 600px) {
     font-size: 45px;
+    width: 33.333vw;
+
   }
   @media (min-width: 900px) {
     font-size: 3vw;
@@ -118,16 +120,16 @@ const IndexPage = () => (
             Therapies
           </BlueButton>
         </AnchorLink>
-      <GreenButton>
         <AnchorLink offset="70" href="#contact">
-        Contact us
+          <GreenButton>
+            Contact us
+          </GreenButton>
         </AnchorLink>
-      </GreenButton>
-      <DarkButton>
         <AnchorLink offset="70" href="#fees">
-        Fees
+          <DarkButton>
+            Fees
+          </DarkButton>
         </AnchorLink>
-      </DarkButton>
     </ButtonContainer>
     <StickyHolder>
       <Links />
