@@ -103,12 +103,12 @@ const Therapies = () => (
         </TherapyBoy>
         <TherapyList>
             <h1>Therapies</h1>
-            <TherapyLink>
                 <Link to="/osteopathy/">
+            <TherapyLink>
                 <Icon size={25} icon={ arrowRightThin } />
                 <h2>Osteopathy</h2>
-                </Link>
             </TherapyLink>
+                </Link>
             <TherapyLink>
                 <Icon size={25} icon={ arrowRightThin } />
                 <h2>Acupuncture</h2>
