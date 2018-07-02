@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import styled from 'styled-components'
 import Icon from 'react-icons-kit'
 import { arrowRightThin } from 'react-icons-kit/metrize/arrowRightThin'
@@ -103,8 +104,10 @@ const Therapies = () => (
         <TherapyList>
             <h1>Therapies</h1>
             <TherapyLink>
+                <Link to="/osteopathy/">
                 <Icon size={25} icon={ arrowRightThin } />
                 <h2>Osteopathy</h2>
+                </Link>
             </TherapyLink>
             <TherapyLink>
                 <Icon size={25} icon={ arrowRightThin } />

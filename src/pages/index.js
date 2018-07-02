@@ -49,6 +49,7 @@ const BlueButton = styled.button`
   width: 100vw;
   :hover {
     background: #69a2d3;
+    cursor: pointer;
   }
   @media (min-width: 600px) {
     font-size: 45px;
