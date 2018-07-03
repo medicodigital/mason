@@ -113,9 +113,9 @@ const Burger = () => (
         <nav>
             <ul>
                 <li><Link to="/">Homepage</Link></li>
-                <li>Therapies</li>
-                <li>Contact Us</li>
-                <li>Fees</li>
+                <li><Link to="/#therapies">Therapies</Link></li>
+                <li><Link to="/#contact">Contact us</Link></li>
+                <li><Link to="/#fees">Fees</Link></li>
             </ul>
         </nav>
     </BurgerWrapper>

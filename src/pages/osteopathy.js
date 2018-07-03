@@ -5,7 +5,8 @@ import styled from 'styled-components'
 import Burger from '../components/Burger'
 
 const OsteopathyWrapper = styled.div`
-    background: #ddeaf6
+    background: #ddeaf6;
+    height: 100vh;
 `
 
 const OsteopathyPage = () => (
