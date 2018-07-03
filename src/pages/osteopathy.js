@@ -4,14 +4,15 @@ import styled from 'styled-components'
 
 import Burger from '../components/Burger'
 
+const OsteopathyWrapper = styled.div`
+    background: #ddeaf6
+`
+
 const OsteopathyPage = () => (
-    <div>
+    <OsteopathyWrapper>
         <h1>Osteopathy</h1>
-        <Link to="/">
-        <h4>Homepage</h4>
-        </Link>
         <Burger />
-    </div>
+    </OsteopathyWrapper>
 )
 
 export default OsteopathyPage
