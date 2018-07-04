@@ -52,7 +52,6 @@ const BurgerWrapper = styled.div`
         }
     }
     input ~ nav {
-        // background: white;
         height: 100px;
         left: 0;
         overflow: hidden;
@@ -65,9 +64,16 @@ const BurgerWrapper = styled.div`
         > ul {
             position: absolute;
             padding: 0;
+            right: 0;
             text-align: center;
-            top: 7vh;
+            top: 38px;
+            @media (min-width: 900px) {
+                top: 63px;
+            }
             width: 100%;
+                @media (min-width: 900px) {
+                    width: 25%;
+                }
             > li {
                 display: block;
                 color: #fff;

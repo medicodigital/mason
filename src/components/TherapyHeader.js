@@ -48,7 +48,7 @@ const TherapyHeader = () => (
             <span>Clinic</span>
         </NameContainer>
         <HeaderContainer>
-            <h3>Osteopathy</h3>
+            <h3><Link to="/">Osteopathy</Link></h3>
         </HeaderContainer>
         <Burger />
     </HeaderWrapper>
