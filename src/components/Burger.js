@@ -7,22 +7,25 @@ const BurgerWrapper = styled.div`
         display: none;
     }
     input + label {
-        position: fixed;
-        top: 40px;
-        right: 40px;
         height: 20px;
+        position: fixed;
+        right: 5%;
+        top: 3%;
+        @media (min-width: 900px) {
+            top: 4%;
+        }   
         width: 25px;
         z-index: 5;
         span {
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            top: 50%;
-            margin-top: -1px;
-            left: 0;
+            background: #fff;
             display: block;
-            background: black;
+            height: 2px;
+            left: 0;
+            margin-top: -1px;
+            position: absolute;
+            top: 50%;
             transition: 0.5s;
+            width: 100%;
         }
         span:first-child {
             top: 3px;
@@ -50,31 +53,31 @@ const BurgerWrapper = styled.div`
     }
     input ~ nav {
         // background: white;
+        height: 100px;
+        left: 0;
+        overflow: hidden;
         position: fixed;
         top: 0;
-        left: 0;
-        width: 100%;
-        height: 100px;
-        z-index: 3;
         transition: 0.5s;
         transition-delay: 0.5s;
-        overflow: hidden;
+        width: 100%;
+        z-index: 3;
         > ul {
-            text-align: center;
             position: absolute;
             padding: 0;
-            top: 10%;
+            text-align: center;
+            top: 7vh;
             width: 100%;
             > li {
+                display: block;
+                color: #fff;
+                font-size: 2rem;
+                font-weight: 100;
                 opacity: 0;
+                padding: 10px;
                 transition: 0.5s;
                 transition-delay: 0.5s;
                 text-decoration: none;
-                color: white;
-                font-weight: 100;
-                font-size: 2rem;
-                display: block;
-                padding: 10px;
             }
             > li:first-child {
                 background: #86aecf;
