@@ -8,7 +8,7 @@ const BurgerWrapper = styled.div`
     }
     input + label {
         height: 20px;
-        position: fixed;
+        position: absolute;
         right: 5%;
         top: 3%;
         @media (min-width: 900px) {
