@@ -5,7 +5,7 @@ import {facebookOfficial} from 'react-icons-kit/fa/facebookOfficial'
 
 const LinksWrapper = styled.div`
     align-items: center;
-    background: #ddeaf6;
+    background: inherit;
     display: flex;
     justify-content: space-around;
     padding: 3% 0;

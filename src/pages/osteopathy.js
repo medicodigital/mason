@@ -39,6 +39,16 @@ const BlurbHeader = styled.div`
     margin-bottom: 5px;
 `
 
+const StickyHolder = styled.div`
+    background: #86aecf;
+    color: #fff;
+    // border-top: 2px solid #4189c8;
+    // border-bottom: 3px solid #4189c8;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+`
+
 
 const OsteopathyPage = () => (
     <OsteopathyWrapper>
@@ -50,7 +60,9 @@ const OsteopathyPage = () => (
         <BlurbHolder>
             Our osteopaths adopt an holistic approach to patient care. We provide physical therapy that complements your body’s ability to heal naturally. Your internal organs, blood vessels, nerves and lymphatic system are supported by your musculo-skeletal system. Problems with one have an adverse effect on the other. That’s why social and psychological factors are important elements in our diagnosis since these impact health.
         </BlurbHolder>
-        <Links />
+        <StickyHolder>
+            <Links />
+        </StickyHolder>
         <ImageHolder>
             <img src={inganeck} alt="treating neck" />
         </ImageHolder>
