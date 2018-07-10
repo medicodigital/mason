@@ -13,9 +13,6 @@ const OsteopathsWrapper = styled.div`
     > div {
         margin: 0 5%;
     }
-    > p {
-        font-size: 1.5rem;
-    }
 `
 
 const OsteopathsContainer = styled.div`
@@ -24,46 +21,38 @@ input {
 }
 input + label {
     position: inherit;
+    > div {
+        margin-left: 5%;
+    }
 }
 label:hover {
     cursor: pointer;
 }
 input:checked + label {
-    transform: rotate(90deg); 
+    > div {
+        transform: rotate(90deg); 
+        transition: 0.5s;
     }
 }
 input ~ nav {
-    height: 100px;
     left: 0;
-    overflow: hidden;
-    position: fixed;
-    transition: 0.5s;
-    transition-delay: 0.5s;
+    position: absolute;
     width: 100%;
     z-index: 3;
     > ul {
-        position: absolute;
         padding: 0;
         right: 0;
         text-align: center;
-        top: 38px;
-        @media (min-width: 900px) {
-            top: 63px;
-        }
         width: 100%;
-            @media (min-width: 900px) {
-                width: 25%;
-            }
         > li {
             background: #86aecf;
             display: block;
             color: #fff;
-            font-size: 2rem;
+            font-size: 1.25rem;
             font-weight: 100;
             opacity: 0;
             padding: 10px;
             transition: 0.5s;
-            transition-delay: 0.5s;
             text-decoration: none;
         }
         
@@ -71,12 +60,20 @@ input ~ nav {
 }
 input:checked ~ nav {
     height: 100%;
-    transition-delay: 0s;
     > ul {
         > li {
             opacity: 1;
-            transition-delay: 0.5s;
+            transition: 0.5s;
         }
+    }
+}
+
+label {
+    display:flex;
+    width: 100vw
+    > p {
+        font-size: 1.7rem;
+        margin-left: 10px;
     }
 }
 `
@@ -87,6 +84,7 @@ const Osteopaths = () => (
         <input id="osteos" type="checkbox" />
         <label htmlFor="osteos">
         <Icon size={25} icon={ arrowRightThin } />
+        <p>Our osteopaths</p>
         </label>
         <nav>
             <ul>
@@ -98,7 +96,6 @@ const Osteopaths = () => (
             </ul>
         </nav>
         </OsteopathsContainer>
-        <p>Our Osteopaths</p>
     </OsteopathsWrapper>
 )
 
