@@ -4,6 +4,13 @@ import Icon from 'react-icons-kit'
 import { arrowUpThin } from 'react-icons-kit/metrize/arrowUpThin'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "instant"
+    });
+}
+
 const FooterWrapper = styled.div`
     background: #142c14;
     color: #fff;
@@ -38,12 +45,12 @@ const WhiteWrapper = styled.div`
 const Footer = () => (
     <FooterWrapper>
         <FooterContainer>
-            <p>&copy; The Mason Clinic 2018<br></br>PRIVACY STATEMENT</p>
-            <AnchorLink offset="100" href="#top">
+            <p>&copy; The Mason Clinic 2018
+                <br></br>PRIVACY STATEMENT
+            </p>
                 <WhiteWrapper>
-                    <Icon size={35} icon={arrowUpThin} />
+                    <Icon onClick={scrollToTop} size={35} icon={arrowUpThin} />
                 </WhiteWrapper>
-            </AnchorLink>
             <RightLink>
                 <p>Made with &hearts; by Big Tent</p>
             </RightLink>

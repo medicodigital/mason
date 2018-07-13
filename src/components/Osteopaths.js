@@ -3,6 +3,9 @@ import styled from 'styled-components'
 import Icon from 'react-icons-kit'
 import { arrowRightThin } from 'react-icons-kit/metrize/arrowRightThin'
 
+import andrewtemp from '../images/therapists/Screenshot 2018-05-09 21.51.17.png'
+
+
 const OsteopathsWrapper = styled.div`
     align-items: center;
     background: #86aecf;
@@ -13,43 +16,53 @@ const OsteopathsWrapper = styled.div`
     > div {
         margin: 0 5%;
     }
-`
-
-const OsteopathsContainer = styled.div`
-input {
-    display: none;
-}
-input + label {
-    position: inherit;
-    > div {
-        margin-left: 5%;
+    `
+    
+    const OsteopathsContainer = styled.div`
+    input {
+        display: none;
     }
-}
-label:hover {
-    cursor: pointer;
-}
-input:checked + label {
+    input + label {
+        position: inherit;
+        > div {
+            margin-left: 5%;
+        }
+    }
+    label {
+        display:flex;
+        width: 300px;
+        :hover {
+            cursor: pointer;
+        }
+        > p {
+            font-size: 1.7rem;
+            margin-left: 10px;
+        }
+    }
+    input:checked + label {
     > div {
         transform: rotate(90deg); 
         transition: 0.5s;
     }
 }
 input ~ nav {
+    height: 100px;
     left: 0;
+    overflow: hidden;
     position: absolute;
+    top: 310px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
     width: 100%;
     z-index: 3;
     > ul {
         padding: 0;
         right: 0;
-        text-align: center;
         width: 100%;
         > li {
             background: #86aecf;
             display: block;
             color: #fff;
-            font-size: 1.25rem;
-            font-weight: 100;
             opacity: 0;
             padding: 10px;
             transition: 0.5s;
@@ -67,15 +80,17 @@ input:checked ~ nav {
         }
     }
 }
+`
 
-label {
-    display:flex;
-    width: 100vw
-    > p {
-        font-size: 1.7rem;
-        margin-left: 10px;
+const ImageHolder = styled.div`
+    display: flex;
+    font-size: 1.7rem;
+    text-align: left;
+    > img {
+        height: 80px;
+        margin-left: 15%;
+        margin-right: 10px;
     }
-}
 `
 
 const Osteopaths = () => (
@@ -88,11 +103,30 @@ const Osteopaths = () => (
         </label>
         <nav>
             <ul>
-                <li>Andrew Allen</li>
-                <li>Inga Werthmann</li>
-                <li>Vincent Martino</li>
-                <li>Heloise Gilleman</li>
-                <li>Ben Rookledge</li>
+                <li>
+                    <ImageHolder>
+                        <img src={andrewtemp} alt="Andrew headshot" />
+                        Andrew<br></br>Allen
+                    </ImageHolder>
+                </li>
+                <li>
+                    <ImageHolder>
+                        <img src={andrewtemp} alt="Andrew headshot" />
+                        Inga<br></br>Werthmann
+                    </ImageHolder>
+                </li>
+                <li> 
+                    <ImageHolder>
+                        <img src={andrewtemp} alt="Andrew headshot" />
+                        Vincent<br></br>Martino
+                    </ImageHolder>
+                </li>
+                <li>
+                    <ImageHolder>
+                        <img src={andrewtemp} alt="Andrew headshot" />
+                        Heloise<br></br>Gilleman
+                    </ImageHolder>
+                </li>
             </ul>
         </nav>
         </OsteopathsContainer>

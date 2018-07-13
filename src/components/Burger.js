@@ -55,7 +55,7 @@ const BurgerWrapper = styled.div`
         height: 100px;
         left: 0;
         overflow: hidden;
-        position: fixed;
+        position: absolute;
         top: 0;
         transition: 0.5s;
         transition-delay: 0.5s;
@@ -80,7 +80,7 @@ const BurgerWrapper = styled.div`
                 font-size: 2rem;
                 font-weight: 100;
                 opacity: 0;
-                padding: 10px;
+                padding: 8px;
                 transition: 0.5s;
                 transition-delay: 0.5s;
                 text-decoration: none;
