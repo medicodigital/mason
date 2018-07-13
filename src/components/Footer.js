@@ -2,12 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import Icon from 'react-icons-kit'
 import { arrowUpThin } from 'react-icons-kit/metrize/arrowUpThin'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const scrollToTop = () => {
     window.scrollTo({
         top: 0,
-        behavior: "instant"
+        behavior: "smooth"
     });
 }
 

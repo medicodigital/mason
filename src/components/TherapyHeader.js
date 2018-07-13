@@ -36,6 +36,7 @@ const NameContainer = styled.div`
     position: absolute;
     left: 5%;
     top: 1%; 
+    z-index: 6;
     @media (min-width: 900px) {
         font-size: 1.5rem;
     }   
@@ -44,8 +45,9 @@ const NameContainer = styled.div`
 const TherapyHeader = () => (
     <HeaderWrapper>
         <NameContainer>
-            <span>Mason</span>
-            <span>Clinic</span>
+            <Link to="/">
+            Mason<br></br>Clinic
+            </Link>
         </NameContainer>
         <HeaderContainer>
             <h3>Osteopathy</h3>

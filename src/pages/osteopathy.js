@@ -42,8 +42,6 @@ const BlurbHeader = styled.div`
 const StickyHolder = styled.div`
     background: #86aecf;
     color: #fff;
-    // border-top: 2px solid #4189c8;
-    // border-bottom: 3px solid #4189c8;
     position: sticky;
     top: 0;
     z-index: 1;

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import styled from 'styled-components'
 import Icon from 'react-icons-kit'
 import { arrowRightThin } from 'react-icons-kit/metrize/arrowRightThin'
@@ -106,7 +107,9 @@ const Osteopaths = () => (
                 <li>
                     <ImageHolder>
                         <img src={andrewtemp} alt="Andrew headshot" />
+                        <Link to="/">
                         Andrew<br></br>Allen
+                        </Link>
                     </ImageHolder>
                 </li>
                 <li>
