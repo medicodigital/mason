@@ -107,7 +107,7 @@ const Osteopaths = () => (
                 <li>
                     <ImageHolder>
                         <img src={andrewtemp} alt="Andrew headshot" />
-                        <Link to="/">
+                        <Link to="/therapistAndrew/">
                         Andrew<br></br>Allen
                         </Link>
                     </ImageHolder>

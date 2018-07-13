@@ -24,30 +24,30 @@ const LinksWrapper = styled.div`
     }
 `
 const LinksLeft = styled.div`
-display: flex;
-flex-direction: column;
-text-align: center;
-@media (min-width: 600px) {
-    margin: 0 40px;
-}
-> h2, h4 {
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     @media (min-width: 600px) {
-        margin: 10px;
-        font-size: 2.5vw;
-        font-weight: 100;
+        margin: 0 40px;
     }
-    @media (min-width: 900px) {
-        font-size: 2vw;
+    > h2, h4 {
+        margin: 0;
+        @media (min-width: 600px) {
+            margin: 10px;
+            font-size: 2.5vw;
+            font-weight: 100;
+        }
+        @media (min-width: 900px) {
+            font-size: 2vw;
+        }
     }
-}
-> h4 {
-    margin-top: 5px;
-}
-@media (min-width: 600px) {
-    align-items: baseline;
-    flex-direction: row;
-}
+    > h4 {
+        margin-top: 5px;
+    }
+    @media (min-width: 600px) {
+        align-items: baseline;
+        flex-direction: row;
+    }
 `
 const LinksRight = styled.div`
     color: #3B5998;

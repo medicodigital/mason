@@ -75,6 +75,7 @@ const DarkButton = BlueButton.extend`
 
 const StickyHolder = styled.div`
   background: #ddeaf6;
+  color: #142c14;
   position: sticky;
   top: 0;
   z-index: 1;
