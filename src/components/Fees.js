@@ -112,19 +112,6 @@ const Fees = () => (
                 <p>60 minutes</p>
                 <p>£45</p>
             </FeesLine>
-            <h3>SPORTS & REMEDIAL MASSAGE</h3>
-            <FeesLine>
-                <p>90 minutes</p>
-                <p>£55</p>
-            </FeesLine>
-            <FeesLine>
-                <p>60 minutes</p>
-                <p>£45</p>
-            </FeesLine>
-            <FeesLine>
-                <p>30 minutes</p>
-                <p>£25</p>
-            </FeesLine>
             <FeesBlurb>
                 Please note we can provide gift vouchers for all of our treatments.
             </FeesBlurb>

@@ -20,6 +20,10 @@ const OsteopathyWrapper = styled.div`
 const ImageHolder = styled.div`
     margin: 0 auto;
     width: 100%;
+    @media (min-width: 600px) {
+        max-width: 60%;
+        margin-top: 7vh;
+    }
     >img {
         max-height: 50vh;
         object-fit: cover;
@@ -31,6 +35,11 @@ const BlurbHolder = styled.div`
     font-size: 1.2rem;
     margin: 0 10%;
     padding: 5% 0;
+    @media (min-width: 600px) {
+        margin: 0 auto;
+        max-width: 60%;
+        padding: 2% 0;
+    }
 `
 
 const BlurbHeader = styled.div`
@@ -47,6 +56,10 @@ const StickyHolder = styled.div`
     z-index: 1;
 `
 
+const BlurbPicContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+`
 
 const OsteopathyPage = () => (
     <OsteopathyWrapper>
@@ -61,24 +74,28 @@ const OsteopathyPage = () => (
         <StickyHolder>
             <Links />
         </StickyHolder>
-        <ImageHolder>
-            <img src={inganeck} alt="treating neck" />
-        </ImageHolder>
-        <BlurbHolder>
-            <BlurbHeader>
-                STRUCTURAL OSTEOPATHY
-            </BlurbHeader>
-            Structural osteopathy is the type of osteopathy most people are familiar with. It comprises a number of techniques such as muscle and connective tissue stretching, rhythmic joint movement, gentle release techniques and the occasional high thrust movement. It can cause the occasional cracking or popping noise but is generally painless.
-        </BlurbHolder>
-        <ImageHolder>
-            <img src={handshead} alt="hands on head" />
-        </ImageHolder>
-        <BlurbHolder>
-            <BlurbHeader>
-                CRANIAL OSTEOPATHY
-            </BlurbHeader>
-            Cranial osteopathy is a subtle and refined form of osteopathy. It encourages the release of unwanted   tensions and stresses held within the head and body. Releasing these stresses provides the patient with asense of well-being. Cranial osteopathy is a gentle treatment for a wide range of conditions.
-        </BlurbHolder>
+        <BlurbPicContainer>
+            <ImageHolder>
+                <img src={inganeck} alt="treating neck" />
+            </ImageHolder>
+            <BlurbHolder>
+                <BlurbHeader>
+                    STRUCTURAL OSTEOPATHY
+                </BlurbHeader>
+                Structural osteopathy is the type of osteopathy most people are familiar with. It comprises a number of techniques such as muscle and connective tissue stretching, rhythmic joint movement, gentle release techniques and the occasional high thrust movement. It can cause the occasional cracking or popping noise but is generally painless.
+            </BlurbHolder>
+        </BlurbPicContainer>
+        <BlurbPicContainer>
+            <ImageHolder>
+                <img src={handshead} alt="hands on head" />
+            </ImageHolder>
+            <BlurbHolder>
+                <BlurbHeader>
+                    CRANIAL OSTEOPATHY
+                </BlurbHeader>
+                Cranial osteopathy is a subtle and refined form of osteopathy. It encourages the release of unwanted   tensions and stresses held within the head and body. Releasing these stresses provides the patient with asense of well-being. Cranial osteopathy is a gentle treatment for a wide range of conditions.
+            </BlurbHolder>
+        </BlurbPicContainer>
         <ImageHolder>
             <img src={treattable} alt="treatment table" />
         </ImageHolder>

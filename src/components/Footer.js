@@ -47,9 +47,6 @@ const Footer = () => (
             <p>&copy; The Mason Clinic 2018
                 <br></br>PRIVACY STATEMENT
             </p>
-                <WhiteWrapper>
-                    <Icon onClick={scrollToTop} size={35} icon={arrowUpThin} />
-                </WhiteWrapper>
             <RightLink>
                 <p>Made with &hearts; by Big Tent</p>
             </RightLink>

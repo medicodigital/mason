@@ -15,7 +15,7 @@ const LinksWrapper = styled.div`
     align-items: center;
     background: inherit;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 3% 0;
     width: 100vw;
     @media (min-width: 600px) {
@@ -27,6 +27,7 @@ const LinksLeft = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 0 7px;
     @media (min-width: 600px) {
         margin: 0 40px;
     }

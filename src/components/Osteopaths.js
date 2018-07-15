@@ -13,7 +13,11 @@ const OsteopathsWrapper = styled.div`
     color: #fff;
     display: flex;
     height: 55px;
+    margin: 0 auto;
     width: 100vw;
+    @media (min-width: 600px) {
+        max-width: 60%;
+    }
     > div {
         margin: 0 5%;
     }
