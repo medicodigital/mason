@@ -68,17 +68,18 @@ const BurgerWrapper = styled.div`
             text-align: center;
             top: 38px;
             @media (min-width: 900px) {
-                top: 63px;
+                top: 64px;
             }
             width: 100%;
                 @media (min-width: 900px) {
-                    width: 25%;
+                    width: 23%;
                 }
             > li {
                 display: block;
                 color: #fff;
                 font-size: 2rem;
                 font-weight: 100;
+                min-height: 46px;
                 opacity: 0;
                 padding: 8px;
                 transition: 0.5s;

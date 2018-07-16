@@ -21,7 +21,11 @@ const HeaderContainer = styled.div`
     justify-content: center;
     position: absolute;
     top: 2%;
-    > h3 {
+    z-index: 6;
+    :hover {
+        cursor: pointer;
+    }
+    h3 {
         font-size: 2rem;
         font-weight: 400;
         @media (min-width: 900px) {
@@ -46,11 +50,13 @@ const TherapyHeader = () => (
     <HeaderWrapper>
         <NameContainer>
             <Link to="/">
-            Mason<br></br>Clinic
+                Mason<br></br>Clinic
             </Link>
         </NameContainer>
         <HeaderContainer>
-            <h3>Osteopathy</h3>
+            <Link to="/osteopathy">
+                <h3>Osteopathy</h3>
+            </Link>
         </HeaderContainer>
         <Burger />
     </HeaderWrapper>
