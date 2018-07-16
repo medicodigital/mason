@@ -4,7 +4,10 @@ import styled from 'styled-components'
 import Icon from 'react-icons-kit'
 import { arrowRightThin } from 'react-icons-kit/metrize/arrowRightThin'
 
-import andrewtemp from '../images/therapists/Screenshot 2018-05-09 21.51.17.png'
+import andrew from '../images/therapists/andrew-headshot.jpeg'
+import inga from '../images/therapists/inga-head.jpeg'
+import vincent from '../images/therapists/vincent-martino.jpeg'
+import heloise from '../images/therapists/Héloïse-Gilleman-3.jpg'
 
 
 const OsteopathsWrapper = styled.div`
@@ -109,7 +112,7 @@ const Osteopaths = () => (
             <ul>
                 <li>
                     <ImageHolder>
-                        <img src={andrewtemp} alt="Andrew headshot" />
+                        <img src={andrew} alt="Andrew headshot" />
                         <Link to="/therapistAndrew/">
                         Andrew<br></br>Allen
                         </Link>
@@ -117,19 +120,19 @@ const Osteopaths = () => (
                 </li>
                 <li>
                     <ImageHolder>
-                        <img src={andrewtemp} alt="Andrew headshot" />
+                        <img src={inga} alt="Andrew headshot" />
                         Inga<br></br>Werthmann
                     </ImageHolder>
                 </li>
                 <li> 
                     <ImageHolder>
-                        <img src={andrewtemp} alt="Andrew headshot" />
+                        <img src={vincent} alt="Andrew headshot" />
                         Vincent<br></br>Martino
                     </ImageHolder>
                 </li>
                 <li>
                     <ImageHolder>
-                        <img src={andrewtemp} alt="Andrew headshot" />
+                        <img src={heloise} alt="Andrew headshot" />
                         Heloise<br></br>Gilleman
                     </ImageHolder>
                 </li>
