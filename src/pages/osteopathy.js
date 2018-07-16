@@ -28,6 +28,9 @@ const ImageHolder = styled.div`
         max-height: 50vh;
         object-fit: cover;
         width: 100%;
+        @media (min-width: 900px) {
+            min-height: 270px;
+        }
     }
 `
 
@@ -59,6 +62,16 @@ const StickyHolder = styled.div`
 const BlurbPicContainer = styled.div`
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    @media (min-width: 900px) {
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        max-width: 60%;
+        > div {
+            margin-right: 20px;
+        }
+    }
 `
 
 const OsteopathyPage = () => (

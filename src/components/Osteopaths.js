@@ -14,6 +14,7 @@ const OsteopathsWrapper = styled.div`
     display: flex;
     height: 55px;
     margin: 0 auto;
+    position: relative;
     width: 100vw;
     @media (min-width: 600px) {
         max-width: 60%;
@@ -51,11 +52,9 @@ const OsteopathsWrapper = styled.div`
     }
 }
 input ~ nav {
-    height: 100px;
     left: 0;
-    overflow: hidden;
     position: absolute;
-    top: 310px;
+    top: 35px;
     transition: 0.5s;
     transition-delay: 0.5s;
     width: 100%;
