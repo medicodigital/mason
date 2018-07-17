@@ -74,6 +74,9 @@ input ~ nav {
             padding: 10px;
             transition: 0.5s;
             text-decoration: none;
+            :last-of-type {
+                padding-bottom: 20px;
+            }
         }
         
     }
@@ -93,7 +96,7 @@ const ImageHolder = styled.div`
     display: flex;
     font-size: 1.7rem;
     text-align: left;
-    > img {
+    img {
         height: 80px;
         margin-left: 15%;
         margin-right: 10px;
@@ -121,19 +124,25 @@ const Osteopaths = () => (
                 <li>
                     <ImageHolder>
                         <img src={inga} alt="Andrew headshot" />
+                        <Link to="/therapistInga/">
                         Inga<br></br>Werthmann
+                        </Link>
                     </ImageHolder>
                 </li>
                 <li> 
                     <ImageHolder>
                         <img src={vincent} alt="Andrew headshot" />
+                        <Link to="/therapistVincent/">
                         Vincent<br></br>Martino
+                        </Link>
                     </ImageHolder>
                 </li>
                 <li>
                     <ImageHolder>
                         <img src={heloise} alt="Andrew headshot" />
+                        <Link to="/therapistHeloise/">
                         Heloise<br></br>Gilleman
+                        </Link>
                     </ImageHolder>
                 </li>
             </ul>

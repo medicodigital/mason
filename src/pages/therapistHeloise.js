@@ -4,7 +4,8 @@ import styled from 'styled-components'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 
-import andrew from '../images/therapists/andrew-headshot.jpeg'
+import heloise from '../images/therapists/Héloïse-Gilleman-3.jpg'
+
 
 const TherapistWrapper = styled.div`
     background: #ddeaf6;
@@ -71,19 +72,20 @@ const StickyHolder = styled.div`
     }
 `
 
-const TherapistAndrew = () => (
+const TherapistHeloise = () => (
     <TherapistWrapper>
         <TherapyHeader />
         <ImageBlurbContainer>
             <ImageHolder>
-                <img src={andrew} alt="Andrew headshot" />
+                <img src={heloise} alt="Heloise headshot" />
             </ImageHolder>
             <BlurbHolder>
-                <h1>Andrew Allen</h1>
-                <h3>BSc &#40;Hons&#41; Osteopathy, DO</h3>
-                <p>Andrew Allen is co-owner of The Mason Clinic. Andrew studied at the European School of Osteopathy. The course was very varied and included cranial osteopathy, as well as traditional osteopathic procedures. Andrew is now involved in teaching at the ESO.</p>
-                <p> Prior to Osteopathy, Andrew worked in Asia and the Middle East, inspiring him to work in the social environment and interact with others at many levels.
-                He is a yoga practitioner and understands the importance of self-awareness and motivation, which he hopes to import to his patients. He is also a keen wood worker and cyclist...when he has the time!</p>
+                <h1>Héloïse Gilleman</h1>
+                <h3>DO, MOst</h3>
+                <p>Héloïse Gilleman trained at the European School of Osteopathy where she learnt a broad range of techniques to treat a variety of conditions.
+                She loves talking to patients, working with them to get to the root cause of their condition  whilst advising on how to modify their lifestyle to prevent their condition re-occurring.</p>
+                <p>During her osteopathic training she developed a particular interest in cranial, visceral and paediatric/obstetric osteopathy. She is currently training at The Osteopathic Centre for Children developing her knowledge across babies to teenagers as well as expectant mothers.</p>
+                <p>In her spare time, Héloïse enjoys travelling, reading and horse riding.</p>
             </BlurbHolder>
         </ImageBlurbContainer>
         <StickyHolder>
@@ -92,4 +94,4 @@ const TherapistAndrew = () => (
     </TherapistWrapper>
 )
 
-export default TherapistAndrew
+export default TherapistHeloise

@@ -60,8 +60,8 @@ const BlurbHolder = styled.div`
 `
 
 const BlurbHeader = styled.div`
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 900;
     margin-bottom: 5px;
 `
 

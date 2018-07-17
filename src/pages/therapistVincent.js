@@ -4,7 +4,8 @@ import styled from 'styled-components'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 
-import andrew from '../images/therapists/andrew-headshot.jpeg'
+import vincent from '../images/therapists/vincent-martino.jpeg'
+
 
 const TherapistWrapper = styled.div`
     background: #ddeaf6;
@@ -71,19 +72,20 @@ const StickyHolder = styled.div`
     }
 `
 
-const TherapistAndrew = () => (
+const TherapistVincent = () => (
     <TherapistWrapper>
         <TherapyHeader />
         <ImageBlurbContainer>
             <ImageHolder>
-                <img src={andrew} alt="Andrew headshot" />
+                <img src={vincent} alt="Vincent headshot" />
             </ImageHolder>
             <BlurbHolder>
-                <h1>Andrew Allen</h1>
-                <h3>BSc &#40;Hons&#41; Osteopathy, DO</h3>
-                <p>Andrew Allen is co-owner of The Mason Clinic. Andrew studied at the European School of Osteopathy. The course was very varied and included cranial osteopathy, as well as traditional osteopathic procedures. Andrew is now involved in teaching at the ESO.</p>
-                <p> Prior to Osteopathy, Andrew worked in Asia and the Middle East, inspiring him to work in the social environment and interact with others at many levels.
-                He is a yoga practitioner and understands the importance of self-awareness and motivation, which he hopes to import to his patients. He is also a keen wood worker and cyclist...when he has the time!</p>
+                <h1>Vincent Martino</h1>
+                <h3>DO, MOst</h3>
+                <p>A graduate of the European School of Osteopathy in Maidstone, Vincent is an holistic osteopath who has studied osteopathy in both France and England. His studies in both countries provide him a broad osteopathic approach that he uses in practice, such as cranial, visceral and structural osteopathy.
+                Vincent enjoys treating patients from all backgrounds, taking time to explain the origin of their pain, and what can be done through treatment to improve it. He also likes to advise on what work and home habits could be changed to create a feeling of well-being and provide further improvement over time.</p>
+                <p>Vincent has also a particular interest in the treatment of pregnant women and babies. For him osteopathic treatment before birth is very important making sure all the joints of the pelvis can move freely in order for the birth to be as smooth as possible.</p>
+                <p>Vincent is happy to conduct his sessions in French as he knows that for the large French community in Kent it is often easier for patients to describe their aches and pain in their mother tongue.</p>
             </BlurbHolder>
         </ImageBlurbContainer>
         <StickyHolder>
@@ -92,4 +94,4 @@ const TherapistAndrew = () => (
     </TherapistWrapper>
 )
 
-export default TherapistAndrew
+export default TherapistVincent

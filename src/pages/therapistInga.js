@@ -4,7 +4,8 @@ import styled from 'styled-components'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 
-import andrew from '../images/therapists/andrew-headshot.jpeg'
+import inga from '../images/therapists/inga-head.jpeg'
+
 
 const TherapistWrapper = styled.div`
     background: #ddeaf6;
@@ -71,19 +72,18 @@ const StickyHolder = styled.div`
     }
 `
 
-const TherapistAndrew = () => (
+const TherapistInga = () => (
     <TherapistWrapper>
         <TherapyHeader />
         <ImageBlurbContainer>
             <ImageHolder>
-                <img src={andrew} alt="Andrew headshot" />
+                <img src={inga} alt="Inga headshot" />
             </ImageHolder>
             <BlurbHolder>
-                <h1>Andrew Allen</h1>
+                <h1>Inga Werthmann</h1>
                 <h3>BSc &#40;Hons&#41; Osteopathy, DO</h3>
-                <p>Andrew Allen is co-owner of The Mason Clinic. Andrew studied at the European School of Osteopathy. The course was very varied and included cranial osteopathy, as well as traditional osteopathic procedures. Andrew is now involved in teaching at the ESO.</p>
-                <p> Prior to Osteopathy, Andrew worked in Asia and the Middle East, inspiring him to work in the social environment and interact with others at many levels.
-                He is a yoga practitioner and understands the importance of self-awareness and motivation, which he hopes to import to his patients. He is also a keen wood worker and cyclist...when he has the time!</p>
+                <p>Inga Werthmann is co-owner of The Mason Clinic. Inga originally trained at the European School of Osteopathy where she is now involved in teaching. She has worked with people of all ages and loves working with babies, infants and expectant mothers in particular. Her approach is patient-centred where she uses a variety of gentle hands on techniques such as cranial osteopathy, visceral manipulations and joint mobilization.</p>
+                <p>Inga encourages patients to take an active role in their own health too. She also gives advice on exercise and nutrition, therefore aiming towards whole body health.</p>
             </BlurbHolder>
         </ImageBlurbContainer>
         <StickyHolder>
@@ -92,4 +92,4 @@ const TherapistAndrew = () => (
     </TherapistWrapper>
 )
 
-export default TherapistAndrew
+export default TherapistInga
