@@ -46,7 +46,7 @@ const NameContainer = styled.div`
     }   
 `
 
-const TherapyHeader = () => (
+const TherapyHeader = (props) => (
     <HeaderWrapper>
         <NameContainer>
             <Link to="/">
@@ -55,7 +55,7 @@ const TherapyHeader = () => (
         </NameContainer>
         <HeaderContainer>
             <Link to="/osteopathy">
-                <h3>Osteopathy</h3>
+                <h3>{props.therapy}</h3>
             </Link>
         </HeaderContainer>
         <Burger />

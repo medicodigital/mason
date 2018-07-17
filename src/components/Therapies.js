@@ -109,10 +109,12 @@ const Therapies = () => (
                         <h2>Osteopathy</h2>
                     </TherapyLink>
                 </Link>
-            <TherapyLink>
-                <Icon size={25} icon={ arrowRightThin } />
-                <h2>Acupuncture</h2>
-            </TherapyLink>
+                <Link to="/acupuncture/">
+                    <TherapyLink>
+                        <Icon size={25} icon={ arrowRightThin } />
+                        <h2>Acupuncture</h2>
+                    </TherapyLink>
+                </Link>
             <TherapyLink>
                 <Icon size={25} icon={ arrowRightThin } />
                 <h2>Podiatry</h2>
