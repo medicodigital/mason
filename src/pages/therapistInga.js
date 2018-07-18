@@ -74,7 +74,10 @@ const StickyHolder = styled.div`
 
 const TherapistInga = () => (
     <TherapistWrapper>
-        <TherapyHeader />
+        <TherapyHeader 
+            therapy="Osteopathy"
+            link="osteopathy"
+            />
         <ImageBlurbContainer>
             <ImageHolder>
                 <img src={inga} alt="Inga headshot" />

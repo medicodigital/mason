@@ -54,7 +54,7 @@ const TherapyHeader = (props) => (
             </Link>
         </NameContainer>
         <HeaderContainer>
-            <Link to="/osteopathy">
+            <Link to={`/${props.link}`}>
                 <h3>{props.therapy}</h3>
             </Link>
         </HeaderContainer>

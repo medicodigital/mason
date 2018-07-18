@@ -3,6 +3,11 @@ import styled from 'styled-components'
 
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
+import Therapist from '../components/Therapist'
+
+import acupuncture from '../images/acupuncture.jpg'
+import renate from '../images/renate.jpg'
+
 
 const AcupunctureWrapper = styled.div`
     background: #ddeaf6;
@@ -31,7 +36,13 @@ const ImageHolder = styled.div`
 const AcupuncturePage = () => (
     <AcupunctureWrapper>
         <TherapyHeader therapy="Acupuncture"/>
-        <h1>Acupuncture</h1>
+        <ImageHolder>
+            <img src={acupuncture} alt="acupuncture" />
+        </ImageHolder>
+        <Therapist 
+            name="Renate Blacker" 
+            pic={renate}
+            />
         <Links />
     </AcupunctureWrapper>
 )

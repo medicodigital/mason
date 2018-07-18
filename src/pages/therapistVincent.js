@@ -74,7 +74,10 @@ const StickyHolder = styled.div`
 
 const TherapistVincent = () => (
     <TherapistWrapper>
-        <TherapyHeader />
+        <TherapyHeader 
+            therapy="Osteopathy"
+            link="osteopathy"
+            />
         <ImageBlurbContainer>
             <ImageHolder>
                 <img src={vincent} alt="Vincent headshot" />

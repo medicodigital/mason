@@ -94,7 +94,10 @@ const BlurbPicContainer = styled.div`
 
 const OsteopathyPage = () => (
     <OsteopathyWrapper>
-        <TherapyHeader therapy="Osteopathy"/>
+        <TherapyHeader 
+            therapy="Osteopathy"
+            link="osteopathy"
+        />
         <HeroHolder>
             <ImageHolder>
                 <img src={shoulders} alt="treating shoulders" />
