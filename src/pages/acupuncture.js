@@ -35,12 +35,15 @@ const ImageHolder = styled.div`
 
 const AcupuncturePage = () => (
     <AcupunctureWrapper>
-        <TherapyHeader therapy="Acupuncture"/>
+        <TherapyHeader 
+            therapy="Acupuncture"
+            />
         <ImageHolder>
             <img src={acupuncture} alt="acupuncture" />
         </ImageHolder>
         <Therapist 
-            name="Renate Blacker" 
+            firstname="Renate"
+            surname="Blacker" 
             pic={renate}
             />
         <Links />

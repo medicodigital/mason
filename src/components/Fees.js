@@ -112,6 +112,15 @@ const Fees = () => (
                 <p>60 minutes</p>
                 <p>£45</p>
             </FeesLine>
+            <h3>DEEP TISSUE MASSAGE</h3>
+            <FeesLine>
+                <p>30 minutes</p>
+                <p>£30</p>
+            </FeesLine>
+            <FeesLine>
+                <p>60 minutes</p>
+                <p>£45</p>
+            </FeesLine>
             <FeesBlurb>
                 Please note we can provide gift vouchers for all of our treatments.
             </FeesBlurb>

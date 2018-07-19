@@ -135,6 +135,10 @@ const Therapies = () => (
                 <Icon size={25} icon={ arrowRightThin } />
                 <h2>Chiropody</h2>
             </TherapyLink>
+            <TherapyLink>
+                <Icon size={25} icon={ arrowRightThin } />
+                <h2>Deep tissue massage</h2>
+            </TherapyLink>
         </TherapyList>
         <TherapyBlurb>
             The Mason Clinic was established as an osteopathic practice in 1966. Named after its founding osteopath, Graham Mason, the clinic is now owned by Inga and Andrew. Qualified osteopaths themselves, they have developed The Mason Clinic into a leading centre for complementary therapy. Remaining true to its roots however, the clinic retains several resident osteopaths. Click on a therapy to find out more
