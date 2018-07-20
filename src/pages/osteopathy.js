@@ -92,6 +92,36 @@ const BlurbPicContainer = styled.div`
     }
 `
 
+const ConditionsContainer = styled.div`
+    background: #86aecf;
+    color: #fff;
+    padding: 5% 10%;
+    max-width: 100vw;
+    h2 {
+        font-size: 1.4rem;
+        font-weight: 900;
+        margin: 0 0 10px 0;
+    }
+    p{
+        font-size: 1.2rem;
+        margin: 0 0 5px 0;;
+    }
+    ul {
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+        li {
+            margin-top: 2px;
+        }
+        @media (min-width: 600px) {
+          column-count: 2;  
+        }
+        @media (min-width: 1200px) {
+          column-count: 3;  
+        }
+    }
+`
+
 const OsteopathyPage = () => (
     <OsteopathyWrapper>
         <TherapyHeader 
@@ -143,6 +173,73 @@ const OsteopathyPage = () => (
             We start by reviewing your medical history and any lifestyle factors that might have a bearing. This is usually followed by some simple physical tests – e.g. blood pressure, pulse and reflex. We then check out your general mobility before examining the painful areas in more detail. If we have enough information we will provide our diagnosis and recommendations.
             You may be asked to undress to your underclothes. If this is difficult for you please let us know and we will try to work around this but please wear something you are comfortable in. You are welcome to bring a friend or relative along with you. We have male and female osteopaths available. Let us know if you have a preference.
         </BlurbHolder>
+        <ConditionsContainer> 
+            <h2>
+                CONDITIONS WE ROUTINELY TREAT
+            </h2>
+            <p>
+                We provide effective treatment for a wide range of conditions, including...
+            </p>
+            <ul>
+                <li>
+                    &bull; General aches and pains
+                </li>
+                <li>
+                    &bull; Joint pains including hip and knee pain from osteoarthritis as an adjunct to core OA treatments and exercise
+                </li>
+                <li>
+                    &bull; Arthritic pain
+                </li>
+                <li>
+                    &bull; General, acute & chronic backache, back pain (not arising from injury or accident) 
+                </li>
+                <li>
+                    &bull; Uncomplicated mechanical neck pain (as opposed to neck pain following injury i.e. whiplash)
+                </li>
+                <li>
+                    &bull; Headache arising from the neck (cervicogenic) 
+                </li>
+                <li>
+                    &bull; Migraine prevention
+                </li>
+                <li>
+                    &bull; Frozen shoulder/ shoulder and elbow pain/ tennis elbow (lateral epicondylitis) arising from associated musculoskeletal conditions of the back and neck, but not isolated occurrences
+                </li>
+                <li>
+                    &bull; Circulatory problems
+                </li>
+                <li>
+                    &bull; Cramp
+                </li>
+                <li>
+                    &bull; Digestion problems
+                </li>
+                <li>
+                    &bull; Joint pains, lumbago
+                </li>
+                <li>
+                    &bull; Sciatica
+                </li>
+                <li>
+                    &bull;  Muscle spasms
+                </li>
+                <li>
+                    &bull; Neuralgia
+                </li>
+                <li>
+                    &bull; Fibromyalgia
+                </li>
+                <li>
+                    &bull; Inability to relax
+                </li>
+                <li>
+                    &bull; Rheumatic pain
+                </li>
+                <li>
+                    &bull; Minor sports injuries and tensions
+                </li>
+            </ul>
+        </ConditionsContainer>
         </BottomHolder>
     </OsteopathyWrapper>
 )
