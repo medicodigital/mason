@@ -123,7 +123,7 @@ const Osteopaths = () => (
                 </li>
                 <li>
                     <ImageHolder>
-                        <img src={inga} alt="Andrew headshot" />
+                        <img src={inga} alt="Inga headshot" />
                         <Link to="/therapistInga/">
                         Inga<br></br>Werthmann
                         </Link>
@@ -131,7 +131,7 @@ const Osteopaths = () => (
                 </li>
                 <li> 
                     <ImageHolder>
-                        <img src={vincent} alt="Andrew headshot" />
+                        <img src={vincent} alt="Vincent headshot" />
                         <Link to="/therapistVincent/">
                         Vincent<br></br>Martino
                         </Link>
@@ -139,7 +139,7 @@ const Osteopaths = () => (
                 </li>
                 <li>
                     <ImageHolder>
-                        <img src={heloise} alt="Andrew headshot" />
+                        <img src={heloise} alt="Heloise headshot" />
                         <Link to="/therapistHeloise/">
                         Héloïse<br></br>Gilleman
                         </Link>

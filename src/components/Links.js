@@ -27,7 +27,7 @@ const LinksLeft = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 0 7px;
+    margin: 0 5px;
     @media (min-width: 600px) {
         margin: 0 40px;
     }

@@ -178,7 +178,7 @@ const OsteopathyPage = () => (
                 CONDITIONS WE ROUTINELY TREAT
             </h2>
             <p>
-                We provide effective treatment for a wide range of conditions, including...
+                Our osteopaths provide effective treatment for a wide range of conditions, including...
             </p>
             <ul>
                 <li>
