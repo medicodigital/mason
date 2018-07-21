@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 
@@ -20,7 +21,7 @@ const FeesWrapper = styled.div`
         margin: 0 10% 25px;
         padding-bottom: 5px;    
     }
-    >h3 {
+    h3 {
         font-weight: 400;
         margin: 10px 10% 5px;
         text-align: left;
@@ -51,7 +52,9 @@ const Fees = () => (
     <FeesWrapper>
         <FeesColumns>
             <h1>Fees</h1>
+            <Link to="/osteopathy" >
             <h3>OSTEOPATHY</h3>
+            </Link>
             <FeesLine>
                 <p>First consultation</p>
                 <p>£45</p>
