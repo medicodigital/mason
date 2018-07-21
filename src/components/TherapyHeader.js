@@ -28,6 +28,7 @@ const HeaderContainer = styled.div`
     h3 {
         font-size: 2rem;
         font-weight: 400;
+        text-transform: capitalize;
         @media (min-width: 900px) {
             font-size: 2.5rem;
         }
@@ -54,7 +55,7 @@ const TherapyHeader = (props) => (
             </Link>
         </NameContainer>
         <HeaderContainer>
-            <Link to={`/${props.link}`}>
+            <Link to={`/${props.therapy}`}>
                 <h3>{props.therapy}</h3>
             </Link>
         </HeaderContainer>

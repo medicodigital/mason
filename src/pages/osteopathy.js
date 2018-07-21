@@ -125,8 +125,7 @@ const ConditionsContainer = styled.div`
 const OsteopathyPage = () => (
     <OsteopathyWrapper>
         <TherapyHeader 
-            therapy="Osteopathy"
-            link="osteopathy"
+            therapy="osteopathy"
         />
         <HeroHolder>
             <ImageHolder>

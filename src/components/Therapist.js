@@ -17,30 +17,35 @@ const WordsContainer = styled.div`
     display: flex;
     flex-direction: column;
     h2 {
-        font-size: 10vw;
-        font-weight: 300;
+        font-size: 8vw;
+        font-weight: 200;
         margin: 0;
     }
     h1 {
-        font-size: 13vw;
+        font-size: 11vw;
         font-weight: 600;
+        line-height: 95%;
         margin: 0;
+        width: 150px;
     }
 `
 
 const ImageContainer = styled.div`
-    max-width: 38%;
+    height: 120px;
+    width: 130px;
     img {
+        height: 100%;
+        width: 100%;
         object-fit: cover;
     }
 `
 
 const AboutHolder = styled.div`
     display: flex;
-    margin-top: 10px;
+    margin-top: 5px;
     p {
-        font-size: 6vw;
-        margin: 0 0 0 10px;
+        font-size: 5vw;
+        margin: 0 0 0 5px;
     }
 `
 
@@ -50,7 +55,7 @@ const Therapist = (props) => (
             <h2>Therapist</h2>
             <h1>{props.firstname+" "+props.surname}</h1>
             <AboutHolder>
-                <Icon size={25} icon={ arrowRightThin } />
+                <Icon size={20} icon={ arrowRightThin } />
                 <p>About {props.firstname}</p>
             </AboutHolder>
         </WordsContainer>
