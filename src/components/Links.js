@@ -14,6 +14,7 @@ const scrollToTop = () => {
 const LinksWrapper = styled.div`
     align-items: center;
     background: inherit;
+    border-bottom: 1px solid #ddeaf6;
     display: flex;
     justify-content: center;
     padding: 3% 0;

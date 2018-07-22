@@ -56,6 +56,36 @@ const StickyHolder = styled.div`
     //     }
 `
 
+const ConditionsContainer = styled.div`
+    background: #86aecf;
+    color: #fff;
+    padding: 5% 10%;
+    max-width: 100vw;
+    h2 {
+        font-size: 1.4rem;
+        font-weight: 900;
+        margin: 0 0 10px 0;
+    }
+    p{
+        font-size: 1.2rem;
+        margin: 5px 0;;
+    }
+    ul {
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+        li {
+            margin-top: 2px;
+        }
+        @media (min-width: 600px) {
+          column-count: 2;  
+        }
+        @media (min-width: 1200px) {
+          column-count: 3;  
+        }
+    }
+`
+
 const AcupuncturePage = () => (
     <AcupunctureWrapper>
         <TherapyHeader 
@@ -78,6 +108,82 @@ const AcupuncturePage = () => (
         <BlurbHolder>
             Practised successfully for thousands of years, acupuncture is a traditional branch of Chinese medicine. The Chinese adopted an holistic approach to medicine, believing the body works as a balanced structure. Anything causing an imbalance would create disharmony in the energy flow so causing ill-health. Working through a complex system of channels or meridians, acupuncture is said to work by re-balancing the Qi (Chee) i.e. the energy flow.
         </BlurbHolder>
+        <ConditionsContainer>
+            <h2>
+                ACUPUNCTURE CAN TREAT:
+            </h2>
+            <ul>
+                <li>
+                    &bull; Tension headaches and stress
+                </li>
+                <li>
+                    &bull; Migraine
+                </li>
+                <li>
+                    &bull; Slipped disc (herniated disc or prolapsed disc)
+                </li>
+                <li>
+                    &bull; Joint problems
+                </li>
+                <li>
+                    &bull; Frozen shoulder
+                </li>
+                <li>
+                    &bull; Tennis Elbow
+                </li>
+                <li>
+                    &bull; Golfer’s Elbow
+                </li>
+                <li>
+                    &bull; Lumbago
+                </li>
+                <li>
+                    &bull; Shoulder, neck, and back pain
+                </li>
+                <li>
+                    &bull; Sciatica
+                </li>
+                <li>
+                    &bull; Asthma
+                </li>
+                <li>
+                    &bull; Anxiety
+                </li>
+                <li>
+                    &bull; Knee pain
+                </li>
+                <li>
+                    &bull; Morning sickness
+                </li>
+                <li>
+                    &bull; Arthritic pain
+                </li>
+                <li>
+                    &bull; Fibromyalgia Syndrome
+                </li>
+                <li>
+                    &bull; Hay fever
+                </li>
+                <li>
+                    &bull; Digestive disorders
+                </li>
+                <li>
+                    &bull; Irregular periods, painful periods, PMT
+                </li>
+                <li>
+                    &bull; Menopause symptoms
+                </li>
+                <li>
+                    &bull; Couples needing fertility treatment (Zita West)
+                </li>
+                <li>
+                    &bull; IVF support (Zita West)
+                </li>
+            </ul>
+            <p>
+                Acupuncturists treat a wide range of conditions. If you don’t see your problem listed here then please ask. 
+            </p>
+        </ConditionsContainer>
     </AcupunctureWrapper>
 )
 
