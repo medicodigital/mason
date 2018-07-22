@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 
-import vincent from '../images/therapists/vincent-martino.jpeg'
+import renate from '../images/therapists/renate.jpg'
 
 
 const TherapistWrapper = styled.div`
@@ -72,22 +72,22 @@ const StickyHolder = styled.div`
     }
 `
 
-const TherapistVincent = () => (
+const TherapistRenate = () => (
     <TherapistWrapper>
         <TherapyHeader 
-            therapy="osteopathy"
+            therapy="acupuncture"
             />
         <ImageBlurbContainer>
             <ImageHolder>
-                <img src={vincent} alt="Vincent headshot" />
+                <img src={renate} alt="renate headshot" />
             </ImageHolder>
             <BlurbHolder>
-                <h1>Vincent Martino</h1>
-                <h3>DO, MOst</h3>
-                <p>A graduate of the European School of Osteopathy in Maidstone, Vincent is an holistic osteopath who has studied osteopathy in both France and England. His studies in both countries provide him a broad osteopathic approach that he uses in practice, such as cranial, visceral and structural osteopathy.
-                Vincent enjoys treating patients from all backgrounds, taking time to explain the origin of their pain, and what can be done through treatment to improve it. He also likes to advise on what work and home habits could be changed to create a feeling of well-being and provide further improvement over time.</p>
-                <p>Vincent has also a particular interest in the treatment of pregnant women and babies. For him osteopathic treatment before birth is very important making sure all the joints of the pelvis can move freely in order for the birth to be as smooth as possible.</p>
-                <p>Vincent is happy to conduct his sessions in French as he knows that for the large French community in Kent it is often easier for patients to describe their aches and pain in their mother tongue.</p>
+                <h1>Renate Blacker</h1>
+                <h3>MBAcC</h3>
+                <p>Renate Blacker has been a healthcare professional for more than 20 years, as a general nurse to begin with and then qualifying as an acupuncturist and Chinese herbalist.
+                Many patients come for painful conditions and acupuncture works very well for acute injuries and chronic pain.</p>
+                <p>Renate also specialises in fertility issues and IVF support. Women can have treatment throughout their pregnancy including before and after the birth. She is a member of the British Acupuncture Council, the Zita West Network and the Register of Chinese Herbal Medicine, which ensure a high standard of practise and professional development.</p>
+                <p>She explains: “I use a lot of massage and acupressure techniques, which are good for children and people who are worried about the needles. The treatment should be a pleasant experience.”</p>
             </BlurbHolder>
         </ImageBlurbContainer>
         <StickyHolder>
@@ -96,4 +96,4 @@ const TherapistVincent = () => (
     </TherapistWrapper>
 )
 
-export default TherapistVincent
+export default TherapistRenate

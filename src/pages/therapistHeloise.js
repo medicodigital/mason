@@ -75,8 +75,7 @@ const StickyHolder = styled.div`
 const TherapistHeloise = () => (
     <TherapistWrapper>
         <TherapyHeader 
-            therapy="Osteopathy"
-            link="osteopathy"
+            therapy="osteopathy"
             />
         <ImageBlurbContainer>
             <ImageHolder>

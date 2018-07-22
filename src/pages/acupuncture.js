@@ -6,7 +6,7 @@ import Links from '../components/Links'
 import Therapist from '../components/Therapist'
 
 import acupuncture from '../images/acupuncture.jpg'
-import renate from '../images/renate.jpg'
+import renate from '../images/therapists/renate.jpg'
 
 
 const AcupunctureWrapper = styled.div`
