@@ -21,6 +21,11 @@ const TherapistWrapper = styled.div`
         margin: 5vh auto 0;
         width: 40vw;
     }
+    @media (min-width: 1200px) {
+        float: right;
+        margin: 3vh 20vw 5vh 5vw;
+        width: 30vw;
+    }
 `
 
 const WordsContainer = styled.div`
@@ -53,7 +58,7 @@ const WordsContainer = styled.div`
             font-size: 5vw;
         }
         @media (min-width: 1200px) {
-            font-size: 4vw;
+            font-size: 3.5vw;
         }
     }
 `

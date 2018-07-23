@@ -42,18 +42,36 @@ const BlurbHolder = styled.div`
         max-width: 60%;
         padding: 2% 0;
     }
+    @media (min-width: 900px) {
+        margin: 0 auto;
+        max-width: 60%;
+        padding: 0;
+    }
+    p {
+        :last-of-type {
+            @media (min-width: 1200px) {
+                column-count: 2;
+            }
+        }
+    }
+`
+
+const HeroHolder = styled.div`
+    @media (min-width: 600px) {
+    order: 2;
+    }
 `
 
 const StickyHolder = styled.div`
     background: #86aecf;
     color: #fff;
-    // order: 0;
+    order: 0;
     position: sticky;
     top: 0;
     z-index: 1;
-    // @media (min-width: 600px) {
-    //     order: 1;
-    //     }
+    @media (min-width: 600px) {
+        order: 1;
+        }
 `
 
 const ConditionsContainer = styled.div`
@@ -61,6 +79,9 @@ const ConditionsContainer = styled.div`
     color: #fff;
     padding: 5% 10%;
     max-width: 100vw;
+    @media (min-width: 600px) {
+        order: 3;
+    }
     h2 {
         font-size: 1.4rem;
         font-weight: 900;
@@ -91,6 +112,7 @@ const AcupuncturePage = () => (
         <TherapyHeader 
             therapy="Acupuncture"
             />
+        <HeroHolder>
         <ImageHolder>
             <img src={acupuncture} alt="acupuncture" />
         </ImageHolder>
@@ -103,6 +125,7 @@ const AcupuncturePage = () => (
             <p> Over the past 20 years acupuncture has risen to the forefront of alternative therapies and is a key treatment at The Mason Clinic. Firmly established in the West, it is used to treat a wide variety of conditions – not only physical problems and injuries, but also problems associated with stress such as chronic headaches and allergies. Acupuncture is also core to the Zita West fertility programme which we are proud to be affiliated to. </p>
             <p> Practised successfully for thousands of years, acupuncture is a traditional branch of Chinese medicine. The Chinese adopted an holistic approach to medicine, believing the body works as a balanced structure. Anything causing an imbalance would create disharmony in the energy flow so causing ill-health. Working through a complex system of channels or meridians, acupuncture is said to work by re-balancing the Qi (Chee) i.e. the energy flow.</p>
         </BlurbHolder>
+        </HeroHolder>
         <StickyHolder>
             <Links />
         </StickyHolder>
