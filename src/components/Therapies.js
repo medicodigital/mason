@@ -103,40 +103,48 @@ const Therapies = () => (
     </TherapyBoy>
     <TherapyList>
       <h1>Therapies</h1>
-      <Link to="/osteopathy/">
+      <Link to="/osteopathy">
         <TherapyLink>
           <Icon size={25} icon={arrowRightThin} />
           <h2>Osteopathy</h2>
         </TherapyLink>
       </Link>
-      <Link to="/acupuncture/">
+      <Link to="/acupuncture">
         <TherapyLink>
           <Icon size={25} icon={arrowRightThin} />
           <h2>Acupuncture</h2>
         </TherapyLink>
       </Link>
-      <Link to="/podiatry/">
+      <Link to="/podiatry">
         <TherapyLink>
           <Icon size={25} icon={arrowRightThin} />
           <h2>Podiatry</h2>
         </TherapyLink>
       </Link>
-      <TherapyLink>
-        <Icon size={25} icon={arrowRightThin} />
-        <h2>Homeopathy</h2>
-      </TherapyLink>
-      <TherapyLink>
-        <Icon size={25} icon={arrowRightThin} />
-        <h2>Allergy testing</h2>
-      </TherapyLink>
-      <TherapyLink>
-        <Icon size={25} icon={arrowRightThin} />
-        <h2>Reflexology</h2>
-      </TherapyLink>
-      <TherapyLink>
-        <Icon size={25} icon={arrowRightThin} />
-        <h2>Chiropody</h2>
-      </TherapyLink>
+      <Link to="/homeopathy">
+        <TherapyLink>
+          <Icon size={25} icon={arrowRightThin} />
+          <h2>Homeopathy</h2>
+        </TherapyLink>
+      </Link>
+      <Link to="/therapistSuzy">
+        <TherapyLink>
+          <Icon size={25} icon={arrowRightThin} />
+          <h2>Allergy testing</h2>
+        </TherapyLink>
+      </Link>
+      <Link to="/reflexology">
+        <TherapyLink>
+          <Icon size={25} icon={arrowRightThin} />
+          <h2>Reflexology</h2>
+        </TherapyLink>
+      </Link>
+      <Link to="/podiatry">
+        <TherapyLink>
+          <Icon size={25} icon={arrowRightThin} />
+          <h2>Chiropody</h2>
+        </TherapyLink>
+      </Link>
       <TherapyLink>
         <Icon size={25} icon={arrowRightThin} />
         <h2>Deep tissue massage</h2>

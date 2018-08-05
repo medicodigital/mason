@@ -49,13 +49,11 @@ const BlurbHolder = styled.div`
     max-width: 30vw;
   }
   > h1,
-  h3,
-  h4 {
+  h3 {
     margin: 0;
     text-align: center;
   }
-  > h1,
-  h4 {
+  > h1 {
     font-weight: 700;
   }
   > h3 {
@@ -74,37 +72,35 @@ const StickyHolder = styled.div`
   }
 `
 
-const TherapistRenate = () => (
+const TherapistMaria = () => (
   <TherapistWrapper>
-    <TherapyHeader therapy="acupuncture" />
+    <TherapyHeader therapy="reflexology" />
     <ImageBlurbContainer>
       <ImageHolder>
         <img src={renate} alt="renate headshot" />
       </ImageHolder>
       <BlurbHolder>
-        <h1>Renate Blacker</h1>
-        <h3>MBAcC</h3>
-        <a href="http://www.blacker-acupuncture.co.uk">
-          <h4>blacker-acupuncture.co.uk</h4>
-        </a>
+        <h1>Maria Mahon</h1>
+        <h3>Reflexologist</h3>
         <p>
-          Renate Blacker has been a healthcare professional for more than 20
-          years, as a general nurse to begin with and then qualifying as an
-          acupuncturist and Chinese herbalist. Many patients come for painful
-          conditions and acupuncture works very well for acute injuries and
-          chronic pain.
+          Maria studied massage therapy and reflexology in London and has been
+          working as a therapist since 2007. She finds her work on reflexology
+          for infertility and maternity particularly rewarding, especially for
+          overdue ladies. Many have said afterwards that their babies are very
+          calm. She is still fascinated by the outcomes of reflexology and
+          always learning something new.
         </p>
         <p>
-          Renate also specialises in fertility issues and IVF support. Women can
-          have treatment throughout their pregnancy including before and after
-          the birth. She is a member of the British Acupuncture Council, the
-          Zita West Network and the Register of Chinese Herbal Medicine, which
-          ensure a high standard of practise and professional development.
+          Maria has recently introduced the Bergman Method of Facial Reflexology
+          which provides all the benefits of foot reflexology plus the added
+          benefits of producing smoother, glowing skin helping wrinkles look
+          reduced. Massaging pressure points on the face, provides a very
+          calming, stress relieving treatment. Collagen and elastin is
+          stimulated, possibly delaying the need for botox or fillers. The
+          difference is immediate and noticeable.
         </p>
         <p>
-          She explains: “I use a lot of massage and acupressure techniques,
-          which are good for children and people who are worried about the
-          needles. The treatment should be a pleasant experience.”
+          In her spare time, Maria enjoys walking her dog and exploring Kent.
         </p>
       </BlurbHolder>
     </ImageBlurbContainer>
@@ -114,4 +110,4 @@ const TherapistRenate = () => (
   </TherapistWrapper>
 )
 
-export default TherapistRenate
+export default TherapistMaria

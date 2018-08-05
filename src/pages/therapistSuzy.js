@@ -74,37 +74,33 @@ const StickyHolder = styled.div`
   }
 `
 
-const TherapistRenate = () => (
+const TherapistSuzy = () => (
   <TherapistWrapper>
-    <TherapyHeader therapy="acupuncture" />
+    <TherapyHeader therapy="homeopathy" />
     <ImageBlurbContainer>
       <ImageHolder>
         <img src={renate} alt="renate headshot" />
       </ImageHolder>
       <BlurbHolder>
-        <h1>Renate Blacker</h1>
-        <h3>MBAcC</h3>
-        <a href="http://www.blacker-acupuncture.co.uk">
-          <h4>blacker-acupuncture.co.uk</h4>
+        <h1>Suzy Cain</h1>
+        <h3>LCPH MHMA</h3>
+        <a href="https://www.suzycainhomeopathy.co.uk">
+          <h4>suzycainhomeopathy.co.uk</h4>
         </a>
         <p>
-          Renate Blacker has been a healthcare professional for more than 20
-          years, as a general nurse to begin with and then qualifying as an
-          acupuncturist and Chinese herbalist. Many patients come for painful
-          conditions and acupuncture works very well for acute injuries and
-          chronic pain.
+          Suzy qualified from the College of Practical Homeopathy in Finchley
+          where she studied with some of the top homeopaths in the country. She
+          is registered and insured with the Homeopathic Medical Association.
+          Suzy is also a member of the British Institute for Allergy and
+          Environmental Therapy and now offers homeopathy and allergy testing.
         </p>
         <p>
-          Renate also specialises in fertility issues and IVF support. Women can
-          have treatment throughout their pregnancy including before and after
-          the birth. She is a member of the British Acupuncture Council, the
-          Zita West Network and the Register of Chinese Herbal Medicine, which
-          ensure a high standard of practise and professional development.
-        </p>
-        <p>
-          She explains: “I use a lot of massage and acupressure techniques,
-          which are good for children and people who are worried about the
-          needles. The treatment should be a pleasant experience.”
+          A full time working mum herself she understands the rigorous demands
+          of living in the 21st century. Before training as a homeopath she
+          worked for twenty years in the fashion industry, which involved
+          working to tight deadlines and much travelling. She is passionate
+          about health and offering patients solutions and choices to their
+          problems.
         </p>
       </BlurbHolder>
     </ImageBlurbContainer>
@@ -114,4 +110,4 @@ const TherapistRenate = () => (
   </TherapistWrapper>
 )
 
-export default TherapistRenate
+export default TherapistSuzy

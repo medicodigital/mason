@@ -106,7 +106,7 @@ const ConditionsContainer = styled.div`
   }
 `
 
-const AcupuncturePage = () => (
+const PodiatryPage = () => (
   <PodiatryWrapper>
     <TherapyHeader therapy="Podiatry" />
     <HeroHolder>
@@ -140,7 +140,7 @@ const AcupuncturePage = () => (
       <Links />
     </StickyHolder>
     <ConditionsContainer>
-      <h2>PODIATRY CAN TREAT:</h2>
+      <h2>OUR TREATMENTS:</h2>
       <ul>
         <li>
           &bull; General Podiatry including verrucae, corns, calluses, fungal
@@ -175,4 +175,4 @@ const AcupuncturePage = () => (
   </PodiatryWrapper>
 )
 
-export default AcupuncturePage
+export default PodiatryPage
