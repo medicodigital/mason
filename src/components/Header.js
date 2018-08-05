@@ -9,16 +9,13 @@ const HeaderWrapper = styled.div`
   width: 100vw;
 `
 
-const Hero = styled.div`
+const Hero = styled.img`
   margin: 0 auto;
-  width: 100vw;
-  >img {
-    height: 85vw;
-    object-fit: cover;
-    width: 100%;
-    @media (min-width: 900px) {
-      height: 91vh;
-    }
+  height: 85vw;
+  object-fit: cover;
+  width: 100%;
+  @media (min-width: 900px) {
+    height: 91vh;
   }
 `
 
@@ -57,14 +54,11 @@ const HeaderContainer = styled.div`
 const Header = () => (
   <HeaderWrapper>
     <HeaderContainer>
-        <h1>The Mason Clinic</h1>
-        <div>Complementary Healthcare</div>
+      <h1>The Mason Clinic</h1>
+      <div>Complementary Healthcare</div>
     </HeaderContainer>
-      <Hero>
-        <img src={hero} alt="Hands on back" />
-      </Hero>
+    <Hero src={hero} alt="Hands on back" />
   </HeaderWrapper>
-  
 )
 
 export default Header

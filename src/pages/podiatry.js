@@ -8,7 +8,7 @@ import Therapist from '../components/Therapist'
 import acupuncture from '../images/acupuncture.jpg'
 import renate from '../images/therapists/renate.jpg'
 
-const AcupunctureWrapper = styled.div`
+const PodiatryWrapper = styled.div`
   background: #ddeaf6;
   display: flex;
   flex-direction: column;
@@ -107,33 +107,32 @@ const ConditionsContainer = styled.div`
 `
 
 const AcupuncturePage = () => (
-  <AcupunctureWrapper>
-    <TherapyHeader therapy="Acupuncture" />
+  <PodiatryWrapper>
+    <TherapyHeader therapy="Podiatry" />
     <HeroHolder>
       <ImageHolder>
         <img src={acupuncture} alt="acupuncture" />
       </ImageHolder>
-      <Therapist firstname="Renate" surname="Blacker" pic={renate} />
+      <Therapist firstname="John" surname="Balchin" pic={renate} />
       <BlurbHolder>
         <p>
           {' '}
-          Over the past 20 years acupuncture has risen to the forefront of
-          alternative therapies and is a key treatment at The Mason Clinic.
-          Firmly established in the West, it is used to treat a wide variety of
-          conditions – not only physical problems and injuries, but also
-          problems associated with stress such as chronic headaches and
-          allergies. Acupuncture is also core to the Zita West fertility
-          programme which we are proud to be affiliated to.{' '}
+          Podiatry is a fast evolving healthcare profession concerned with the
+          assessment, diagnosis and treatment of lower limb and foot injuries,
+          diseases and abnormalities. The foot is a highly complex structure,
+          comprising 26 bones and together the feet make up over a quarter of
+          the bones in the adult body! So like any complex mechanism feet are
+          prone to mechanical problems and benefit from regular maintenance.
         </p>
         <p>
           {' '}
-          Practised successfully for thousands of years, acupuncture is a
-          traditional branch of Chinese medicine. The Chinese adopted an
-          holistic approach to medicine, believing the body works as a balanced
-          structure. Anything causing an imbalance would create disharmony in
-          the energy flow so causing ill-health. Working through a complex
-          system of channels or meridians, acupuncture is said to work by
-          re-balancing the Qi (Chee) i.e. the energy flow.
+          There is often confusion between what is a ‘podiatrist’ and a
+          ‘chiropodist’ but they are the same. The word ‘chiropody’, in use
+          since the 1700’s with regards to footcare specialists, is actually a
+          misnomer. It derives from the Greek ‘chiro’ meaning ‘hand’ and ‘pous’
+          meaning foot (plural ‘podes’). In the US, ‘chiropody’ was used until
+          1958 when it was officially changed to ‘podiatry.’ Now ‘podiatrist’ is
+          becoming universally adopted.
         </p>
       </BlurbHolder>
     </HeroHolder>
@@ -141,37 +140,39 @@ const AcupuncturePage = () => (
       <Links />
     </StickyHolder>
     <ConditionsContainer>
-      <h2>ACUPUNCTURE CAN TREAT:</h2>
+      <h2>PODIATRY CAN TREAT:</h2>
       <ul>
-        <li>&bull; Tension headaches and stress</li>
-        <li>&bull; Migraine</li>
-        <li>&bull; Slipped disc (herniated disc or prolapsed disc)</li>
-        <li>&bull; Joint problems</li>
-        <li>&bull; Frozen shoulder</li>
-        <li>&bull; Tennis Elbow</li>
-        <li>&bull; Golfer’s Elbow</li>
-        <li>&bull; Lumbago</li>
-        <li>&bull; Shoulder, neck, and back pain</li>
-        <li>&bull; Sciatica</li>
-        <li>&bull; Asthma</li>
-        <li>&bull; Anxiety</li>
-        <li>&bull; Knee pain</li>
-        <li>&bull; Morning sickness</li>
-        <li>&bull; Arthritic pain</li>
-        <li>&bull; Fibromyalgia Syndrome</li>
-        <li>&bull; Hay fever</li>
-        <li>&bull; Digestive disorders</li>
-        <li>&bull; Irregular periods, painful periods, PMT</li>
-        <li>&bull; Menopause symptoms</li>
-        <li>&bull; Couples needing fertility treatment (Zita West)</li>
-        <li>&bull; IVF support (Zita West)</li>
+        <li>
+          &bull; General Podiatry including verrucae, corns, calluses, fungal
+          infections (including athlete’s foot), etc.
+        </li>
+        <li>&bull; Foot, leg and back pain</li>
+        <li>&bull; Toenail problems and toenail surgery</li>
+        <li>&bull; Heel and forefoot pain</li>
+        <li>&bull; Plantar fasciitis</li>
+        <li>&bull; Knee pain and flat feet</li>
+        <li>&bull; Foot skin infections and disorders</li>
+        <li>&bull; Gait and posture analysis</li>
+        <li>&bull; Hammer toe</li>
+        <li>&bull; Bunions and toe deformities</li>
+        <li>&bull; Neuroma</li>
+        <li>&bull; Ankle sprains and strains</li>
+        <li>&bull; Biomechanical assessments</li>
+        <li>&bull; Pregnancy-related feet problems</li>
+        <li>&bull; Orthoses / Orthotics (insoles)</li>
+        <li>&bull; Stress fractures</li>
+        <li>&bull; 'Shin Splints' (Anterior Compartment Syndrome)</li>
+        <li>&bull; 'Growing pains'</li>
+        <li>&bull; Arthritis problems of the lower limb</li>
+        <li>&bull; Diabetes foot care</li>
+        <li>&bull; Footwear advice</li>
       </ul>
       <p>
         Acupuncturists treat a wide range of conditions. If you don’t see your
         problem listed here then please ask.
       </p>
     </ConditionsContainer>
-  </AcupunctureWrapper>
+  </PodiatryWrapper>
 )
 
 export default AcupuncturePage

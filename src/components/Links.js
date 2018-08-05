@@ -63,7 +63,7 @@ const Links = () => (
         <Icon onClick={scrollToTop} size={30} icon={arrowUpThin} />
         <LinksLeft>
             <h2><a href="tel:01634842583">01634 842583</a></h2>
-            <h4><a href="mailto:enquiries@masonclinic.co.uk">enquiries@masonclinic.co.uk</a></h4>
+            <h4><a href="#">enquiries@masonclinic.co.uk</a></h4>
         </LinksLeft>
         <LinksRight>
         <a href="https://www.facebook.com/The-Mason-Clinic-643641389021284/">
