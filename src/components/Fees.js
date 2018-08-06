@@ -73,7 +73,9 @@ const Fees = () => (
         <p>New and continuing patients</p>
         <p>£45</p>
       </FeesLine>
-      <h3>HOMEOPATHY</h3>
+      <Link to="/homeopathy">
+        <h3>HOMEOPATHY</h3>
+      </Link>
       <FeesLine>
         <p>Adult first consultation</p>
         <p>£65</p>
@@ -114,7 +116,9 @@ const Fees = () => (
         <p>Under-16 follow-up</p>
         <p>£35</p>
       </FeesLine>
-      <h3>REFLEXOLOGY</h3>
+      <Link to="/reflexology">
+        <h3>REFLEXOLOGY</h3>
+      </Link>
       <FeesLine>
         <p>60 minutes</p>
         <p>£45</p>

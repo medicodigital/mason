@@ -8,6 +8,7 @@ import andrew from '../images/therapists/andrew-headshot.jpeg'
 import inga from '../images/therapists/inga-head.jpeg'
 import vincent from '../images/therapists/vincent-martino.jpeg'
 import heloise from '../images/therapists/Héloïse-Gilleman-3.jpg'
+import ingaJ from '../images/therapists/ingaJ.jpeg'
 
 const OsteopathsWrapper = styled.div`
   align-items: center;
@@ -98,6 +99,8 @@ const ImageHolder = styled.div`
     height: 80px;
     margin-left: 15%;
     margin-right: 10px;
+    object-fit: cover;
+    width: 60px;
   }
 `
 
@@ -114,7 +117,7 @@ const Osteopaths = () => (
           <li>
             <ImageHolder>
               <img src={andrew} alt="Andrew headshot" />
-              <Link to="/therapistAndrew/">
+              <Link to="/therapistAndrew">
                 Andrew<br />Allen
               </Link>
             </ImageHolder>
@@ -122,7 +125,7 @@ const Osteopaths = () => (
           <li>
             <ImageHolder>
               <img src={inga} alt="Inga headshot" />
-              <Link to="/therapistInga/">
+              <Link to="/therapistInga">
                 Inga<br />Werthmann
               </Link>
             </ImageHolder>
@@ -130,7 +133,7 @@ const Osteopaths = () => (
           <li>
             <ImageHolder>
               <img src={vincent} alt="Vincent headshot" />
-              <Link to="/therapistVincent/">
+              <Link to="/therapistVincent">
                 Vincent<br />Martino
               </Link>
             </ImageHolder>
@@ -138,15 +141,15 @@ const Osteopaths = () => (
           <li>
             <ImageHolder>
               <img src={heloise} alt="Heloise headshot" />
-              <Link to="/therapistHeloise/">
+              <Link to="/therapistHeloise">
                 Héloïse<br />Gilleman
               </Link>
             </ImageHolder>
           </li>
           <li>
             <ImageHolder>
-              <img src={heloise} alt="IngaJ headshot" />
-              <Link to="/therapistIngaJ/">
+              <img src={ingaJ} alt="IngaJ headshot" />
+              <Link to="/therapistIngaJ">
                 Inga<br />Jakubovskaja
               </Link>
             </ImageHolder>
