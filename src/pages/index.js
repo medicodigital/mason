@@ -19,7 +19,6 @@ const IndexWrapper = styled.div`
   display: flex
   flex-direction: column;
 `
-
 const ButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -36,7 +35,6 @@ const ButtonContainer = styled.div`
     transform: translate(-50%, -50%);
   }
 `
-
 const BlueButton = styled.button`
   background: #4189c8;
   border-width: 0;
@@ -70,7 +68,6 @@ const DarkButton = BlueButton.extend`
     background: #34829d;
   }
 `
-
 const StickyHolder = styled.div`
   background: #ddeaf6;
   color: #142c14;
@@ -78,7 +75,6 @@ const StickyHolder = styled.div`
   top: 0;
   z-index: 1;
 `
-
 const Clinic = styled.div`
   background: #86ab45;
   margin: 0 auto;
@@ -91,7 +87,6 @@ const PicWrapper = styled.div`
   display: flex;
   width: 100vw;
 `
-
 const Bottles = styled.div`
   background: #276277;
   margin: 0 auto;

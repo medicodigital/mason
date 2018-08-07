@@ -10,8 +10,9 @@ const HeaderWrapper = styled.div`
 `
 
 const Hero = styled.img`
+  display: block;
   margin: 0 auto;
-  height: 85vw;
+  height: 48vh;
   object-fit: cover;
   width: 100%;
   @media (min-width: 900px) {
