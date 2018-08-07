@@ -13,7 +13,6 @@ import clinic from '../images/clinic.jpeg'
 import bottles from '../images/bottles.jpeg'
 import flowers from '../images/flowers.jpeg'
 
-
 const IndexWrapper = styled.div`
   align-items: flex-start;
   background: #ddeaf6;
@@ -54,7 +53,6 @@ const BlueButton = styled.button`
   @media (min-width: 600px) {
     font-size: 45px;
     width: 33.333vw;
-
   }
   @media (min-width: 900px) {
     font-size: 3vw;
@@ -85,7 +83,7 @@ const Clinic = styled.div`
   background: #86ab45;
   margin: 0 auto;
   width: 100%;
-  >img {
+  > img {
     width: 100%;
   }
 `
@@ -101,11 +99,11 @@ const Bottles = styled.div`
   @media (min-width: 900px) {
     width: 50%;
   }
-  >img {
+  > img {
     object-fit: cover;
     width: 100%;
   }
-  `
+`
 const Flowers = Bottles.extend`
   display: none;
   width: 50%;
@@ -118,21 +116,15 @@ const IndexPage = () => (
   <IndexWrapper>
     <Header />
     <ButtonContainer>
-        <AnchorLink offset="70" href="#therapies">
-          <BlueButton>
-            Therapies
-          </BlueButton>
-        </AnchorLink>
-        <AnchorLink offset="70" href="#contact">
-          <GreenButton>
-            Contact us
-          </GreenButton>
-        </AnchorLink>
-        <AnchorLink offset="70" href="#fees">
-          <DarkButton>
-            Fees
-          </DarkButton>
-        </AnchorLink>
+      <AnchorLink offset="70" href="#therapies">
+        <BlueButton>Therapies</BlueButton>
+      </AnchorLink>
+      <AnchorLink offset="70" href="#contact">
+        <GreenButton>Contact us</GreenButton>
+      </AnchorLink>
+      <AnchorLink offset="70" href="#fees">
+        <DarkButton>Fees</DarkButton>
+      </AnchorLink>
     </ButtonContainer>
     <StickyHolder>
       <Links />
@@ -148,10 +140,10 @@ const IndexPage = () => (
     </section>
     <PicWrapper>
       <Bottles>
-        <img src={ bottles } alt="bottles on shelf" />
+        <img src={bottles} alt="bottles on shelf" />
       </Bottles>
       <Flowers>
-        <img src={ flowers } alt="Flowers on shelf" />
+        <img src={flowers} alt="Flowers on shelf" />
       </Flowers>
     </PicWrapper>
     <section id="fees">

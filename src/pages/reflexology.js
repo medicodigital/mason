@@ -46,13 +46,6 @@ const BlurbHolder = styled.div`
     max-width: 60%;
     padding: 0;
   }
-  p {
-    :last-of-type {
-      @media (min-width: 1200px) {
-        column-count: 2;
-      }
-    }
-  }
 `
 
 const BlurbHeader = styled.div`

@@ -127,7 +127,7 @@ const Therapies = () => (
           <h2>Homeopathy</h2>
         </TherapyLink>
       </Link>
-      <Link to="/therapistSuzy">
+      <Link to="/allergy">
         <TherapyLink>
           <Icon size={25} icon={arrowRightThin} />
           <h2>Allergy testing</h2>

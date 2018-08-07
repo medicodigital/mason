@@ -99,7 +99,9 @@ const Fees = () => (
         <p>General treatment</p>
         <p>£38</p>
       </FeesLine>
-      <h3>ALLERGY TESTING</h3>
+      <Link to="/allergy">
+        <h3>ALLERGY TESTING</h3>
+      </Link>
       <FeesLine>
         <p>Adult first consultation</p>
         <p>£85</p>
