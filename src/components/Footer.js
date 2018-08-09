@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import styled from 'styled-components'
 import Icon from 'react-icons-kit'
 import { arrowUpThin } from 'react-icons-kit/metrize/arrowUpThin'
@@ -46,7 +47,8 @@ const Footer = () => (
     <FooterContainer>
       <p>
         &copy; The Mason Clinic 2018
-        <br />PRIVACY STATEMENT
+        <br />
+        <Link to="/privacy">PRIVACY STATEMENT</Link>
       </p>
       <RightLink>
         <p>

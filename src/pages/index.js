@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
@@ -16,7 +15,7 @@ import flowers from '../images/flowers.jpeg'
 const IndexWrapper = styled.div`
   align-items: flex-start;
   background: #ddeaf6;
-  display: flex
+  display: flex;
   flex-direction: column;
 `
 const ButtonContainer = styled.div`
