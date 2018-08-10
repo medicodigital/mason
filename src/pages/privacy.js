@@ -39,7 +39,7 @@ const PrivacyPage = () => (
   <PrivacyWrapper>
     <TherapyHeader therapy="Data privacy" />
     <PrivacyHolder>
-      <h3>GDPR 2018 Privacy Notice</h3>
+      <h3>GDPR Privacy Notice</h3>
       <p>
         This document refers to personal data, which is defined as information
         concerning any living person (a natural person who hereafter will be
