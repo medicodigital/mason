@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import Link from 'gatsby-link'
 
 import TherapyHeader from '../components/TherapyHeader'
+import Links from '../components/Links'
 
 const PrivacyWrapper = styled.div`
   background: #ddeaf6;
@@ -21,9 +23,21 @@ const PrivacyHolder = styled.div`
   }
 `
 
+const StickyHolder = styled.div`
+  background: #86aecf;
+  color: #fff;
+  order: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  @media (min-width: 600px) {
+    order: 1;
+  }
+`
+
 const PrivacyPage = () => (
   <PrivacyWrapper>
-    <TherapyHeader therapy="Privacy" />
+    <TherapyHeader therapy="Data privacy" />
     <PrivacyHolder>
       <h3>GDPR 2018 Privacy Notice</h3>
       <p>
@@ -226,11 +240,18 @@ const PrivacyPage = () => (
       <p>
         You have a right to receive a copy of the data/information we hold about
         you or to authorise someone to act on your behalf. Please print out and
-        complete this form providing proof of your identity. Your request will
-        be processed within 30 calendar days on receipt of a fully completed
-        request form with proof of identity.
+        complete
+        <Link to="/privacyform">
+          <strong> this form </strong>
+        </Link>
+        providing proof of your identity. Your request will be processed within
+        30 calendar days on receipt of a fully completed request form with proof
+        of identity.
       </p>
     </PrivacyHolder>
+    <StickyHolder>
+      <Links />
+    </StickyHolder>
   </PrivacyWrapper>
 )
 
