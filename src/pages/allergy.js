@@ -5,7 +5,7 @@ import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 import Therapist from '../components/Therapist'
 
-import acupuncture from '../images/acupuncture.jpg'
+import wheat from '../images/wheat.jpg'
 import suzy from '../images/therapists/suzy-cain.jpeg'
 
 const AllergyWrapper = styled.div`
@@ -23,6 +23,7 @@ const ImageHolder = styled.div`
     margin-top: 7vh;
   }
   > img {
+    display: block;
     max-height: 50vh;
     object-fit: cover;
     width: 100%;
@@ -71,7 +72,7 @@ const AllergyPage = () => (
     <TherapyHeader therapy="Allergy testing" />
     <HeroHolder>
       <ImageHolder>
-        <img src={acupuncture} alt="acupuncture" />
+        <img src={wheat} alt="wheat" />
       </ImageHolder>
       <Therapist firstname="Suzy" surname="Cain" pic={suzy} />
       <BlurbHolder>
