@@ -10,6 +10,7 @@ import shoulders from '../images/osteoshoulders.jpeg'
 import inganeck from '../images/inganeck.jpeg'
 import handshead from '../images/handshead.jpeg'
 import treattable from '../images/treattable.jpeg'
+import osteobaby from '../images/osteobaby.jpg'
 
 const OsteopathyWrapper = styled.div`
   background: #ddeaf6;
@@ -127,7 +128,7 @@ const OsteopathyPage = () => (
     <TherapyHeader therapy="osteopathy" />
     <HeroHolder>
       <ImageHolder>
-        <img src={shoulders} alt="treating shoulders" />
+        <img src={osteobaby} alt="treating shoulders" />
       </ImageHolder>
       <Osteopaths />
       <BlurbHolder>
