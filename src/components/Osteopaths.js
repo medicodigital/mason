@@ -5,7 +5,7 @@ import Icon from 'react-icons-kit'
 import { arrowRightThin } from 'react-icons-kit/metrize/arrowRightThin'
 
 import andrew from '../images/therapists/andrew-headshot.jpeg'
-import inga from '../images/therapists/inga-head.jpeg'
+import inga from '../images/therapists/inga2018.jpeg'
 import vincent from '../images/therapists/vincent-martino.jpeg'
 import heloise from '../images/therapists/Héloïse-Gilleman-3.jpg'
 import ingaJ from '../images/therapists/ingaJ.jpeg'

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 
-import renate from '../images/therapists/renate.jpg'
+import john from '../images/therapists/john2018.jpg'
 
 const TherapistWrapper = styled.div`
   background: #ddeaf6;
@@ -77,7 +77,7 @@ const TherapistJohn = () => (
     <TherapyHeader therapy="podiatry" />
     <ImageBlurbContainer>
       <ImageHolder>
-        <img src={renate} alt="renate headshot" />
+        <img src={john} alt="john headshot" />
       </ImageHolder>
       <BlurbHolder>
         <h1>John Balchin</h1>

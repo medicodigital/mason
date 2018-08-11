@@ -6,7 +6,7 @@ import Links from '../components/Links'
 import Therapist from '../components/Therapist'
 
 import acupuncture from '../images/acupuncture.jpg'
-import renate from '../images/therapists/renate.jpg'
+import john from '../images/therapists/john2018.jpg'
 
 const PodiatryWrapper = styled.div`
   background: #ddeaf6;
@@ -113,15 +113,15 @@ const PodiatryPage = () => (
       <ImageHolder>
         <img src={acupuncture} alt="acupuncture" />
       </ImageHolder>
-      <Therapist firstname="John" surname="Balchin" pic={renate} />
+      <Therapist firstname="John" surname="Balchin" pic={john} />
       <BlurbHolder>
         <p>
           {' '}
           Podiatry is a fast evolving healthcare profession concerned with the
           assessment, diagnosis and treatment of lower limb and foot injuries,
-          diseases and abnormalities. The foot is a highly complex structure,
-          comprising 26 bones and together the feet make up over a quarter of
-          the bones in the adult body! So like any complex mechanism feet are
+          diseases and abnormalities. The foot is a highly complex structure
+          comprising 26 bones, and together the feet make up over a quarter of
+          the bones in the adult body. So like any complex mechanism feet are
           prone to mechanical problems and benefit from regular maintenance.
         </p>
         <p>

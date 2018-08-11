@@ -6,7 +6,7 @@ import Links from '../components/Links'
 import Therapist from '../components/Therapist'
 
 import acupuncture from '../images/acupuncture.jpg'
-import renate from '../images/therapists/renate.jpg'
+import maria from '../images/therapists/maria2018.jpeg'
 
 const ReflexologyWrapper = styled.div`
   background: #ddeaf6;
@@ -79,7 +79,7 @@ const ReflexologyPage = () => (
       <ImageHolder>
         <img src={acupuncture} alt="acupuncture" />
       </ImageHolder>
-      <Therapist firstname="Maria" surname="Mahon" pic={renate} />
+      <Therapist firstname="Maria" surname="Mahon" pic={maria} />
       <BlurbHolder>
         <p>
           {' '}
