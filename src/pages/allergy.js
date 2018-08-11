@@ -5,7 +5,7 @@ import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 import Therapist from '../components/Therapist'
 
-import wheat from '../images/wheat.jpg'
+import lavender from '../images/lavender.jpg'
 import suzy from '../images/therapists/suzy-cain.jpeg'
 
 const AllergyWrapper = styled.div`
@@ -72,7 +72,7 @@ const AllergyPage = () => (
     <TherapyHeader therapy="Allergy testing" />
     <HeroHolder>
       <ImageHolder>
-        <img src={wheat} alt="wheat" />
+        <img src={lavender} alt="lavender" />
       </ImageHolder>
       <Therapist firstname="Suzy" surname="Cain" pic={suzy} />
       <BlurbHolder>

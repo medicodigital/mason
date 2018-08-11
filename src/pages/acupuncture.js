@@ -23,6 +23,7 @@ const ImageHolder = styled.div`
     margin-top: 7vh;
   }
   > img {
+    display: block;
     max-height: 50vh;
     object-fit: cover;
     width: 100%;
