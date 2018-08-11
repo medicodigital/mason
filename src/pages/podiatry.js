@@ -5,7 +5,7 @@ import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 import Therapist from '../components/Therapist'
 
-import acupuncture from '../images/acupuncture.jpg'
+import podiatry from '../images/podiatry2018.jpg'
 import john from '../images/therapists/john2018.jpg'
 
 const PodiatryWrapper = styled.div`
@@ -23,6 +23,7 @@ const ImageHolder = styled.div`
     margin-top: 7vh;
   }
   > img {
+    display: block;
     max-height: 50vh;
     object-fit: cover;
     width: 100%;
@@ -111,7 +112,7 @@ const PodiatryPage = () => (
     <TherapyHeader therapy="Podiatry" />
     <HeroHolder>
       <ImageHolder>
-        <img src={acupuncture} alt="acupuncture" />
+        <img src={podiatry} alt="podiatry" />
       </ImageHolder>
       <Therapist firstname="John" surname="Balchin" pic={john} />
       <BlurbHolder>

@@ -5,7 +5,7 @@ import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 import Therapist from '../components/Therapist'
 
-import acupuncture from '../images/acupuncture.jpg'
+import homeopathy from '../images/homeopathy.jpg'
 import suzy from '../images/therapists/suzy-cain.jpeg'
 
 const HomeopathyWrapper = styled.div`
@@ -23,6 +23,7 @@ const ImageHolder = styled.div`
     margin-top: 7vh;
   }
   > img {
+    display: block;
     max-height: 50vh;
     object-fit: cover;
     width: 100%;
@@ -77,7 +78,7 @@ const HomeopathyPage = () => (
     <TherapyHeader therapy="Homeopathy" />
     <HeroHolder>
       <ImageHolder>
-        <img src={acupuncture} alt="acupuncture" />
+        <img src={homeopathy} alt="homeopathy" />
       </ImageHolder>
       <Therapist firstname="Suzy" surname="Cain" pic={suzy} />
       <BlurbHolder>

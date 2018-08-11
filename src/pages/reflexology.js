@@ -5,7 +5,7 @@ import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 import Therapist from '../components/Therapist'
 
-import acupuncture from '../images/acupuncture.jpg'
+import reflexology from '../images/reflexology.jpg'
 import maria from '../images/therapists/maria2018.jpeg'
 
 const ReflexologyWrapper = styled.div`
@@ -23,6 +23,7 @@ const ImageHolder = styled.div`
     margin-top: 7vh;
   }
   > img {
+    display: block;
     max-height: 50vh;
     object-fit: cover;
     width: 100%;
@@ -77,7 +78,7 @@ const ReflexologyPage = () => (
     <TherapyHeader therapy="Reflexology" />
     <HeroHolder>
       <ImageHolder>
-        <img src={acupuncture} alt="acupuncture" />
+        <img src={reflexology} alt="reflexology" />
       </ImageHolder>
       <Therapist firstname="Maria" surname="Mahon" pic={maria} />
       <BlurbHolder>

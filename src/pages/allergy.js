@@ -6,7 +6,7 @@ import Links from '../components/Links'
 import Therapist from '../components/Therapist'
 
 import acupuncture from '../images/acupuncture.jpg'
-import renate from '../images/therapists/renate.jpg'
+import suzy from '../images/therapists/suzy-cain.jpeg'
 
 const AllergyWrapper = styled.div`
   background: #ddeaf6;
@@ -73,7 +73,7 @@ const AllergyPage = () => (
       <ImageHolder>
         <img src={acupuncture} alt="acupuncture" />
       </ImageHolder>
-      <Therapist firstname="Suzy" surname="Cain" pic={renate} />
+      <Therapist firstname="Suzy" surname="Cain" pic={suzy} />
       <BlurbHolder>
         <p>
           {' '}
