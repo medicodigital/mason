@@ -1,15 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import Icon from 'react-icons-kit'
-import { arrowUpThin } from 'react-icons-kit/metrize/arrowUpThin'
-
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  })
-}
 
 const FooterWrapper = styled.div`
   background: #142c14;

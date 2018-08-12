@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Headroom from 'react-headroom'
+
 import Icon from 'react-icons-kit'
 import { facebookOfficial } from 'react-icons-kit/fa/facebookOfficial'
 import { arrowUpThin } from 'react-icons-kit/metrize/arrowUpThin'

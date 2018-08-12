@@ -44,7 +44,7 @@ const ImageHolder = styled.div`
     object-fit: cover;
     width: 100%;
     @media (min-width: 900px) {
-      min-height: 270px;
+      min-height: 300px;
     }
   }
 `
@@ -128,7 +128,7 @@ const OsteopathyPage = () => (
     <TherapyHeader therapy="osteopathy" />
     <HeroHolder>
       <ImageHolder>
-        <img src={osteobaby} alt="treating shoulders" />
+        <img src={shoulders} alt="treating shoulders" />
       </ImageHolder>
       <Osteopaths />
       <BlurbHolder>
@@ -159,7 +159,7 @@ const OsteopathyPage = () => (
       </BlurbPicContainer>
       <BlurbPicContainer>
         <ImageHolder>
-          <img src={handshead} alt="hands on head" />
+          <img src={osteobaby} alt="hands on head" />
         </ImageHolder>
         <BlurbHolder>
           <BlurbHeader>CRANIAL OSTEOPATHY</BlurbHeader>
