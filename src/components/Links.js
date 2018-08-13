@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Headroom from 'react-headroom'
 
 import Icon from 'react-icons-kit'
 import { facebookOfficial } from 'react-icons-kit/fa/facebookOfficial'
@@ -61,9 +60,15 @@ const LinksRight = styled.div`
   color: #3b5998;
 `
 
+const IconHolder = styled.div`
+  display: ${props => props.display};
+`
+
 const Links = () => (
   <LinksWrapper>
-    <Icon onClick={scrollToTop} size={30} icon={arrowUpThin} />
+    <IconHolder display={'inline'}>
+      <Icon onClick={scrollToTop} size={30} icon={arrowUpThin} />
+    </IconHolder>
     <LinksLeft>
       <h2>
         <a href="tel:01634842583">01634 842583</a>
