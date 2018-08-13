@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
+import io from '../images/io.jpg'
+
 const FooterWrapper = styled.div`
   background: #142c14;
   color: #fff;
@@ -29,8 +31,9 @@ const RightLink = styled.div`
   min-width: 120px;
 `
 
-const WhiteWrapper = styled.div`
-  color: #fff;
+const IoLogo = styled.img`
+  background: #fff;
+  max-height: 50px;
 `
 
 const Footer = () => (
@@ -41,6 +44,7 @@ const Footer = () => (
         <br />
         <Link to="/privacy">PRIVACY STATEMENT</Link>
       </p>
+      <IoLogo src={io} />
       <RightLink>
         <p>
           <a href="https://www.bigtent.media">Made with &hearts; by Big Tent</a>
