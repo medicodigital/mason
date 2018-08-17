@@ -145,10 +145,12 @@ const Therapies = () => (
           <h2>Chiropody</h2>
         </TherapyLink>
       </Link>
-      <TherapyLink>
-        <Icon size={25} icon={arrowRightThin} />
-        <h2>Deep tissue massage</h2>
-      </TherapyLink>
+      <Link to="/massage">
+        <TherapyLink>
+          <Icon size={25} icon={arrowRightThin} />
+          <h2>Deep tissue massage</h2>
+        </TherapyLink>
+      </Link>
     </TherapyList>
     <TherapyBlurb>
       The Mason Clinic was established as an osteopathic practice in 1966. Named

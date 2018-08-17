@@ -168,10 +168,6 @@ const PodiatryPage = () => (
         <li>&bull; Diabetes foot care</li>
         <li>&bull; Footwear advice</li>
       </ul>
-      <p>
-        Acupuncturists treat a wide range of conditions. If you don’t see your
-        problem listed here then please ask.
-      </p>
     </ConditionsContainer>
   </PodiatryWrapper>
 )

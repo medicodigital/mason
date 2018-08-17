@@ -73,6 +73,39 @@ const StickyHolder = styled.div`
   }
 `
 
+const ConditionsContainer = styled.div`
+  background: #86aecf;
+  color: #fff;
+  padding: 5% 10%;
+  max-width: 100vw;
+  @media (min-width: 600px) {
+    order: 3;
+  }
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin: 0 0 10px 0;
+  }
+  p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  ul {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    li {
+      margin-top: 2px;
+    }
+    @media (min-width: 600px) {
+      column-count: 2;
+    }
+    @media (min-width: 1200px) {
+      column-count: 3;
+    }
+  }
+`
+
 const HomeopathyPage = () => (
   <HomeopathyWrapper>
     <TherapyHeader therapy="Homeopathy" />
@@ -123,6 +156,40 @@ const HomeopathyPage = () => (
     <StickyHolder>
       <Links />
     </StickyHolder>
+    <ConditionsContainer>
+      <h2>HOMEOPATHY CAN HELP WITH:</h2>
+      <ul>
+        <li>&bull; Allergies</li>
+        <li>&bull; Migraines</li>
+        <li>&bull; Depression</li>
+        <li>&bull; Chronic fatigue syndrome</li>
+        <li>&bull; Rheumatoid arthritis</li>
+        <li>&bull; Irritable bowel syndrome</li>
+        <li>&bull; Infertility</li>
+        <li>&bull; Premenstrual syndrome</li>
+        <li>&bull; Asthma</li>
+        <li>&bull; Ear infections</li>
+        <li>&bull; Hay fever</li>
+        <li>&bull; Depression, stress and anxiety</li>
+        <li>&bull; Dermatitis</li>
+        <li>&bull; Arthritis</li>
+        <li>&bull; High blood pressure</li>
+        <li>&bull; Snoring</li>
+        <li>&bull; Sinusitis</li>
+        <li>&bull; Psoriasis</li>
+        <li>&bull; Fibromyalgia</li>
+        <li>&bull; Insomnia</li>
+        <li>&bull; Varicose veins</li>
+        <li>
+          &bull; It can also be used for minor issues like bruises, scrapes,
+          toothaches, headaches, nausea, coughs, and colds
+        </li>
+      </ul>
+      <p>
+        Homeopathy can help a wide range of conditions. If you don’t see your
+        problem listed here, please ask.
+      </p>
+    </ConditionsContainer>
   </HomeopathyWrapper>
 )
 

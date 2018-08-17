@@ -142,7 +142,7 @@ const AcupuncturePage = () => (
       <Links />
     </StickyHolder>
     <ConditionsContainer>
-      <h2>ACUPUNCTURE CAN TREAT:</h2>
+      <h2>ACUPUNCTURE CAN HELP WITH:</h2>
       <ul>
         <li>&bull; Tension headaches and stress</li>
         <li>&bull; Migraine</li>

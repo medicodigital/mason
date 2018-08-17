@@ -73,6 +73,39 @@ const StickyHolder = styled.div`
   }
 `
 
+const ConditionsContainer = styled.div`
+  background: #86aecf;
+  color: #fff;
+  padding: 5% 10%;
+  max-width: 100vw;
+  @media (min-width: 600px) {
+    order: 3;
+  }
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin: 0 0 10px 0;
+  }
+  p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  ul {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    li {
+      margin-top: 2px;
+    }
+    @media (min-width: 600px) {
+      column-count: 2;
+    }
+    @media (min-width: 1200px) {
+      column-count: 3;
+    }
+  }
+`
+
 const ReflexologyPage = () => (
   <ReflexologyWrapper>
     <TherapyHeader therapy="Reflexology" />
@@ -127,6 +160,29 @@ const ReflexologyPage = () => (
     <StickyHolder>
       <Links />
     </StickyHolder>
+    <ConditionsContainer>
+      <h2>REFLEXOLOGY CAN HELP WITH:</h2>
+      <ul>
+        <li>&bull; Stress</li>
+        <li>&bull; Muscle pain</li>
+        <li>&bull; Back pain</li>
+        <li>&bull; Headaches</li>
+        <li>&bull; Insomnia</li>
+        <li>&bull; Anxiety</li>
+        <li>&bull; Post-operative pain</li>
+        <li>&bull; Fibromyalgia</li>
+        <li>&bull; Arthritis</li>
+        <li>&bull; Sports injuries</li>
+        <li>&bull; Hormone imbalances</li>
+        <li>&bull; Digestive disorders</li>
+        <li>&bull; Premenstrual Syndrome</li>
+        <li>&bull; Chemotherapy-induced nausea</li>
+      </ul>
+      <p>
+        Reflexology can help a wide range of conditions. If you don’t see your
+        problem listed here, please ask.
+      </p>
+    </ConditionsContainer>
   </ReflexologyWrapper>
 )
 
