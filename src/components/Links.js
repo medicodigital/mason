@@ -1,8 +1,10 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 import Icon from 'react-icons-kit'
 import { facebookOfficial } from 'react-icons-kit/fa/facebookOfficial'
+import { envelopeO } from 'react-icons-kit/fa/envelopeO'
 import { arrowUpThin } from 'react-icons-kit/metrize/arrowUpThin'
 
 const scrollToTop = () => {
@@ -64,6 +66,12 @@ const IconHolder = styled.div`
   display: ${props => props.display};
 `
 
+const ContactHolder = styled.div`
+  align-items: baseline;
+  display: flex;
+  margin-left: 25px;
+`
+
 const Links = () => (
   <LinksWrapper>
     <IconHolder display={'inline'}>
@@ -73,9 +81,12 @@ const Links = () => (
       <h2>
         <a href="tel:01634842583">01634 842583</a>
       </h2>
-      <h4>
-        <a href="#">enquiries@masonclinic.co.uk</a>
-      </h4>
+      <ContactHolder>
+        <Icon size={30} icon={envelopeO} />
+        <Link to="/contact">
+          <h2>Contact us</h2>
+        </Link>
+      </ContactHolder>
     </LinksLeft>
     <LinksRight>
       <a href="https://www.facebook.com/The-Mason-Clinic-643641389021284/">

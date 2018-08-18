@@ -38,7 +38,7 @@ const BlueButton = styled.button`
   background: #4189c8;
   border-width: 0;
   color: #fff;
-  font-family: 'Lato', sans-serif;
+  font-family: Lato, sans-serif;
   font-size: 35px;
   margin: 0 auto;
   padding: 10px;
@@ -114,7 +114,7 @@ const IndexPage = () => (
         <BlueButton>Therapies</BlueButton>
       </AnchorLink>
       <AnchorLink offset="70" href="#contact">
-        <GreenButton>Contact us</GreenButton>
+        <GreenButton>Find us</GreenButton>
       </AnchorLink>
       <AnchorLink offset="70" href="#fees">
         <DarkButton>Fees</DarkButton>
