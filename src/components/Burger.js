@@ -129,7 +129,7 @@ const Burger = () => (
           <Link to="/#therapies">Therapies</Link>
         </li>
         <li>
-          <Link to="/#contact">Contact us</Link>
+          <Link to="/#contact">Find us</Link>
         </li>
         <li>
           <Link to="/#fees">Fees</Link>

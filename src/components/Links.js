@@ -31,7 +31,6 @@ const LinksLeft = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 0 5px;
   @media (min-width: 600px) {
     margin: 0 40px;
   }
@@ -43,7 +42,7 @@ const LinksLeft = styled.div`
     margin: 0;
     @media (min-width: 600px) {
       margin: 10px;
-      font-size: 2.5vw;
+      font-size: 3vw;
       font-weight: 100;
     }
     @media (min-width: 900px) {
@@ -54,7 +53,7 @@ const LinksLeft = styled.div`
     margin-top: 5px;
   }
   @media (min-width: 600px) {
-    align-items: baseline;
+    align-items: center;
     flex-direction: row;
   }
 `
@@ -67,9 +66,18 @@ const IconHolder = styled.div`
 `
 
 const ContactHolder = styled.div`
-  align-items: baseline;
+  align-items: center;
   display: flex;
+  justify-content: center;
   margin-left: 25px;
+  @media (max-width: 600px) {
+    margin-top: 10px;
+  }
+  h2 {
+    margin-left: 4px;
+    margin-bottom: 0;
+    margin-right: 25px;
+  }
 `
 
 const Links = () => (
