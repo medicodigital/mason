@@ -6,7 +6,7 @@ import Links from '../components/Links'
 import Therapist from '../components/Therapist'
 
 import podiatry from '../images/podiatry2018.jpg'
-import john from '../images/therapists/john2018.jpg'
+import john from '../images/therapists/foot-john.jpeg'
 
 const PodiatryWrapper = styled.div`
   background: #ddeaf6;
@@ -148,7 +148,7 @@ const PodiatryPage = () => (
           infections (including athlete’s foot), etc.
         </li>
         <li>&bull; Foot, leg and back pain</li>
-        <li>&bull; Toenail problems and toenail surgery</li>
+        <li>&bull; Nail surgery for ingrown toe nails or other reasons</li>
         <li>&bull; Heel and forefoot pain</li>
         <li>&bull; Plantar fasciitis</li>
         <li>&bull; Knee pain and flat feet</li>
@@ -158,12 +158,8 @@ const PodiatryPage = () => (
         <li>&bull; Bunions and toe deformities</li>
         <li>&bull; Neuroma</li>
         <li>&bull; Ankle sprains and strains</li>
-        <li>&bull; Biomechanical assessments</li>
         <li>&bull; Pregnancy-related feet problems</li>
         <li>&bull; Orthoses / Orthotics (insoles)</li>
-        <li>&bull; Stress fractures</li>
-        <li>&bull; 'Shin Splints' (Anterior Compartment Syndrome)</li>
-        <li>&bull; 'Growing pains'</li>
         <li>&bull; Arthritis problems of the lower limb</li>
         <li>&bull; Diabetes foot care</li>
         <li>&bull; Footwear advice</li>

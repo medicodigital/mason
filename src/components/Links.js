@@ -37,8 +37,7 @@ const LinksLeft = styled.div`
   @media (min-width: 350px) {
     margin: 0 25px;
   }
-  > h2,
-  h4 {
+  > h2 {
     margin: 0;
     @media (min-width: 600px) {
       margin: 10px;
@@ -48,9 +47,6 @@ const LinksLeft = styled.div`
     @media (min-width: 900px) {
       font-size: 2vw;
     }
-  }
-  > h4 {
-    margin-top: 5px;
   }
   @media (min-width: 600px) {
     align-items: center;
@@ -74,7 +70,7 @@ const ContactHolder = styled.div`
     margin-top: 10px;
   }
   h2 {
-    margin-left: 4px;
+    margin-left: 5px;
     margin-bottom: 0;
     margin-right: 25px;
   }

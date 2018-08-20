@@ -187,20 +187,27 @@ const MassagePage = () => (
       <BlurbHolder>
         <p>
           {' '}
-          Your health and wellbeing may be affected by a number of different
-          factors that you are in direct contact with on a regular basis such as
-          food, pets, environmental pollutants, exhaust fumes, chemicals and
-          even detergents.
+          Massage works to loosen up tight muscles, break up adhesions in muscle
+          fibres, and generally focuses on restoring and maintaining the full
+          functionality of your muscles. It can help your muscles perform better
+          and prevent injury, relieve tension and ease muscular pain. It’s
+          especially effective on chronic aches and pains, as well as areas of
+          the body which have contracted because of long-term tension, for
+          example shoulders, legs and the back.
         </p>
         <p>
           {' '}
-          Suzy can help you identify these potential allergens using muscle
-          testing and from there will devise a programme which may involve
-          desensitizing remedies, supplements and homeopathic remedies depending
-          on what would be the best course of action for you. She will then give
-          you a report of all the things identified in the test that day for you
-          to take away, as this information can be very helpful in the next
-          weeks following your test.
+          First the therapist will warm up and relax the superficial muscles,
+          before using use deep finger, knuckle, forearm or elbow pressure and
+          slow, firm strokes which focus on the deeper muscles, tendons and
+          tissues.
+        </p>
+        <p>
+          Massage therapy does not just treat injured parts, bring relaxation to
+          areas of the body, or reduce pain in a certain place; it can
+          also treat the whole person. Each individual needs individual
+          treatment, and each treatment should be done within the context of
+          that client's whole body.
         </p>
       </BlurbHolder>
     </HeroHolder>

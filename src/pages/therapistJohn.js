@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 
-import john from '../images/therapists/john2018.jpg'
+import john from '../images/therapists/foot-john.jpeg'
 
 const TherapistWrapper = styled.div`
   background: #ddeaf6;
