@@ -30,7 +30,7 @@ const HeaderContainer = styled.div`
   padding: 10px 0;
   width: 100vw;
   @media (min-width: 900px) {
-    width 60vw;
+    width: 55vw;
     position: absolute;
       top: 50%;
       left: 50%;
@@ -44,7 +44,9 @@ const HeaderContainer = styled.div`
     } 
   }
   > h1 {
-    font-size: 11vw;
+    font-size: 13vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: -1px;
     margin-bottom: 0;
     @media (min-width: 900px) {
       font-size: 7vw;

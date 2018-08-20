@@ -4,14 +4,29 @@ import Helmet from 'react-helmet'
 
 import Footer from '../components/Footer'
 import './index.css'
+import icon32 from '../images/favicon.png'
 
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: "description", content: "complementary healthcare in Medway, Kent" },
-        { name: "description", content: "osteopathy, acupuncture, chiropody, podiatry, homeopathy, reflexology, massage, back pain in Medway, Kent" },
+        {
+          name: 'description',
+          content: 'complementary healthcare in Medway, Kent',
+        },
+        {
+          name: 'description',
+          content:
+            'osteopathy, acupuncture, chiropody, podiatry, homeopathy, reflexology, massage, back pain in Medway, Kent',
+        },
+      ]}
+      link={[
+        {
+          rel: 'shortcut icon',
+          type: 'image/png',
+          href: `${icon32}`,
+        },
       ]}
     />
     <div

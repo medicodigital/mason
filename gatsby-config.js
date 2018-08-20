@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'The Mason Clinic'
+    title: 'The Mason Clinic',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -9,11 +9,10 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'img',
-        path: `${__dirname}/src/images`
-      }
+        path: `${__dirname}/src/images`,
+      },
     },
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp'
-  ]
-};
-
+    'gatsby-plugin-sharp',
+  ],
+}
