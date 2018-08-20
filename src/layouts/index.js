@@ -13,12 +13,12 @@ const Layout = ({ children, data }) => (
       meta={[
         {
           name: 'description',
-          content: 'complementary healthcare in Medway, Kent',
+          content: 'The Mason Clinic, complementary healthcare in Medway, Kent',
         },
         {
-          name: 'description',
+          name: 'keywords',
           content:
-            'osteopathy, acupuncture, chiropody, podiatry, homeopathy, reflexology, massage, back pain in Medway, Kent',
+            'osteopathy, acupuncture, chiropody, podiatry, homeopathy, reflexology, massage, back pain complementary healthcare in Medway, Kent',
         },
       ]}
       link={[
