@@ -5,25 +5,31 @@ import styled from 'styled-components'
 import TherapyHeader from '../components/TherapyHeader'
 
 const ContactWrapper = styled.div`
+  background: #ddeaf6;
   display: grid;
-  margin-bottom: 10vh;
+  height: 100%;
   width: 100vw;
   place-items: center;
 `
 
 const Form = styled.form`
   align-items: center;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  margin-top: 10vh;
-  width: 70vmin;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+  padding: 30px;
+  width: 75vmin;
 `
 
 const Input = styled.input`
   font-family: 'Lato', sans-serif;
   font-size: 1.5rem;
   margin-bottom: 20px;
-  padding: 5px;
+  padding: 10px;
   width: 100%;
 `
 const Message = styled.textarea`
@@ -31,24 +37,24 @@ const Message = styled.textarea`
   font-size: 1.5rem;
   height: 200px;
   margin-bottom: 20px;
-  padding: 5px;
+  padding: 10px;
   width: 100%;
 `
 
 const ButtonHolder = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 70vmin;
+  width: 78vmin;
 `
 
 const Submit = styled.input`
   background: #86ab45;
   border-color: #86ab45;
+  border-radius: 5px;
   border-style: outset;
   color: #fff;
   font: 1.5rem Lato, sans-serif;
   height: 50px;
-  margin-bottom: 20px;
   text-shadow: none;
   width: 30vmin;
   :hover {
@@ -58,6 +64,7 @@ const Submit = styled.input`
 
 const HomeButton = styled.button`
   background: #4189c8;
+  border-radius: 5px;
   color: #fff;
   display: flex;
   justify-content: center;
