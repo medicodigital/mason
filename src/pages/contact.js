@@ -51,6 +51,9 @@ const Submit = styled.input`
   margin-bottom: 20px;
   text-shadow: none;
   width: 30vmin;
+  :hover {
+    cursor: pointer;
+  }
 `
 
 const HomeButton = styled.button`
@@ -62,6 +65,9 @@ const HomeButton = styled.button`
   font: 1.5rem Lato, sans-serif;
   padding: 10px;
   width: 30vmin;
+  :hover {
+    cursor: pointer;
+  }
 `
 
 const Contact = () => (

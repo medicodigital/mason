@@ -65,14 +65,15 @@ const ContactHolder = styled.div`
   border-radius: 7px;
   padding: 4px 15px;
   min-width: 11vw;
-  :hover {
-    background: #4189c8;
-    border-color: #4189c8;
-    color: #fff;
+  @media (min-width: 600px) {
+    :hover {
+      background: #4189c8;
+      border-color: #4189c8;
+      color: #fff;
+    }
   }
   @media (max-width: 600px) {
     margin-top: 7px;
-    margin-left: 15px;
   }
   h2 {
     margin-bottom: 0;
