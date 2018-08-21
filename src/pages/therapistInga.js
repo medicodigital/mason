@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 
-import inga from '../images/therapists/inga2018.jpeg'
+import inga from '../images/therapists/inga-head.jpeg'
 
 const TherapistWrapper = styled.div`
   background: #ddeaf6;
