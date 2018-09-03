@@ -66,6 +66,7 @@ const ContactHolder = styled.div`
   }
   @media (max-width: 600px) {
     margin-top: 7px;
+    min-width: 100px;
   }
   h2 {
     margin-bottom: 0;
