@@ -66,7 +66,6 @@ const ContactHolder = styled.div`
     min-width: 100px;
     h2 {
       font-size: 1.3rem;
-      color: red;
     }
   }
   h2 {
