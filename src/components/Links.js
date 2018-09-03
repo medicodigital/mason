@@ -32,7 +32,6 @@ const LinksLeft = styled.div`
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  margin: 0 10px;
   @media (min-width: 600px) {
     align-items: center;
     flex-direction: row;
@@ -55,8 +54,7 @@ const ContactHolder = styled.div`
   border-radius: 7px;
   padding: 4px 15px;
   min-width: 200px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin: 3px 5px;
   @media (min-width: 600px) {
     :hover {
       background: #4189c8;
@@ -64,9 +62,11 @@ const ContactHolder = styled.div`
       color: #fff;
     }
   }
-  @media (max-width: 600px) {
-    margin-top: 7px;
+  @media (max-width: 400px) {
     min-width: 100px;
+    h2 {
+      font-size: 1.3rem;
+    }
   }
   h2 {
     margin-bottom: 0;
