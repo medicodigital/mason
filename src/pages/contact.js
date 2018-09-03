@@ -22,7 +22,7 @@ const Form = styled.form`
   margin-bottom: 5vh;
   margin-top: 5vh;
   padding: 30px;
-  width: 75vmin;
+  width: 80vmin;
 `
 
 const Input = styled.input`
@@ -44,7 +44,7 @@ const Message = styled.textarea`
 const ButtonHolder = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 78vmin;
+  width: 83vmin;
 `
 
 const Submit = styled.input`

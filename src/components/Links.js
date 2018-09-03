@@ -38,18 +38,8 @@ const LinksLeft = styled.div`
     flex-direction: row;
     min-width: 30vw;
   }
-  > h2 {
-    margin: 0;
-    @media (min-width: 600px) {
-      font-size: 3vw;
-      font-weight: 100;
-      margin-right: 15px;
-    }
-    @media (min-width: 900px) {
-      font-size: 2vw;
-    }
-  }
 `
+
 const LinksRight = styled.div`
   color: #3b5998;
   margin-right: 15px;
@@ -64,7 +54,9 @@ const ContactHolder = styled.div`
   border: 2px solid ${props => props.color};
   border-radius: 7px;
   padding: 4px 15px;
-  min-width: 11vw;
+  min-width: 200px;
+  margin-left: 5px;
+  margin-right: 5px;
   @media (min-width: 600px) {
     :hover {
       background: #4189c8;
@@ -86,9 +78,11 @@ const Links = () => (
       <Icon onClick={scrollToTop} size={30} icon={arrowUpThin} />
     </IconHolder>
     <LinksLeft>
-      <h2>
-        <a href="tel:01634842583">01634 842583</a>
-      </h2>
+      <ContactHolder>
+        <a href="tel:01634842583">
+          <h2>01634 842 583</h2>
+        </a>
+      </ContactHolder>
       <ContactHolder>
         <Link to="/contact">
           <h2>Email us</h2>
