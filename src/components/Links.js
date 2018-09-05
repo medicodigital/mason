@@ -91,7 +91,10 @@ const Links = () => (
       </ContactHolder>
     </LinksLeft>
     <LinksRight>
-      <a href="https://www.facebook.com/The-Mason-Clinic-643641389021284/">
+      <a
+        href="https://www.facebook.com/The-Mason-Clinic-643641389021284/"
+        alt="link to Facebook page"
+      >
         <Icon size={50} icon={facebookOfficial} />
       </a>
     </LinksRight>

@@ -28,6 +28,7 @@ const Layout = ({ children, data }) => (
           href: `${icon32}`,
         },
       ]}
+      htmllang="en"
     />
     <div
       style={{
