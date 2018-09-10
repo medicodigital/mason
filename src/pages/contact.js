@@ -80,7 +80,10 @@ const HomeButton = styled.button`
 const Contact = () => (
   <ContactWrapper>
     <TherapyHeader therapy="Contact us" />
-    <Form action="https://formspree.io/davidcooper974@gmail.com" method="POST">
+    <Form
+      action="https://formspree.io/enquiries@masonclinic.co.uk"
+      method="POST"
+    >
       <Input type="text" name="name" placeholder="Your name" />
       <Input type="email" name="_replyto" placeholder="Your email address" />
       <Message type="message" name="message" placeholder="Your message" />
