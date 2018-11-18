@@ -100,6 +100,11 @@ const TherapistMaria = () => (
           difference is immediate and noticeable.
         </p>
         <p>
+          She has also started offering Hopi Ear Candling, an ancient therapy
+          that is relaxing and rejuvenating, and can be helpful for a variety of
+          ear, nose and throat conditions
+        </p>
+        <p>
           In her spare time, Maria enjoys walking her dog and exploring Kent.
         </p>
       </BlurbHolder>

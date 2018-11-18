@@ -151,6 +151,12 @@ const Therapies = () => (
           <h2>Deep tissue massage</h2>
         </TherapyLink>
       </Link>
+      <Link to="/therapistMaria">
+        <TherapyLink>
+          <Icon size={25} icon={arrowRightThin} />
+          <h2>Hopi ear candling</h2>
+        </TherapyLink>
+      </Link>
     </TherapyList>
     <TherapyBlurb>
       The Mason Clinic was established as an osteopathic practice in 1966. Named

@@ -125,7 +125,7 @@ const Fees = () => (
         <p>60 minutes</p>
         <p>£45</p>
       </FeesLine>
-      <Link to="/reflexology">
+      <Link to="/therapistMaria">
         <h3>HOPI EAR CANDLING</h3>
       </Link>
       <FeesLine>
