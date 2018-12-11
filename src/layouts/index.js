@@ -19,7 +19,7 @@ const Layout = ({ children, data }) => (
         {
           name: 'keywords',
           content:
-            'osteopathy, cranial osteopathy, acupuncture, chiropody, podiatry, homeopathy, reflexology, massage, back pain, complementary healthcare in Chatham, Medway, Kent',
+            'osteopathy, cranial osteopathy, acupuncture, chiropody, podiatry, homeopathy, reflexology, massage, back pain, complementary healthcare, Chatham, Medway, Kent',
         },
       ]}
       link={[

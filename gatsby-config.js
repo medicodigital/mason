@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: 'The Mason Clinic',
+    siteUrl: 'https://www.masonclinic.co.uk',
   },
   plugins: [
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
