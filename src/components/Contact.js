@@ -105,6 +105,7 @@ const Contact = () => (
         <h3>The Hollies, </h3>
         <h3>1B Cornwallis Avenue, </h3>
         <h3>Chatham, </h3>
+        <h3>Medway, </h3>
         <h3>Kent ME4 6JT</h3>
         <h2>
           <a href="tel:01634842583">01634 842583</a>

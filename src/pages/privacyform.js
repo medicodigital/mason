@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import TherapyHeader from '../components/TherapyHeader'
+import NoLinkHeader from '../components/NoLinkHeader'
 import Links from '../components/Links'
 
 const PrivacyFormWrapper = styled.div`
@@ -36,7 +36,7 @@ const StickyHolder = styled.div`
 
 const PrivacyFormPage = () => (
   <PrivacyFormWrapper>
-    <TherapyHeader therapy="Data privacy" />
+    <NoLinkHeader therapy="Data Privacy" />
     <PrivacyFormHolder>
       <h3>DATA SUBJECT ACCESS REQUEST FORM</h3>
       <p>

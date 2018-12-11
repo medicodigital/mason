@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import TherapyHeader from '../components/TherapyHeader'
+import NoLinkHeader from '../components/NoLinkHeader'
 import Links from '../components/Links'
 import Therapist from '../components/Therapist'
 
@@ -69,7 +69,7 @@ const StickyHolder = styled.div`
 
 const AllergyPage = () => (
   <AllergyWrapper>
-    <TherapyHeader therapy="Allergy testing" />
+    <NoLinkHeader therapy="Allergy testing" />
     <HeroHolder>
       <ImageHolder>
         <img src={lavender} alt="lavender" />

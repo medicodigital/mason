@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
-import TherapyHeader from '../components/TherapyHeader'
+import NoLinkHeader from '../components/NoLinkHeader'
 import Links from '../components/Links'
 
 const PrivacyWrapper = styled.div`
@@ -37,7 +37,7 @@ const StickyHolder = styled.div`
 
 const PrivacyPage = () => (
   <PrivacyWrapper>
-    <TherapyHeader therapy="Data privacy" />
+    <NoLinkHeader therapy="Data Privacy" />
     <PrivacyHolder>
       <h3>GDPR Privacy Notice</h3>
       <p>

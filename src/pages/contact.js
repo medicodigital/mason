@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-import TherapyHeader from '../components/TherapyHeader'
+import NoLinkHeader from '../components/NoLinkHeader'
 
 const ContactWrapper = styled.div`
   background: #ddeaf6;
@@ -79,7 +79,7 @@ const HomeButton = styled.button`
 
 const Contact = () => (
   <ContactWrapper>
-    <TherapyHeader therapy="Contact us" />
+    <NoLinkHeader therapy="Contact us" />
     <Form
       action="https://formspree.io/enquiries@masonclinic.co.uk"
       method="POST"
