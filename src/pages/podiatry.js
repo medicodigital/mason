@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 import Therapist from '../components/Therapist'
@@ -108,64 +109,66 @@ const ConditionsContainer = styled.div`
 `
 
 const PodiatryPage = () => (
-  <PodiatryWrapper>
-    <TherapyHeader therapy="Podiatry" />
-    <HeroHolder>
-      <ImageHolder>
-        <img src={podiatry} alt="podiatry" />
-      </ImageHolder>
-      <Therapist firstname="John" surname="Balchin" pic={john} />
-      <BlurbHolder>
-        <p>
-          {' '}
-          Podiatry is a fast evolving healthcare profession concerned with the
-          assessment, diagnosis and treatment of lower limb and foot injuries,
-          diseases and abnormalities. The foot is a highly complex structure
-          comprising 26 bones, and together the feet make up over a quarter of
-          the bones in the adult body. So like any complex mechanism feet are
-          prone to mechanical problems and benefit from regular maintenance.
-        </p>
-        <p>
-          {' '}
-          There is often confusion between what is a ‘podiatrist’ and a
-          ‘chiropodist’ but they are the same. The word ‘chiropody’, in use
-          since the 1700’s with regards to footcare specialists, is actually a
-          misnomer. It derives from the Greek ‘chiro’ meaning ‘hand’ and ‘pous’
-          meaning foot (plural ‘podes’). In the US, ‘chiropody’ was used until
-          1958 when it was officially changed to ‘podiatry.’ Now ‘podiatrist’ is
-          becoming universally adopted.
-        </p>
-      </BlurbHolder>
-    </HeroHolder>
-    <StickyHolder>
-      <Links />
-    </StickyHolder>
-    <ConditionsContainer>
-      <h2>OUR TREATMENTS:</h2>
-      <ul>
-        <li>
-          &bull; General Podiatry including verrucae, corns, calluses, fungal
-          infections (including athlete’s foot), etc.
-        </li>
-        <li>&bull; Foot, leg and back pain</li>
-        <li>&bull; Nail surgery for ingrown toe nails or other reasons</li>
-        <li>&bull; Heel and forefoot pain</li>
-        <li>&bull; Plantar fasciitis</li>
-        <li>&bull; Knee pain and flat feet</li>
-        <li>&bull; Foot skin infections and disorders</li>
-        <li>&bull; Gait and posture analysis</li>
-        <li>&bull; Hammer toe</li>
-        <li>&bull; Bunions and toe deformities</li>
-        <li>&bull; Neuroma</li>
-        <li>&bull; Ankle sprains and strains</li>
-        <li>&bull; Pregnancy-related feet problems</li>
-        <li>&bull; Orthoses / Orthotics (insoles)</li>
-        <li>&bull; Arthritis problems of the lower limb</li>
-        <li>&bull; Diabetes foot care</li>
-        <li>&bull; Footwear advice</li>
-      </ul>
-    </ConditionsContainer>
-  </PodiatryWrapper>
+  <Layout>
+    <PodiatryWrapper>
+      <TherapyHeader therapy="Podiatry" />
+      <HeroHolder>
+        <ImageHolder>
+          <img src={podiatry} alt="podiatry" />
+        </ImageHolder>
+        <Therapist firstname="John" surname="Balchin" pic={john} />
+        <BlurbHolder>
+          <p>
+            {' '}
+            Podiatry is a fast evolving healthcare profession concerned with the
+            assessment, diagnosis and treatment of lower limb and foot injuries,
+            diseases and abnormalities. The foot is a highly complex structure
+            comprising 26 bones, and together the feet make up over a quarter of
+            the bones in the adult body. So like any complex mechanism feet are
+            prone to mechanical problems and benefit from regular maintenance.
+          </p>
+          <p>
+            {' '}
+            There is often confusion between what is a ‘podiatrist’ and a
+            ‘chiropodist’ but they are the same. The word ‘chiropody’, in use
+            since the 1700’s with regards to footcare specialists, is actually a
+            misnomer. It derives from the Greek ‘chiro’ meaning ‘hand’ and
+            ‘pous’ meaning foot (plural ‘podes’). In the US, ‘chiropody’ was
+            used until 1958 when it was officially changed to ‘podiatry.’ Now
+            ‘podiatrist’ is becoming universally adopted.
+          </p>
+        </BlurbHolder>
+      </HeroHolder>
+      <StickyHolder>
+        <Links />
+      </StickyHolder>
+      <ConditionsContainer>
+        <h2>OUR TREATMENTS:</h2>
+        <ul>
+          <li>
+            &bull; General Podiatry including verrucae, corns, calluses, fungal
+            infections (including athlete’s foot), etc.
+          </li>
+          <li>&bull; Foot, leg and back pain</li>
+          <li>&bull; Nail surgery for ingrown toe nails or other reasons</li>
+          <li>&bull; Heel and forefoot pain</li>
+          <li>&bull; Plantar fasciitis</li>
+          <li>&bull; Knee pain and flat feet</li>
+          <li>&bull; Foot skin infections and disorders</li>
+          <li>&bull; Gait and posture analysis</li>
+          <li>&bull; Hammer toe</li>
+          <li>&bull; Bunions and toe deformities</li>
+          <li>&bull; Neuroma</li>
+          <li>&bull; Ankle sprains and strains</li>
+          <li>&bull; Pregnancy-related feet problems</li>
+          <li>&bull; Orthoses / Orthotics (insoles)</li>
+          <li>&bull; Arthritis problems of the lower limb</li>
+          <li>&bull; Diabetes foot care</li>
+          <li>&bull; Footwear advice</li>
+        </ul>
+      </ConditionsContainer>
+    </PodiatryWrapper>
+  </Layout>
 )
 
 export default PodiatryPage

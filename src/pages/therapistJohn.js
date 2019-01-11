@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 
@@ -73,38 +74,41 @@ const StickyHolder = styled.div`
 `
 
 const TherapistJohn = () => (
-  <TherapistWrapper>
-    <TherapyHeader therapy="podiatry" />
-    <ImageBlurbContainer>
-      <ImageHolder>
-        <img src={john} alt="john headshot" />
-      </ImageHolder>
-      <BlurbHolder>
-        <h1>John Balchin</h1>
-        <h3>BSc (Hons), PodMed, SRCh, MSCP</h3>
-        <p>
-          John studied at the Leaf Hospital Department of Podiatry, University
-          of Brighton. On qualifying, he was retained as a tutor in the
-          department on a one year contract. His honors degree in podiatry is
-          complimented by a qualification in local anesthesia, which allows him
-          to perform nail surgery when required.
-        </p>
-        <p>
-          After a twelve year career in the NHS, John now works full time as a
-          private practitioner and finds that the more relaxed atmosphere of the
-          Mason Clinic results in better treatments and outcomes for patients.
-        </p>
-        <p>
-          Outside of work, John enjoys playing his guitar (badly), building cars
-          (with slightly more success) and trying to stop his old house falling
-          down!
-        </p>
-      </BlurbHolder>
-    </ImageBlurbContainer>
-    <StickyHolder>
-      <Links />
-    </StickyHolder>
-  </TherapistWrapper>
+  <Layout>
+    <TherapistWrapper>
+      <TherapyHeader therapy="podiatry" />
+      <ImageBlurbContainer>
+        <ImageHolder>
+          <img src={john} alt="john headshot" />
+        </ImageHolder>
+        <BlurbHolder>
+          <h1>John Balchin</h1>
+          <h3>BSc (Hons), PodMed, SRCh, MSCP</h3>
+          <p>
+            John studied at the Leaf Hospital Department of Podiatry, University
+            of Brighton. On qualifying, he was retained as a tutor in the
+            department on a one year contract. His honors degree in podiatry is
+            complimented by a qualification in local anesthesia, which allows
+            him to perform nail surgery when required.
+          </p>
+          <p>
+            After a twelve year career in the NHS, John now works full time as a
+            private practitioner and finds that the more relaxed atmosphere of
+            the Mason Clinic results in better treatments and outcomes for
+            patients.
+          </p>
+          <p>
+            Outside of work, John enjoys playing his guitar (badly), building
+            cars (with slightly more success) and trying to stop his old house
+            falling down!
+          </p>
+        </BlurbHolder>
+      </ImageBlurbContainer>
+      <StickyHolder>
+        <Links />
+      </StickyHolder>
+    </TherapistWrapper>
+  </Layout>
 )
 
 export default TherapistJohn

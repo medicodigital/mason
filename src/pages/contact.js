@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
+import Layout from '../components/Layout'
 import NoLinkHeader from '../components/NoLinkHeader'
 
 const ContactWrapper = styled.div`
@@ -21,6 +22,7 @@ const Form = styled.form`
   flex-direction: column;
   margin-bottom: 5vh;
   margin-top: 5vh;
+  min-height: 70vh;
   padding: 30px;
   width: 80vmin;
 `
@@ -35,7 +37,7 @@ const Input = styled.input`
 const Message = styled.textarea`
   font-family: 'Lato', sans-serif;
   font-size: 1.5rem;
-  height: 200px;
+  height: 300px;
   margin-bottom: 20px;
   padding: 10px;
   width: 100%;
@@ -78,23 +80,25 @@ const HomeButton = styled.button`
 `
 
 const Contact = () => (
-  <ContactWrapper>
-    <NoLinkHeader therapy="Contact us" />
-    <Form
-      action="https://formspree.io/enquiries@masonclinic.co.uk"
-      method="POST"
-    >
-      <Input type="text" name="name" placeholder="Your name" />
-      <Input type="email" name="_replyto" placeholder="Your email address" />
-      <Message type="message" name="message" placeholder="Your message" />
-      <ButtonHolder>
-        <Submit type="submit" value="Send" />
-        <Link to="/">
-          <HomeButton>Back</HomeButton>
-        </Link>
-      </ButtonHolder>
-    </Form>
-  </ContactWrapper>
+  <Layout>
+    <ContactWrapper>
+      <NoLinkHeader therapy="Contact us" />
+      <Form
+        action="https://formspree.io/enquiries@masonclinic.co.uk"
+        method="POST"
+      >
+        <Input type="text" name="name" placeholder="Your name" />
+        <Input type="email" name="_replyto" placeholder="Your email address" />
+        <Message type="message" name="message" placeholder="Your message" />
+        <ButtonHolder>
+          <Submit type="submit" value="Send" />
+          <Link to="/">
+            <HomeButton>Back</HomeButton>
+          </Link>
+        </ButtonHolder>
+      </Form>
+    </ContactWrapper>
+  </Layout>
 )
 
 export default Contact

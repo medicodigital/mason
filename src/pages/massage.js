@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Icon from 'react-icons-kit'
 import { arrowRightThin } from 'react-icons-kit/metrize/arrowRightThin'
 
+import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 
@@ -161,60 +162,62 @@ const AboutHolder = styled.div`
 `
 
 const MassagePage = () => (
-  <MassageWrapper>
-    <TherapyHeader therapy="Massage" />
-    <HeroHolder>
-      <ImageHolder>
-        <img src={massage} alt="massage" />
-      </ImageHolder>
+  <Layout>
+    <MassageWrapper>
+      <TherapyHeader therapy="Massage" />
+      <HeroHolder>
+        <ImageHolder>
+          <img src={massage} alt="massage" />
+        </ImageHolder>
 
-      <TherapistWrapper>
-        <WordsContainer>
-          <Link to="/therapistIngaJ">
-            <h2>Therapist</h2>
-            <ImageContainer>
-              <img src={ingaJ} alt="therapist headshot" />
-            </ImageContainer>
-            <h1>Inga Jakubovskaja</h1>
-            <AboutHolder>
-              <Icon size={20} icon={arrowRightThin} />
-              <p>About Inga</p>
-            </AboutHolder>
-          </Link>
-        </WordsContainer>
-      </TherapistWrapper>
+        <TherapistWrapper>
+          <WordsContainer>
+            <Link to="/therapistIngaJ">
+              <h2>Therapist</h2>
+              <ImageContainer>
+                <img src={ingaJ} alt="therapist headshot" />
+              </ImageContainer>
+              <h1>Inga Jakubovskaja</h1>
+              <AboutHolder>
+                <Icon size={20} icon={arrowRightThin} />
+                <p>About Inga</p>
+              </AboutHolder>
+            </Link>
+          </WordsContainer>
+        </TherapistWrapper>
 
-      <BlurbHolder>
-        <p>
-          {' '}
-          Massage works to loosen up tight muscles, break up adhesions in muscle
-          fibres, and generally focuses on restoring and maintaining the full
-          functionality of your muscles. It can help your muscles perform better
-          and prevent injury, relieve tension and ease muscular pain. It’s
-          especially effective on chronic aches and pains, as well as areas of
-          the body which have contracted because of long-term tension, for
-          example shoulders, legs and the back.
-        </p>
-        <p>
-          {' '}
-          First the therapist will warm up and relax the superficial muscles,
-          before using use deep finger, knuckle, forearm or elbow pressure and
-          slow, firm strokes which focus on the deeper muscles, tendons and
-          tissues.
-        </p>
-        <p>
-          Massage therapy does not just treat injured parts, bring relaxation to
-          areas of the body, or reduce pain in a certain place; it can
-          also treat the whole person. Each individual needs individual
-          treatment, and each treatment should be done within the context of
-          that client's whole body.
-        </p>
-      </BlurbHolder>
-    </HeroHolder>
-    <StickyHolder>
-      <Links />
-    </StickyHolder>
-  </MassageWrapper>
+        <BlurbHolder>
+          <p>
+            {' '}
+            Massage works to loosen up tight muscles, break up adhesions in
+            muscle fibres, and generally focuses on restoring and maintaining
+            the full functionality of your muscles. It can help your muscles
+            perform better and prevent injury, relieve tension and ease muscular
+            pain. It’s especially effective on chronic aches and pains, as well
+            as areas of the body which have contracted because of long-term
+            tension, for example shoulders, legs and the back.
+          </p>
+          <p>
+            {' '}
+            First the therapist will warm up and relax the superficial muscles,
+            before using use deep finger, knuckle, forearm or elbow pressure and
+            slow, firm strokes which focus on the deeper muscles, tendons and
+            tissues.
+          </p>
+          <p>
+            Massage therapy does not just treat injured parts, bring relaxation
+            to areas of the body, or reduce pain in a certain place; it can
+            also treat the whole person. Each individual needs individual
+            treatment, and each treatment should be done within the context of
+            that client's whole body.
+          </p>
+        </BlurbHolder>
+      </HeroHolder>
+      <StickyHolder>
+        <Links />
+      </StickyHolder>
+    </MassageWrapper>
+  </Layout>
 )
 
 export default MassagePage

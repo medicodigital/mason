@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 
 import vincent from '../images/therapists/vincent-martino.jpeg'
-
 
 const TherapistWrapper = styled.div`
     background: #ddeaf6;
@@ -27,7 +27,7 @@ const ImageBlurbContainer = styled.div`
         padding: 10vh 10vw;
     }
     `
-    
+
 const ImageHolder = styled.div`
     align-self: flex-start;
     margin: 20px auto;
@@ -73,27 +73,46 @@ const StickyHolder = styled.div`
 `
 
 const TherapistVincent = () => (
+  <Layout>
     <TherapistWrapper>
-        <TherapyHeader 
-            therapy="osteopathy"
-            />
-        <ImageBlurbContainer>
-            <ImageHolder>
-                <img src={vincent} alt="Vincent headshot" />
-            </ImageHolder>
-            <BlurbHolder>
-                <h1>Vincent Martino</h1>
-                <h3>DO, MOst</h3>
-                <p>A graduate of the European School of Osteopathy in Maidstone, Vincent is an holistic osteopath who has studied osteopathy in both France and England. His studies in both countries provide him a broad osteopathic approach that he uses in practice, such as cranial, visceral and structural osteopathy.
-                Vincent enjoys treating patients from all backgrounds, taking time to explain the origin of their pain, and what can be done through treatment to improve it. He also likes to advise on what work and home habits could be changed to create a feeling of well-being and provide further improvement over time.</p>
-                <p>Vincent has also a particular interest in the treatment of pregnant women and babies. For him osteopathic treatment before birth is very important making sure all the joints of the pelvis can move freely in order for the birth to be as smooth as possible.</p>
-                <p>Vincent is happy to conduct his sessions in French as he knows that for the large French community in Kent it is often easier for patients to describe their aches and pain in their mother tongue.</p>
-            </BlurbHolder>
-        </ImageBlurbContainer>
-        <StickyHolder>
-            <Links />
-        </StickyHolder>
+      <TherapyHeader therapy="osteopathy" />
+      <ImageBlurbContainer>
+        <ImageHolder>
+          <img src={vincent} alt="Vincent headshot" />
+        </ImageHolder>
+        <BlurbHolder>
+          <h1>Vincent Martino</h1>
+          <h3>DO, MOst</h3>
+          <p>
+            A graduate of the European School of Osteopathy in Maidstone,
+            Vincent is an holistic osteopath who has studied osteopathy in both
+            France and England. His studies in both countries provide him a
+            broad osteopathic approach that he uses in practice, such as
+            cranial, visceral and structural osteopathy. Vincent enjoys treating
+            patients from all backgrounds, taking time to explain the origin of
+            their pain, and what can be done through treatment to improve it. He
+            also likes to advise on what work and home habits could be changed
+            to create a feeling of well-being and provide further improvement
+            over time.
+          </p>
+          <p>
+            Vincent has also a particular interest in the treatment of pregnant
+            women and babies. For him osteopathic treatment before birth is very
+            important making sure all the joints of the pelvis can move freely
+            in order for the birth to be as smooth as possible.
+          </p>
+          <p>
+            Vincent is happy to conduct his sessions in French as he knows that
+            for the large French community in Kent it is often easier for
+            patients to describe their aches and pain in their mother tongue.
+          </p>
+        </BlurbHolder>
+      </ImageBlurbContainer>
+      <StickyHolder>
+        <Links />
+      </StickyHolder>
     </TherapistWrapper>
+  </Layout>
 )
 
 export default TherapistVincent

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Layout from '../components/Layout'
 import NoLinkHeader from '../components/NoLinkHeader'
 import Links from '../components/Links'
 import Therapist from '../components/Therapist'
@@ -68,37 +69,39 @@ const StickyHolder = styled.div`
 `
 
 const AllergyPage = () => (
-  <AllergyWrapper>
-    <NoLinkHeader therapy="Allergy testing" />
-    <HeroHolder>
-      <ImageHolder>
-        <img src={lavender} alt="lavender" />
-      </ImageHolder>
-      <Therapist firstname="Suzy" surname="Cain" pic={suzy} />
-      <BlurbHolder>
-        <p>
-          {' '}
-          Your health and wellbeing may be affected by a number of different
-          factors that you are in direct contact with on a regular basis such as
-          food, pets, environmental pollutants, exhaust fumes, chemicals and
-          even detergents.
-        </p>
-        <p>
-          {' '}
-          Suzy can help you identify these potential allergens using muscle
-          testing and from there will devise a programme which may involve
-          desensitizing remedies, supplements and homeopathic remedies depending
-          on what would be the best course of action for you. She will then give
-          you a report of all the things identified in the test that day for you
-          to take away, as this information can be very helpful in the next
-          weeks following your test.
-        </p>
-      </BlurbHolder>
-    </HeroHolder>
-    <StickyHolder>
-      <Links />
-    </StickyHolder>
-  </AllergyWrapper>
+  <Layout>
+    <AllergyWrapper>
+      <NoLinkHeader therapy="Allergy testing" />
+      <HeroHolder>
+        <ImageHolder>
+          <img src={lavender} alt="lavender" />
+        </ImageHolder>
+        <Therapist firstname="Suzy" surname="Cain" pic={suzy} />
+        <BlurbHolder>
+          <p>
+            {' '}
+            Your health and wellbeing may be affected by a number of different
+            factors that you are in direct contact with on a regular basis such
+            as food, pets, environmental pollutants, exhaust fumes, chemicals
+            and even detergents.
+          </p>
+          <p>
+            {' '}
+            Suzy can help you identify these potential allergens using muscle
+            testing and from there will devise a programme which may involve
+            desensitizing remedies, supplements and homeopathic remedies
+            depending on what would be the best course of action for you. She
+            will then give you a report of all the things identified in the test
+            that day for you to take away, as this information can be very
+            helpful in the next weeks following your test.
+          </p>
+        </BlurbHolder>
+      </HeroHolder>
+      <StickyHolder>
+        <Links />
+      </StickyHolder>
+    </AllergyWrapper>
+  </Layout>
 )
 
 export default AllergyPage

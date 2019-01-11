@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 
@@ -33,15 +34,17 @@ const StickyHolder = styled.div`
 `
 
 const NewsPage = () => (
-  <NewsWrapper>
-    <TherapyHeader therapy="News" />
-    <NewsContainer>
-      <h1>News</h1>
-    </NewsContainer>
-    <StickyHolder>
-      <Links />
-    </StickyHolder>
-  </NewsWrapper>
+  <Layout>
+    <NewsWrapper>
+      <TherapyHeader therapy="News" />
+      <NewsContainer>
+        <h1>News</h1>
+      </NewsContainer>
+      <StickyHolder>
+        <Links />
+      </StickyHolder>
+    </NewsWrapper>
+  </Layout>
 )
 
 export default NewsPage

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 import Therapist from '../components/Therapist'
@@ -108,71 +109,73 @@ const ConditionsContainer = styled.div`
 `
 
 const AcupuncturePage = () => (
-  <AcupunctureWrapper>
-    <TherapyHeader therapy="Acupuncture" />
-    <HeroHolder>
-      <ImageHolder>
-        <img src={acupuncture} alt="acupuncture" />
-      </ImageHolder>
-      <Therapist firstname="Renate" surname="Blacker" pic={renate} />
-      <BlurbHolder>
+  <Layout>
+    <AcupunctureWrapper>
+      <TherapyHeader therapy="Acupuncture" />
+      <HeroHolder>
+        <ImageHolder>
+          <img src={acupuncture} alt="acupuncture" />
+        </ImageHolder>
+        <Therapist firstname="Renate" surname="Blacker" pic={renate} />
+        <BlurbHolder>
+          <p>
+            {' '}
+            Over the past 20 years acupuncture has risen to the forefront of
+            alternative therapies and is a key treatment at The Mason Clinic.
+            Firmly established in the West, it is used to treat a wide variety
+            of conditions – not only physical problems and injuries, but also
+            problems associated with stress such as chronic headaches and
+            allergies. Acupuncture is also core to the Zita West fertility
+            programme which we are proud to be affiliated to.{' '}
+          </p>
+          <p>
+            {' '}
+            Practised successfully for thousands of years, acupuncture is a
+            traditional branch of Chinese medicine. The Chinese adopted an
+            holistic approach to medicine, believing the body works as a
+            balanced structure. Anything causing an imbalance would create
+            disharmony in the energy flow so causing ill-health. Working through
+            a complex system of channels or meridians, acupuncture is said to
+            work by re-balancing the Qi (Chee) i.e. the energy flow.
+          </p>
+        </BlurbHolder>
+      </HeroHolder>
+      <StickyHolder>
+        <Links />
+      </StickyHolder>
+      <ConditionsContainer>
+        <h2>ACUPUNCTURE CAN HELP WITH:</h2>
+        <ul>
+          <li>&bull; Tension headaches and stress</li>
+          <li>&bull; Migraine</li>
+          <li>&bull; Slipped disc (herniated disc or prolapsed disc)</li>
+          <li>&bull; Joint problems</li>
+          <li>&bull; Frozen shoulder</li>
+          <li>&bull; Tennis Elbow</li>
+          <li>&bull; Golfer’s Elbow</li>
+          <li>&bull; Lumbago</li>
+          <li>&bull; Shoulder, neck, and back pain</li>
+          <li>&bull; Sciatica</li>
+          <li>&bull; Asthma</li>
+          <li>&bull; Anxiety</li>
+          <li>&bull; Knee pain</li>
+          <li>&bull; Morning sickness</li>
+          <li>&bull; Arthritic pain</li>
+          <li>&bull; Fibromyalgia Syndrome</li>
+          <li>&bull; Hay fever</li>
+          <li>&bull; Digestive disorders</li>
+          <li>&bull; Irregular periods, painful periods, PMT</li>
+          <li>&bull; Menopause symptoms</li>
+          <li>&bull; Couples needing fertility treatment (Zita West)</li>
+          <li>&bull; IVF support (Zita West)</li>
+        </ul>
         <p>
-          {' '}
-          Over the past 20 years acupuncture has risen to the forefront of
-          alternative therapies and is a key treatment at The Mason Clinic.
-          Firmly established in the West, it is used to treat a wide variety of
-          conditions – not only physical problems and injuries, but also
-          problems associated with stress such as chronic headaches and
-          allergies. Acupuncture is also core to the Zita West fertility
-          programme which we are proud to be affiliated to.{' '}
+          Acupuncturists treat a wide range of conditions. If you don’t see your
+          problem listed here then please ask.
         </p>
-        <p>
-          {' '}
-          Practised successfully for thousands of years, acupuncture is a
-          traditional branch of Chinese medicine. The Chinese adopted an
-          holistic approach to medicine, believing the body works as a balanced
-          structure. Anything causing an imbalance would create disharmony in
-          the energy flow so causing ill-health. Working through a complex
-          system of channels or meridians, acupuncture is said to work by
-          re-balancing the Qi (Chee) i.e. the energy flow.
-        </p>
-      </BlurbHolder>
-    </HeroHolder>
-    <StickyHolder>
-      <Links />
-    </StickyHolder>
-    <ConditionsContainer>
-      <h2>ACUPUNCTURE CAN HELP WITH:</h2>
-      <ul>
-        <li>&bull; Tension headaches and stress</li>
-        <li>&bull; Migraine</li>
-        <li>&bull; Slipped disc (herniated disc or prolapsed disc)</li>
-        <li>&bull; Joint problems</li>
-        <li>&bull; Frozen shoulder</li>
-        <li>&bull; Tennis Elbow</li>
-        <li>&bull; Golfer’s Elbow</li>
-        <li>&bull; Lumbago</li>
-        <li>&bull; Shoulder, neck, and back pain</li>
-        <li>&bull; Sciatica</li>
-        <li>&bull; Asthma</li>
-        <li>&bull; Anxiety</li>
-        <li>&bull; Knee pain</li>
-        <li>&bull; Morning sickness</li>
-        <li>&bull; Arthritic pain</li>
-        <li>&bull; Fibromyalgia Syndrome</li>
-        <li>&bull; Hay fever</li>
-        <li>&bull; Digestive disorders</li>
-        <li>&bull; Irregular periods, painful periods, PMT</li>
-        <li>&bull; Menopause symptoms</li>
-        <li>&bull; Couples needing fertility treatment (Zita West)</li>
-        <li>&bull; IVF support (Zita West)</li>
-      </ul>
-      <p>
-        Acupuncturists treat a wide range of conditions. If you don’t see your
-        problem listed here then please ask.
-      </p>
-    </ConditionsContainer>
-  </AcupunctureWrapper>
+      </ConditionsContainer>
+    </AcupunctureWrapper>
+  </Layout>
 )
 
 export default AcupuncturePage

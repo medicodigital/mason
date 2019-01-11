@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 
 import heloise from '../images/therapists/Héloïse-Gilleman-3.jpg'
-
 
 const TherapistWrapper = styled.div`
     background: #ddeaf6;
@@ -27,7 +27,7 @@ const ImageBlurbContainer = styled.div`
         padding: 10vh 10vw;
     }
     `
-    
+
 const ImageHolder = styled.div`
     align-self: flex-start;
     margin: 20px auto;
@@ -73,27 +73,41 @@ const StickyHolder = styled.div`
 `
 
 const TherapistHeloise = () => (
+  <Layout>
     <TherapistWrapper>
-        <TherapyHeader 
-            therapy="osteopathy"
-            />
-        <ImageBlurbContainer>
-            <ImageHolder>
-                <img src={heloise} alt="Heloise headshot" />
-            </ImageHolder>
-            <BlurbHolder>
-                <h1>Héloïse Gilleman</h1>
-                <h3>DO, MOst</h3>
-                <p>Héloïse Gilleman trained at the European School of Osteopathy where she learnt a broad range of techniques to treat a variety of conditions.
-                She loves talking to patients, working with them to get to the root cause of their condition  whilst advising on how to modify their lifestyle to prevent their condition re-occurring.</p>
-                <p>During her osteopathic training she developed a particular interest in cranial, visceral and paediatric/obstetric osteopathy. She is currently training at The Osteopathic Centre for Children developing her knowledge across babies to teenagers as well as expectant mothers.</p>
-                <p>In her spare time, Héloïse enjoys travelling, reading and horse riding.</p>
-            </BlurbHolder>
-        </ImageBlurbContainer>
-        <StickyHolder>
-            <Links />
-        </StickyHolder>
+      <TherapyHeader therapy="osteopathy" />
+      <ImageBlurbContainer>
+        <ImageHolder>
+          <img src={heloise} alt="Heloise headshot" />
+        </ImageHolder>
+        <BlurbHolder>
+          <h1>Héloïse Gilleman</h1>
+          <h3>DO, MOst</h3>
+          <p>
+            Héloïse Gilleman trained at the European School of Osteopathy where
+            she learnt a broad range of techniques to treat a variety of
+            conditions. She loves talking to patients, working with them to get
+            to the root cause of their condition whilst advising on how to
+            modify their lifestyle to prevent their condition re-occurring.
+          </p>
+          <p>
+            During her osteopathic training she developed a particular interest
+            in cranial, visceral and paediatric/obstetric osteopathy. She is
+            currently training at The Osteopathic Centre for Children developing
+            her knowledge across babies to teenagers as well as expectant
+            mothers.
+          </p>
+          <p>
+            In her spare time, Héloïse enjoys travelling, reading and horse
+            riding.
+          </p>
+        </BlurbHolder>
+      </ImageBlurbContainer>
+      <StickyHolder>
+        <Links />
+      </StickyHolder>
     </TherapistWrapper>
+  </Layout>
 )
 
 export default TherapistHeloise

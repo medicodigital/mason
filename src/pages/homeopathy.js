@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 import Therapist from '../components/Therapist'
@@ -107,90 +108,94 @@ const ConditionsContainer = styled.div`
 `
 
 const HomeopathyPage = () => (
-  <HomeopathyWrapper>
-    <TherapyHeader therapy="Homeopathy" />
-    <HeroHolder>
-      <ImageHolder>
-        <img src={homeopathy} alt="homeopathy" />
-      </ImageHolder>
-      <Therapist firstname="Suzy" surname="Cain" pic={suzy} />
-      <BlurbHolder>
+  <Layout>
+    <HomeopathyWrapper>
+      <TherapyHeader therapy="Homeopathy" />
+      <HeroHolder>
+        <ImageHolder>
+          <img src={homeopathy} alt="homeopathy" />
+        </ImageHolder>
+        <Therapist firstname="Suzy" surname="Cain" pic={suzy} />
+        <BlurbHolder>
+          <p>
+            {' '}
+            Homeopathy is a holistic medicine which uses specially prepared,
+            highly diluted substances (given mainly in tablet form) with the aim
+            of triggering the body’s own healing mechanisms. It’s based on a
+            series of ideas developed in the 1790s by a German doctor called
+            Samuel Hahnemann, who was looking for a way to reduce the damaging
+            side effects associated with the medical treatment of his day. It is
+            used on an extremely wide range of conditions, including physical
+            conditions such as asthma and psychological conditions such as
+            depression. A homeopath will prescribe medicines according to the
+            patient’s specific set of symptoms, and how they experience them,
+            taking into account their overall level of health.
+          </p>
+          <p>
+            {' '}
+            Homeopathy is based on the principle of “like treats like” – that
+            is, a substance which can cause symptoms when taken in large doses,
+            can be used in small amounts to treat similar symptoms. For example,
+            drinking too much coffee can cause sleeplessness and agitation, so
+            according to this principle, when made into a homeopathic medicine,
+            it could be used to treat people suffering from sleeplessness and
+            agitation.
+          </p>
+          <BlurbHeader>WHAT TO EXPECT DURING YOUR APPOINTMENT</BlurbHeader>
+          <p>
+            A homeopath’s job is to gain a thorough understanding of your health
+            and the exact symptoms you are experiencing. With detailed knowledge
+            they can find a homeopathic medicine (known as a ‘remedy’) that
+            matches you and your symptoms as closely as possible. During the
+            first consultation, you will be asked lots of questions to build up
+            a complete picture, taking into account a wide variety of factors
+            such as medical history, personality traits, stress triggers, likes
+            and dislikes, lifestyle and dreams. Because homeopathy looks at the
+            whole picture, patients who have the same diagnosed illness – hay
+            fever, for example – are each likely to need different homeopathic
+            medicines.
+          </p>
+        </BlurbHolder>
+      </HeroHolder>
+      <StickyHolder>
+        <Links />
+      </StickyHolder>
+      <ConditionsContainer>
+        <h2>HOMEOPATHY CAN HELP WITH:</h2>
+        <ul>
+          <li>&bull; Allergies</li>
+          <li>&bull; Migraines</li>
+          <li>&bull; Depression</li>
+          <li>&bull; Chronic fatigue syndrome</li>
+          <li>&bull; Rheumatoid arthritis</li>
+          <li>&bull; Irritable bowel syndrome</li>
+          <li>&bull; Infertility</li>
+          <li>&bull; Premenstrual syndrome</li>
+          <li>&bull; Asthma</li>
+          <li>&bull; Ear infections</li>
+          <li>&bull; Hay fever</li>
+          <li>&bull; Depression, stress and anxiety</li>
+          <li>&bull; Dermatitis</li>
+          <li>&bull; Arthritis</li>
+          <li>&bull; High blood pressure</li>
+          <li>&bull; Snoring</li>
+          <li>&bull; Sinusitis</li>
+          <li>&bull; Psoriasis</li>
+          <li>&bull; Fibromyalgia</li>
+          <li>&bull; Insomnia</li>
+          <li>&bull; Varicose veins</li>
+          <li>
+            &bull; It can also be used for minor issues like bruises, scrapes,
+            toothaches, headaches, nausea, coughs, and colds
+          </li>
+        </ul>
         <p>
-          {' '}
-          Homeopathy is a holistic medicine which uses specially prepared,
-          highly diluted substances (given mainly in tablet form) with the aim
-          of triggering the body’s own healing mechanisms. It’s based on a
-          series of ideas developed in the 1790s by a German doctor called
-          Samuel Hahnemann, who was looking for a way to reduce the damaging
-          side effects associated with the medical treatment of his day. It is
-          used on an extremely wide range of conditions, including physical
-          conditions such as asthma and psychological conditions such as
-          depression. A homeopath will prescribe medicines according to the
-          patient’s specific set of symptoms, and how they experience them,
-          taking into account their overall level of health.
+          Homeopathy can help a wide range of conditions. If you don’t see your
+          problem listed here, please ask.
         </p>
-        <p>
-          {' '}
-          Homeopathy is based on the principle of “like treats like” – that is,
-          a substance which can cause symptoms when taken in large doses, can be
-          used in small amounts to treat similar symptoms. For example, drinking
-          too much coffee can cause sleeplessness and agitation, so according to
-          this principle, when made into a homeopathic medicine, it could be
-          used to treat people suffering from sleeplessness and agitation.
-        </p>
-        <BlurbHeader>WHAT TO EXPECT DURING YOUR APPOINTMENT</BlurbHeader>
-        <p>
-          A homeopath’s job is to gain a thorough understanding of your health
-          and the exact symptoms you are experiencing. With detailed knowledge
-          they can find a homeopathic medicine (known as a ‘remedy’) that
-          matches you and your symptoms as closely as possible. During the first
-          consultation, you will be asked lots of questions to build up a
-          complete picture, taking into account a wide variety of factors such
-          as medical history, personality traits, stress triggers, likes and
-          dislikes, lifestyle and dreams. Because homeopathy looks at the whole
-          picture, patients who have the same diagnosed illness – hay fever, for
-          example – are each likely to need different homeopathic medicines.
-        </p>
-      </BlurbHolder>
-    </HeroHolder>
-    <StickyHolder>
-      <Links />
-    </StickyHolder>
-    <ConditionsContainer>
-      <h2>HOMEOPATHY CAN HELP WITH:</h2>
-      <ul>
-        <li>&bull; Allergies</li>
-        <li>&bull; Migraines</li>
-        <li>&bull; Depression</li>
-        <li>&bull; Chronic fatigue syndrome</li>
-        <li>&bull; Rheumatoid arthritis</li>
-        <li>&bull; Irritable bowel syndrome</li>
-        <li>&bull; Infertility</li>
-        <li>&bull; Premenstrual syndrome</li>
-        <li>&bull; Asthma</li>
-        <li>&bull; Ear infections</li>
-        <li>&bull; Hay fever</li>
-        <li>&bull; Depression, stress and anxiety</li>
-        <li>&bull; Dermatitis</li>
-        <li>&bull; Arthritis</li>
-        <li>&bull; High blood pressure</li>
-        <li>&bull; Snoring</li>
-        <li>&bull; Sinusitis</li>
-        <li>&bull; Psoriasis</li>
-        <li>&bull; Fibromyalgia</li>
-        <li>&bull; Insomnia</li>
-        <li>&bull; Varicose veins</li>
-        <li>
-          &bull; It can also be used for minor issues like bruises, scrapes,
-          toothaches, headaches, nausea, coughs, and colds
-        </li>
-      </ul>
-      <p>
-        Homeopathy can help a wide range of conditions. If you don’t see your
-        problem listed here, please ask.
-      </p>
-    </ConditionsContainer>
-  </HomeopathyWrapper>
+      </ConditionsContainer>
+    </HomeopathyWrapper>
+  </Layout>
 )
 
 export default HomeopathyPage

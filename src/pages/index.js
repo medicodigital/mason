@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
+import Layout from '../components/Layout'
 import Header from '../components/Header'
 import Links from '../components/Links'
 import Therapies from '../components/Therapies'
@@ -55,13 +56,13 @@ const BlueButton = styled.button`
     font-size: 3vw;
   }
 `
-const GreenButton = BlueButton.extend`
+const GreenButton = styled(BlueButton)`
   background: #86ab45;
   :hover {
     background: #9ec063;
   }
 `
-const DarkButton = BlueButton.extend`
+const DarkButton = styled(BlueButton)`
   background: #276277;
   :hover {
     background: #34829d;
@@ -98,7 +99,7 @@ const Bottles = styled.div`
     width: 100%;
   }
 `
-const Flowers = Bottles.extend`
+const Flowers = styled(Bottles)`
   display: none;
   width: 50%;
   @media (min-width: 900px) {
@@ -107,43 +108,45 @@ const Flowers = Bottles.extend`
 `
 
 const IndexPage = () => (
-  <IndexWrapper>
-    <Header />
-    <ButtonContainer>
-      <AnchorLink offset="70" href="#therapies">
-        <BlueButton>Therapies</BlueButton>
-      </AnchorLink>
-      <AnchorLink offset="70" href="#contact">
-        <GreenButton>Find us</GreenButton>
-      </AnchorLink>
-      <AnchorLink offset="70" href="#fees">
-        <DarkButton>Fees</DarkButton>
-      </AnchorLink>
-    </ButtonContainer>
-    <StickyHolder>
-      <Links />
-    </StickyHolder>
-    <section id="therapies">
-      <Therapies />
-    </section>
-    <Clinic>
-      <img src={clinic} alt="Mason Clinic exterior" />
-    </Clinic>
-    <section id="contact">
-      <Contact />
-    </section>
-    <PicWrapper>
-      <Bottles>
-        <img src={bottles} alt="bottles on shelf" />
-      </Bottles>
-      <Flowers>
-        <img src={flowers} alt="Flowers on shelf" />
-      </Flowers>
-    </PicWrapper>
-    <section id="fees">
-      <Fees />
-    </section>
-  </IndexWrapper>
+  <Layout>
+    <IndexWrapper>
+      <Header />
+      <ButtonContainer>
+        <AnchorLink offset="70" href="#therapies">
+          <BlueButton>Therapies</BlueButton>
+        </AnchorLink>
+        <AnchorLink offset="70" href="#contact">
+          <GreenButton>Find us</GreenButton>
+        </AnchorLink>
+        <AnchorLink offset="70" href="#fees">
+          <DarkButton>Fees</DarkButton>
+        </AnchorLink>
+      </ButtonContainer>
+      <StickyHolder>
+        <Links />
+      </StickyHolder>
+      <section id="therapies">
+        <Therapies />
+      </section>
+      <Clinic>
+        <img src={clinic} alt="Mason Clinic exterior" />
+      </Clinic>
+      <section id="contact">
+        <Contact />
+      </section>
+      <PicWrapper>
+        <Bottles>
+          <img src={bottles} alt="bottles on shelf" />
+        </Bottles>
+        <Flowers>
+          <img src={flowers} alt="Flowers on shelf" />
+        </Flowers>
+      </PicWrapper>
+      <section id="fees">
+        <Fees />
+      </section>
+    </IndexWrapper>
+  </Layout>
 )
 
 export default IndexPage

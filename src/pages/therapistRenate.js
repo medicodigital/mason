@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 
@@ -75,43 +76,46 @@ const StickyHolder = styled.div`
 `
 
 const TherapistRenate = () => (
-  <TherapistWrapper>
-    <TherapyHeader therapy="acupuncture" />
-    <ImageBlurbContainer>
-      <ImageHolder>
-        <img src={renate} alt="renate headshot" />
-      </ImageHolder>
-      <BlurbHolder>
-        <h1>Renate Blacker</h1>
-        <h3>MBAcC</h3>
-        <a href="http://www.blacker-acupuncture.co.uk">
-          <h4>blacker-acupuncture.co.uk</h4>
-        </a>
-        <p>
-          Renate Blacker has been a healthcare professional for more than 20
-          years, as a general nurse to begin with and then qualifying as an
-          acupuncturist and Chinese herbalist. Many patients come for painful
-          conditions and acupuncture works very well for acute injuries and
-          chronic pain.
-        </p>
-        <p>
-          Renate also specialises in fertility issues and IVF support. Women can
-          have treatment throughout their pregnancy including before and after
-          the birth. She is a member of the British Acupuncture Council, the
-          Zita West Network and the Register of Chinese Herbal Medicine, which
-          ensure a high standard of practise and professional development.
-        </p>
-        <p>
-          She explains: “I use a lot of massage and acupressure techniques,
-          which are good for children and people who are worried about the
-          needles. The treatment should be a pleasant experience.”
-        </p>
-      </BlurbHolder>
-    </ImageBlurbContainer>
-    <StickyHolder>
-      <Links />
-    </StickyHolder>
-  </TherapistWrapper>
+  <Layout>
+    <TherapistWrapper>
+      <TherapyHeader therapy="acupuncture" />
+      <ImageBlurbContainer>
+        <ImageHolder>
+          <img src={renate} alt="renate headshot" />
+        </ImageHolder>
+        <BlurbHolder>
+          <h1>Renate Blacker</h1>
+          <h3>MBAcC</h3>
+          <a href="http://www.blacker-acupuncture.co.uk">
+            <h4>blacker-acupuncture.co.uk</h4>
+          </a>
+          <p>
+            Renate Blacker has been a healthcare professional for more than 20
+            years, as a general nurse to begin with and then qualifying as an
+            acupuncturist and Chinese herbalist. Many patients come for painful
+            conditions and acupuncture works very well for acute injuries and
+            chronic pain.
+          </p>
+          <p>
+            Renate also specialises in fertility issues and IVF support. Women
+            can have treatment throughout their pregnancy including before and
+            after the birth. She is a member of the British Acupuncture Council,
+            the Zita West Network and the Register of Chinese Herbal Medicine,
+            which ensure a high standard of practise and professional
+            development.
+          </p>
+          <p>
+            She explains: “I use a lot of massage and acupressure techniques,
+            which are good for children and people who are worried about the
+            needles. The treatment should be a pleasant experience.”
+          </p>
+        </BlurbHolder>
+      </ImageBlurbContainer>
+      <StickyHolder>
+        <Links />
+      </StickyHolder>
+    </TherapistWrapper>
+  </Layout>
 )
 
 export default TherapistRenate

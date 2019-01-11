@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 
@@ -73,46 +74,48 @@ const StickyHolder = styled.div`
 `
 
 const TherapistMaria = () => (
-  <TherapistWrapper>
-    <TherapyHeader therapy="reflexology" />
-    <ImageBlurbContainer>
-      <ImageHolder>
-        <img src={maria} alt="maria headshot" />
-      </ImageHolder>
-      <BlurbHolder>
-        <h1>Maria Mahon</h1>
-        <h3>Reflexologist</h3>
-        <p>
-          Maria studied massage therapy and reflexology in London and has been
-          working as a therapist since 2007. She finds her work on reflexology
-          for infertility and maternity particularly rewarding, especially for
-          overdue ladies. Many have said afterwards that their babies are very
-          calm. She is still fascinated by the outcomes of reflexology and
-          always learning something new.
-        </p>
-        <p>
-          Maria has recently introduced the Bergman Method of Facial Reflexology
-          which provides all the benefits of foot reflexology plus the added
-          benefits of producing smoother, glowing skin helping wrinkles look
-          reduced. Massaging pressure points on the face, provides a very
-          calming, stress relieving treatment. Collagen and elastin is
-          stimulated, possibly delaying the need for botox or fillers. The
-          difference is immediate and noticeable.
-        </p>
-        <p>
-          She has also started offering Hopi Ear Candling, an ancient therapy
-          that is relaxing and rejuvenating, and can be helpful for a variety of
-          ear, nose and throat conditions
-        </p>
-        <p>
-          In her spare time, Maria enjoys walking her dog and exploring Kent.
-        </p>
-      </BlurbHolder>
-    </ImageBlurbContainer>
-    <StickyHolder>
-      <Links />
-    </StickyHolder>
-  </TherapistWrapper>
+  <Layout>
+    <TherapistWrapper>
+      <TherapyHeader therapy="reflexology" />
+      <ImageBlurbContainer>
+        <ImageHolder>
+          <img src={maria} alt="maria headshot" />
+        </ImageHolder>
+        <BlurbHolder>
+          <h1>Maria Mahon</h1>
+          <h3>Reflexologist</h3>
+          <p>
+            Maria studied massage therapy and reflexology in London and has been
+            working as a therapist since 2007. She finds her work on reflexology
+            for infertility and maternity particularly rewarding, especially for
+            overdue ladies. Many have said afterwards that their babies are very
+            calm. She is still fascinated by the outcomes of reflexology and
+            always learning something new.
+          </p>
+          <p>
+            Maria has recently introduced the Bergman Method of Facial
+            Reflexology which provides all the benefits of foot reflexology plus
+            the added benefits of producing smoother, glowing skin helping
+            wrinkles look reduced. Massaging pressure points on the face,
+            provides a very calming, stress relieving treatment. Collagen and
+            elastin is stimulated, possibly delaying the need for botox or
+            fillers. The difference is immediate and noticeable.
+          </p>
+          <p>
+            She has also started offering Hopi Ear Candling, an ancient therapy
+            that is relaxing and rejuvenating, and can be helpful for a variety
+            of ear, nose and throat conditions
+          </p>
+          <p>
+            In her spare time, Maria enjoys walking her dog and exploring Kent.
+          </p>
+        </BlurbHolder>
+      </ImageBlurbContainer>
+      <StickyHolder>
+        <Links />
+      </StickyHolder>
+    </TherapistWrapper>
+  </Layout>
 )
 
 export default TherapistMaria

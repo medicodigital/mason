@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 
@@ -75,39 +76,42 @@ const StickyHolder = styled.div`
 `
 
 const TherapistSuzy = () => (
-  <TherapistWrapper>
-    <TherapyHeader therapy="homeopathy" />
-    <ImageBlurbContainer>
-      <ImageHolder>
-        <img src={suzy} alt="suzy headshot" />
-      </ImageHolder>
-      <BlurbHolder>
-        <h1>Suzy Cain</h1>
-        <h3>LCPH MHMA</h3>
-        <a href="https://www.suzycainhomeopathy.co.uk">
-          <h4>suzycainhomeopathy.co.uk</h4>
-        </a>
-        <p>
-          Suzy qualified from the College of Practical Homeopathy in Finchley
-          where she studied with some of the top homeopaths in the country. She
-          is registered and insured with the Homeopathic Medical Association.
-          Suzy is also a member of the British Institute for Allergy and
-          Environmental Therapy and now offers homeopathy and allergy testing.
-        </p>
-        <p>
-          A full time working mum herself she understands the rigorous demands
-          of living in the 21st century. Before training as a homeopath she
-          worked for twenty years in the fashion industry, which involved
-          working to tight deadlines and much travelling. She is passionate
-          about health and offering patients solutions and choices to their
-          problems.
-        </p>
-      </BlurbHolder>
-    </ImageBlurbContainer>
-    <StickyHolder>
-      <Links />
-    </StickyHolder>
-  </TherapistWrapper>
+  <Layout>
+    <TherapistWrapper>
+      <TherapyHeader therapy="homeopathy" />
+      <ImageBlurbContainer>
+        <ImageHolder>
+          <img src={suzy} alt="suzy headshot" />
+        </ImageHolder>
+        <BlurbHolder>
+          <h1>Suzy Cain</h1>
+          <h3>LCPH MHMA</h3>
+          <a href="https://www.suzycainhomeopathy.co.uk">
+            <h4>suzycainhomeopathy.co.uk</h4>
+          </a>
+          <p>
+            Suzy qualified from the College of Practical Homeopathy in Finchley
+            where she studied with some of the top homeopaths in the country.
+            She is registered and insured with the Homeopathic Medical
+            Association. Suzy is also a member of the British Institute for
+            Allergy and Environmental Therapy and now offers homeopathy and
+            allergy testing.
+          </p>
+          <p>
+            A full time working mum herself she understands the rigorous demands
+            of living in the 21st century. Before training as a homeopath she
+            worked for twenty years in the fashion industry, which involved
+            working to tight deadlines and much travelling. She is passionate
+            about health and offering patients solutions and choices to their
+            problems.
+          </p>
+        </BlurbHolder>
+      </ImageBlurbContainer>
+      <StickyHolder>
+        <Links />
+      </StickyHolder>
+    </TherapistWrapper>
+  </Layout>
 )
 
 export default TherapistSuzy
