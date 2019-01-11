@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
@@ -9,7 +8,6 @@ import Osteopaths from '../components/Osteopaths'
 
 import shoulders from '../images/osteoshoulders.jpeg'
 import inganeck from '../images/inganeck.jpeg'
-import handshead from '../images/handshead.jpeg'
 import treattable from '../images/treattable.jpeg'
 import osteobaby from '../images/osteobaby.jpg'
 

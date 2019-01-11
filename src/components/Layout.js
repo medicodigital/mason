@@ -1,21 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Footer from '../components/Footer'
 import '../layouts/index.css'
 import icon32 from '../images/favicon.png'
-
-// const Layout = ({ children, data }) => (
-//   <div>
-
-//   </div>
-// )
-
-// Layout.propTypes = {
-//   children: PropTypes.func,
-// }
 
 export default ({ children }) => (
   <StaticQuery
