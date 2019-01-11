@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 import hero from '../images/hero.jpeg'
@@ -51,7 +50,7 @@ const HeaderContainer = styled.div`
     @media (min-width: 900px) {
       font-size: 7vw;
     } 
-  
+  }
 `
 
 const Header = () => (

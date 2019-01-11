@@ -33,6 +33,9 @@ const OsteopathsContainer = styled.div`
   }
   input + label {
     position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     > div {
       margin-left: 5%;
     }
