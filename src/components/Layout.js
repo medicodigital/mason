@@ -54,13 +54,3 @@ export default ({ children }) => (
     )}
   />
 )
-
-// export const query = graphql`
-//   query SiteTitleQuery {
-//     site {
-//       siteMetadata {
-//         title
-//       }
-//     }
-//   }
-// `
