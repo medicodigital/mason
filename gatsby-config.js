@@ -1,3 +1,11 @@
+const dotenv = require('dotenv')
+
+if (process.env.ENVIRONMENT !== 'production') {
+  dotenv.config()
+}
+
+const { spaceId, accessToken } = process.env
+
 module.exports = {
   siteMetadata: {
     title: 'The Mason Clinic',
@@ -15,6 +23,7 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-transformer-remark',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -33,6 +42,13 @@ module.exports = {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
         pixelId: '673796719642088',
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId,
+        accessToken,
       },
     },
   ],
