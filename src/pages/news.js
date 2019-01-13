@@ -36,10 +36,21 @@ const StickyHolder = styled.div`
   }
 `
 
+const BlogHeader = styled.h3`
+  margin-top: 3rem;
+`
+
 const BlogPost = ({ node }) => {
   return (
     <li>
-      <Link to={node.slug}>{node.headline}</Link>
+      <Link to={node.slug}>
+        <BlogHeader>{node.headline}</BlogHeader>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: node.copy.childMarkdownRemark.excerpt,
+          }}
+        />
+      </Link>
     </li>
   )
 }
@@ -73,6 +84,11 @@ export const pageQuery = graphql`
         node {
           headline
           slug
+          copy {
+            childMarkdownRemark {
+                excerpt
+              }
+        }
         }
       }
     }
