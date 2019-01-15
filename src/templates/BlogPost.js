@@ -25,6 +25,11 @@ const NewsContainer = styled.main`
 
 const PostHolder = styled.article`
     max-width: 70vw;
+    margin: 10vh 0;
+`
+
+const Image = styled.img`
+  max-height: 30vh;
 `
 
 const StickyHolder = styled.div`
@@ -47,10 +52,10 @@ export default ({ data }) => {
         <TherapyHeader therapy="Blog" />
         <NewsContainer>
           <PostHolder>
+            <Image src={post.image.file.url} alt={post.image.description} />
             <h1>{post.headline}</h1>
             <h6>{post.dateline}</h6>
             <h6>{post.therapy}</h6>
-            <img src={post.image.file.url} alt={post.image.description} />
             <div
               dangerouslySetInnerHTML={{
                 __html: post.copy.childMarkdownRemark.html,
