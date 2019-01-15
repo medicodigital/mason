@@ -9,19 +9,14 @@ import Links from '../components/Links'
 
 const NewsWrapper = styled.div`
   background: #ddeaf6;
-  display: flex;
-  flex-direction: column;
   min-height: 90vh;
-  margin: 0;
   width: 100%;
 `
 
 const NewsContainer = styled.main`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   min-height: 100%;
+  max-width: 70vw;
+  margin: 0 auto;
 `
 
 const StickyHolder = styled.div`
@@ -37,34 +32,80 @@ const StickyHolder = styled.div`
 `
 
 const BlogHeader = styled.h3`
-  margin-top: 3rem;
+  color: #161616;
+  margin: 0;
+`
+
+const BlogPostList = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 425px;
+  grid-gap: 20px;
+  margin-top: 10vh;
+  padding: 0;
+`
+
+const BlogPostHolder = styled.li`
+  border: 1px solid black;
+  background: #fefefe;
+`
+
+const BlogImage = styled.img`
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+`
+
+const BlogCopyHolder = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 43%;
+  justify-content: space-between;
+  padding: 20px 20px 0 20px;
+`
+
+const BlogExcerpt = styled.div`
+  color: #3c3c3c;
+`
+
+const ReadMore = styled.h6`
+  color: #161616;
+  font-weight: 900;
+  margin: 0;
 `
 
 const BlogPost = ({ node }) => {
   return (
-    <li>
+    <BlogPostHolder>
       <Link to={node.slug}>
-        <BlogHeader>{node.headline}</BlogHeader>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: node.copy.childMarkdownRemark.excerpt,
-          }}
-        />
+        <BlogImage src={node.image.file.url} alt={node.image.description} />
+        <BlogCopyHolder>
+          <BlogHeader>{node.headline}</BlogHeader>
+          <BlogExcerpt
+            dangerouslySetInnerHTML={{
+              __html: node.copy.childMarkdownRemark.excerpt,
+            }}
+          />
+          <ReadMore>Click to read more</ReadMore>
+        </BlogCopyHolder>
       </Link>
-    </li>
+    </BlogPostHolder>
   )
 }
 
 const NewsPage = ({ data }) => (
   <Layout>
     <NewsWrapper>
-      <TherapyHeader therapy="Blog" />
+      <TherapyHeader therapy="News from the Clinic" />
       <NewsContainer>
-        <ul>
+        <BlogPostList>
           {data.allContentfulBlog.edges.map(edge => (
             <BlogPost node={edge.node} />
           ))}
-        </ul>
+        </BlogPostList>
       </NewsContainer>
     </NewsWrapper>
     <StickyHolder>
@@ -77,9 +118,7 @@ export default NewsPage
 
 export const pageQuery = graphql`
   query pageQuery{
-    allContentfulBlog (filter: {
-      node_locale: {eq:"en-US"}
-    }) {
+    allContentfulBlog {
       edges {
         node {
           headline
@@ -89,6 +128,12 @@ export const pageQuery = graphql`
                 excerpt
               }
         }
+          image {
+           description
+            file {
+              url
+           }
+          }
         }
       }
     }
