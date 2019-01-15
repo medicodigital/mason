@@ -23,13 +23,45 @@ const NewsContainer = styled.main`
   min-height: 100%;
 `
 
-const PostHolder = styled.article`
-    max-width: 70vw;
+const PostHolder = styled.main`
+    max-width: 90vmin;
     margin: 10vh 0;
 `
 
 const Image = styled.img`
-  max-height: 30vh;
+  max-height: 50vh;
+  width: 100%;
+  object-fit: cover;
+`
+
+const BlogPostHeadline = styled.h1`
+  color: #161616;
+  margin-top: 20px;
+  `
+
+const BlogPostDateline = styled.h4`
+  color: #161616;
+  margin-bottom: 5px;
+`
+
+const BlogPostTherapy = styled.h4`
+  color: #626262;
+  font-weight: bold;
+  text-transform: uppercase;
+`
+
+const BlogPostCopy = styled.div`
+  color: #161616;
+  font-size: 20px;
+  line-height: 1.5;
+  ul {
+    padding-left: 20px;
+  }
+  li {
+    font-weight: bold;
+    list-style-type: disc;
+    margin-bottom: 10px;
+  }
 `
 
 const StickyHolder = styled.div`
@@ -49,14 +81,14 @@ export default ({ data }) => {
   return (
     <Layout>
       <NewsWrapper>
-        <TherapyHeader therapy="Blog" />
+        <TherapyHeader therapy="News" />
         <NewsContainer>
+          <Image src={post.image.file.url} alt={post.image.description} />
           <PostHolder>
-            <Image src={post.image.file.url} alt={post.image.description} />
-            <h1>{post.headline}</h1>
-            <h6>{post.dateline}</h6>
-            <h6>{post.therapy}</h6>
-            <div
+            <BlogPostHeadline>{post.headline}</BlogPostHeadline>
+            <BlogPostDateline>{post.dateline}</BlogPostDateline>
+            <BlogPostTherapy>{post.therapy}</BlogPostTherapy>
+            <BlogPostCopy
               dangerouslySetInnerHTML={{
                 __html: post.copy.childMarkdownRemark.html,
               }}
@@ -76,7 +108,7 @@ export const query = graphql`
         contentfulBlog(slug: {eq: $slug}) {
             headline
             slug
-            dateline
+            dateline(formatString: "DD MMMM, YYYY")
             therapy
             copy {
                 childMarkdownRemark {

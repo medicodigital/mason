@@ -79,7 +79,7 @@ const BlogExcerpt = styled.div`
 `
 
 const ReadMore = styled.h6`
-  color: #161616;
+  color: #3c3c3c;
   font-weight: 900;
   margin: 0;
 `
@@ -106,7 +106,7 @@ const BlogPost = ({ node }) => {
 const NewsPage = ({ data }) => (
   <Layout>
     <NewsWrapper>
-      <TherapyHeader therapy="News from the Clinic" />
+      <TherapyHeader therapy="News" />
       <NewsContainer>
         <BlogPostList>
           {data.allContentfulBlog.edges.map(edge => (

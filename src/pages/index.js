@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import Link from 'gatsby-link'
 
 import Layout from '../components/Layout'
 import Header from '../components/Header'
@@ -49,11 +50,17 @@ const BlueButton = styled.button`
     cursor: pointer;
   }
   @media (min-width: 600px) {
-    font-size: 45px;
-    width: 33.333vw;
+    font-size: 25px;
+    width: 25vw;
   }
   @media (min-width: 900px) {
     font-size: 3vw;
+  }
+`
+const DarkBlueButton = styled(BlueButton)`
+  background: #274f73;
+  :hover {
+    background: #346999;
   }
 `
 const GreenButton = styled(BlueButton)`
@@ -63,9 +70,9 @@ const GreenButton = styled(BlueButton)`
   }
 `
 const DarkButton = styled(BlueButton)`
-  background: #276277;
+  background: #34829d;
   :hover {
-    background: #34829d;
+    background: #56aac7;
   }
 `
 const StickyHolder = styled.div`
@@ -115,6 +122,9 @@ const IndexPage = () => (
         <AnchorLink offset="70" href="#therapies">
           <BlueButton>Therapies</BlueButton>
         </AnchorLink>
+        <Link to="/news">
+          <DarkBlueButton>News</DarkBlueButton>
+        </Link>
         <AnchorLink offset="70" href="#contact">
           <GreenButton>Find us</GreenButton>
         </AnchorLink>

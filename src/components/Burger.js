@@ -93,9 +93,12 @@ const BurgerWrapper = styled.div`
         background: #4189c8;
       }
       > li:nth-child(3) {
-        background: #86ab45;
+        background: #274f73;
       }
       > li:nth-child(4) {
+        background: #86ab45;
+      }
+      > li:nth-child(5) {
         background: #276277;
       }
     }
@@ -127,6 +130,9 @@ const Burger = () => (
         </li>
         <li>
           <Link to="/#therapies">Therapies</Link>
+        </li>
+        <li>
+          <Link to="/news">News</Link>
         </li>
         <li>
           <Link to="/#contact">Find us</Link>
