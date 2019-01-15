@@ -10,6 +10,7 @@ import Links from '../components/Links'
 const NewsWrapper = styled.div`
   background: #ddeaf6;
   min-height: 90vh;
+  padding-bottom: 10vh;
   width: 100%;
 `
 
@@ -46,8 +47,14 @@ const BlogPostList = styled.ul`
 `
 
 const BlogPostHolder = styled.li`
-  border: 1px solid black;
   background: #fefefe;
+  border: 1px solid #3c3c3c;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 1s all;
+  :hover {
+    box-shadow: 10px 10px 16px -8px rgba(60,60,60,1);
+  }
 `
 
 const BlogImage = styled.img`
