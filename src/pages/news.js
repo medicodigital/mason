@@ -39,7 +39,7 @@ const BlogHeader = styled.h3`
 
 const BlogPostList = styled.ul`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
   grid-auto-rows: 425px;
   grid-gap: 20px;
   margin-top: 10vh;

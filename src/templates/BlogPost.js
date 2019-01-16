@@ -66,7 +66,7 @@ const BlogPostCopy = styled.div`
 
 const StickyHolder = styled.div`
   background: #86aecf;
-  color: #fff;
+  color: #fefefe;
   order: 0;
   position: sticky;
   top: 0;
