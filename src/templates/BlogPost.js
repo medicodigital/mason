@@ -24,8 +24,8 @@ const NewsContainer = styled.main`
 `
 
 const PostHolder = styled.main`
-    max-width: 90vmin;
-    margin: 10vh 0;
+  max-width: 90vmin;
+  margin: 10vh 0;
 `
 
 const Image = styled.img`
@@ -37,7 +37,7 @@ const Image = styled.img`
 const BlogPostHeadline = styled.h1`
   color: #161616;
   margin-top: 20px;
-  `
+`
 
 const BlogPostDateline = styled.h4`
   color: #161616;
@@ -81,7 +81,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <NewsWrapper>
-        <TherapyHeader therapy="News" />
+        <TherapyHeader therapy="news" />
         <NewsContainer>
           <Image src={post.image.file.url} alt={post.image.description} />
           <PostHolder>
@@ -104,23 +104,23 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-    query blogPostQuery($slug: String!) {
-        contentfulBlog(slug: {eq: $slug}) {
-            headline
-            slug
-            dateline(formatString: "DD MMMM, YYYY")
-            therapy
-            copy {
-                childMarkdownRemark {
-                    html
-                  }
-            }
-            image {
-                description
-                file {
-                  url
-                }
-              }
-          }
+  query blogPostQuery($slug: String!) {
+    contentfulBlog(slug: { eq: $slug }) {
+      headline
+      slug
+      dateline(formatString: "DD MMMM, YYYY")
+      therapy
+      copy {
+        childMarkdownRemark {
+          html
+        }
+      }
+      image {
+        description
+        file {
+          url
+        }
+      }
     }
+  }
 `

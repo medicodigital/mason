@@ -53,7 +53,7 @@ const BlogPostHolder = styled.li`
   overflow: hidden;
   transition: 1s all;
   :hover {
-    box-shadow: 10px 10px 16px -8px rgba(60,60,60,1);
+    box-shadow: 10px 10px 16px -8px rgba(60, 60, 60, 1);
   }
 `
 
@@ -106,7 +106,7 @@ const BlogPost = ({ node }) => {
 const NewsPage = ({ data }) => (
   <Layout>
     <NewsWrapper>
-      <TherapyHeader therapy="News" />
+      <TherapyHeader therapy="news" />
       <NewsContainer>
         <BlogPostList>
           {data.allContentfulBlog.edges.map(edge => (
@@ -124,7 +124,7 @@ const NewsPage = ({ data }) => (
 export default NewsPage
 
 export const pageQuery = graphql`
-  query pageQuery{
+  query pageQuery {
     allContentfulBlog {
       edges {
         node {
@@ -132,14 +132,14 @@ export const pageQuery = graphql`
           slug
           copy {
             childMarkdownRemark {
-                excerpt
-              }
-        }
+              excerpt
+            }
+          }
           image {
-           description
+            description
             file {
               url
-           }
+            }
           }
         }
       }
