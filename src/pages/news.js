@@ -42,6 +42,7 @@ const BlogPostList = styled.ul`
   grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
   grid-auto-rows: 425px;
   grid-gap: 20px;
+  justify-content: center;
   margin-top: 10vh;
   padding: 0;
 `
@@ -53,7 +54,8 @@ const BlogPostHolder = styled.li`
   overflow: hidden;
   transition: 1s all;
   :hover {
-    box-shadow: 10px 10px 16px -8px rgba(60, 60, 60, 1);
+    box-shadow: 2px 2px 4px hsla(0, 0%, 30%, 0.7),
+      6px 6px 8px hsla(0, 0%, 50%, 0.2);
   }
 `
 
@@ -61,7 +63,7 @@ const BlogImage = styled.img`
   position: relative;
   top: 0;
   left: 0;
-  height: 200px;
+  height: 45%;
   object-fit: cover;
   width: 100%;
 `
@@ -69,9 +71,9 @@ const BlogImage = styled.img`
 const BlogCopyHolder = styled.div`
   display: flex;
   flex-direction: column;
-  height: 43%;
+  height: 45%;
   justify-content: space-between;
-  padding: 20px 20px 0 20px;
+  padding: 20px;
 `
 
 const BlogExcerpt = styled.div`
