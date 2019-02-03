@@ -9,7 +9,7 @@ const { spaceId, accessToken } = process.env
 module.exports = {
   siteMetadata: {
     title: 'The Mason Clinic',
-    siteUrl: `https://www.masonclinic.co.uk`,
+    siteUrl: `http://www.masonclinic.co.uk`,
   },
   plugins: [
     'gatsby-plugin-sitemap',
