@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
@@ -28,10 +29,10 @@ const PostHolder = styled.main`
   margin: 10vh 0;
 `
 
-const Image = styled.img`
+const Image = styled(Img)`
   max-height: 50vh;
-  width: 100%;
   object-fit: cover;
+  width: 100%;
 `
 
 const BlogPostHeadline = styled.h1`
@@ -83,7 +84,7 @@ export default ({ data }) => {
       <NewsWrapper>
         <TherapyHeader therapy="news" />
         <NewsContainer>
-          <Image src={post.image.file.url} alt={post.image.description} />
+          <Image fluid={post.image.fluid} alt={post.image.description} />
           <PostHolder>
             <BlogPostHeadline>{post.headline}</BlogPostHeadline>
             <BlogPostDateline>{post.dateline}</BlogPostDateline>
@@ -117,8 +118,8 @@ export const query = graphql`
       }
       image {
         description
-        file {
-          url
+        fluid {
+          ...GatsbyContentfulFluid_withWebp
         }
       }
     }

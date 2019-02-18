@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
@@ -39,7 +40,7 @@ const BlogHeader = styled.h3`
 
 const BlogPostList = styled.ul`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: 425px;
   grid-gap: 20px;
   justify-content: center;
@@ -59,7 +60,7 @@ const BlogPostHolder = styled.li`
   }
 `
 
-const BlogImage = styled.img`
+const BlogImage = styled(Img)`
   position: relative;
   top: 0;
   left: 0;
@@ -90,7 +91,7 @@ const BlogPost = ({ node }) => {
   return (
     <BlogPostHolder>
       <Link to={node.slug}>
-        <BlogImage src={node.image.file.url} alt={node.image.description} />
+        <BlogImage fluid={node.image.fluid} alt={node.image.description} />
         <BlogCopyHolder>
           <BlogHeader>{node.headline}</BlogHeader>
           <BlogExcerpt
@@ -139,8 +140,8 @@ export const pageQuery = graphql`
           }
           image {
             description
-            file {
-              url
+            fluid {
+              ...GatsbyContentfulFluid_withWebp
             }
           }
         }
