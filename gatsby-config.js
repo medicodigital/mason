@@ -52,5 +52,19 @@ module.exports = {
         accessToken,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `The Mason Clinic`,
+        short_name: `Mason Clinic`,
+        start_url: `/`,
+        background_color: `#4189c8`,
+        theme_color: `#4189c8`,
+        display: `standalone`,
+        icon: `src/images/favicon.png`,
+        include_favicon: true,
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 }
