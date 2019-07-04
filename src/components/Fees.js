@@ -60,7 +60,7 @@ const Fees = () => (
       </FeesLine>
       <FeesLine>
         <p>Follow-up</p>
-        <p>£40</p>
+        <p>£42</p>
       </FeesLine>
       <FeesBlurb>
         First appointments are 30 to 45 minutes, while follow-up appointments
