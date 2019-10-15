@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 import Therapist from '../components/Therapist'
+import SEO from '../components/Seo'
 
 import acupuncture from '../images/acupuncture.jpg'
 import renate from '../images/therapists/renate.jpg'
@@ -110,6 +111,7 @@ const ConditionsContainer = styled.div`
 
 const AcupuncturePage = () => (
   <Layout>
+    <SEO title="acupuncture" keywords={[`acupuncture doctor near me`, `best acupuncture doctor near me`, `acupuncture treatment for back pain`, `acupuncture Chatham`, `acupuncture Rochester`, `acupuncture Kent`, `acupuncture pain`]} />
     <AcupunctureWrapper>
       <TherapyHeader therapy="Acupuncture" />
       <HeroHolder>

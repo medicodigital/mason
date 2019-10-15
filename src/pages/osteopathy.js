@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
+import SEO from '../components/Seo'
 import Osteopaths from '../components/Osteopaths'
 
 import shoulders from '../images/osteoshoulders.jpeg'
@@ -124,6 +125,7 @@ const ConditionsContainer = styled.div`
 
 const OsteopathyPage = () => (
   <Layout>
+    <SEO title="osteopathy" keywords={[`Mr Mason osteopath`, `structural osteopthy`, `cranial osteopathy`, `joint pain osteopathy`, `cramp osteopath`, `headache osteopath Kent`, `migraine osteopath Chatham`, `neuralgia Kent`, `neuralgia osteopath Kent`, `Fibromyalgia Chatham`, `sciatica Chatham`]}/>
     <OsteopathyWrapper>
       <TherapyHeader therapy="osteopathy" />
       <HeroHolder>

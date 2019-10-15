@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
+import SEO from '../components/Seo'
 
 import inga from '../images/therapists/IngaWnov2018.jpg'
 
@@ -75,6 +76,7 @@ const StickyHolder = styled.div`
 
 const TherapistInga = () => (
   <Layout>
+    <SEO title="Inga Allen" keywords={[`Inga Allen`, `Inga Allen osteopath`, `female osteopath`, `female osteopath near me`, `womens health osteopath`, `fertility help near me`, `osteopath near me`, `baby osteopath near me`]} />
     <TherapistWrapper>
       <TherapyHeader therapy="osteopathy" />
       <ImageBlurbContainer>

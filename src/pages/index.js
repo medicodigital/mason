@@ -119,7 +119,26 @@ const IndexPage = () => (
   <Layout>
     <SEO
       title="Homepage"
-      keywords={[`Mason`, `Clinic`, `complementary`, `therapy`, `osteopathy`]}
+      keywords={[
+        `Mason`,
+        `Clinic`,
+        `complementary`,
+        `therapy`,
+        `osteopathy`,
+        `Maidstone Road`,
+        `Maidstone Road osteopath`,
+        `Maidstone Road osteopathy`,
+        `Maidstone Road Chatham`,
+        `Maidstone Road clinic`,
+        `cranial sacral osteopathy`,
+        `sore back chatham`,
+        `sore back rochester`,
+        `sore back Kent`,
+        `sore back Medway`,
+        `back pain, back pain Kent`,
+        `back pain Chatham`,
+        `cranial osteopathy Kent`,
+      ]}
     />
     <IndexWrapper>
       <Header />

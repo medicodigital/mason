@@ -7,6 +7,7 @@ import { arrowRightThin } from 'react-icons-kit/metrize/arrowRightThin'
 import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
+import SEO from '../components/Seo'
 
 import massage from '../images/massage.jpg'
 import ingaJ from '../images/therapists/ingaJ.jpeg'
@@ -163,6 +164,7 @@ const AboutHolder = styled.div`
 
 const MassagePage = () => (
   <Layout>
+    <SEO title="massage" keywords={[`deep tissue massage`, `deep tissue massage Kent`, `deep tissue massage Chatham`, `therapeutic massage`, `therapeutic massage Medway`, `therapeutic massage Rochester`, `tight muscles`, `tight muscles Kent`, `tight muscles Chatham`, `chronic pain massage`]}/>
     <MassageWrapper>
       <TherapyHeader therapy="Massage" />
       <HeroHolder>

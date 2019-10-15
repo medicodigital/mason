@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 import Therapist from '../components/Therapist'
+import SEO from '../components/Seo'
 
 import podiatry from '../images/podiatry2018.jpg'
 import john from '../images/therapists/foot-john.jpeg'
@@ -110,6 +111,7 @@ const ConditionsContainer = styled.div`
 
 const PodiatryPage = () => (
   <Layout>
+    <SEO title="podiatry" keywords={[`podiatry Chatham`, `podiatry Rochester`, `podiatry Kent`, `podiatrist Chatham`, `podiatrist Rochester`, `foot care Chatham`, `bunions Kent`, `foot pain Chatham`, `Plantar fasciitis Kent`, `chiropody Chatham`, `chiropodist near me`]}/>
     <PodiatryWrapper>
       <TherapyHeader therapy="Podiatry" />
       <HeroHolder>

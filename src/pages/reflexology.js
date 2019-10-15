@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 import Therapist from '../components/Therapist'
+import SEO from '../components/Seo'
 
 import reflexology from '../images/reflexology.jpg'
 import maria from '../images/therapists/maria2018.jpeg'
@@ -109,11 +110,12 @@ const ConditionsContainer = styled.div`
 
 const ReflexologyPage = () => (
   <Layout>
+    <SEO title="reflexology" keywords={[`reflexology Chatham`, `reflexology Rochester`, `reflexology Medway`, `reflexology Kent`, `foot massage`, `foot massage Kent`, `foot massage Chatham`, `reflexology massage near me`, `reflexology stress`, `reflexology benefits`]}/>
     <ReflexologyWrapper>
       <TherapyHeader therapy="Reflexology" />
       <HeroHolder>
         <ImageHolder>
-          <img src={reflexology} alt="reflexology" />
+          <img src={reflexology} alt="reflexology hands on foot" />
         </ImageHolder>
         <Therapist firstname="Maria" surname="Mahon" pic={maria} />
         <BlurbHolder>
