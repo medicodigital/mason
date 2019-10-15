@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
+import SEO from '../components/Seo'
 
 import john from '../images/therapists/foot-john.jpeg'
 
@@ -75,6 +76,7 @@ const StickyHolder = styled.div`
 
 const TherapistJohn = () => (
   <Layout>
+    <SEO title="John Balchin" keywords={[`nail surgery Kent`, `nail surgery Chatham`, `podiatrist Chatham`, `John Balchin`, `foot skin infection Chatham`, `pregnancy foot problem`, `foot pain heel`, `foot pain after running`, `foot doctor near me`, `chiropodist Kent`]}/>
     <TherapistWrapper>
       <TherapyHeader therapy="podiatry" />
       <ImageBlurbContainer>

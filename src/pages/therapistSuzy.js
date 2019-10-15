@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
+import SEO from '../components/Seo'
 
 import suzy from '../images/therapists/suzy-cain.jpeg'
 
@@ -77,6 +78,7 @@ const StickyHolder = styled.div`
 
 const TherapistSuzy = () => (
   <Layout>
+    <SEO title="Suzy Cain" keywords={[`homeopathy depression`, `homeopathy fatigue`, `homeopathy anxiety`, `herbal remedies near me`, `herbal doctor near me`, `homeopathy doctor`, `homeopathy clinic near me`, `homeopathic remedies`, `Suzy Cain`]}/>
     <TherapistWrapper>
       <TherapyHeader therapy="homeopathy" />
       <ImageBlurbContainer>

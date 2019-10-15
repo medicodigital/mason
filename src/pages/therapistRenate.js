@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
+import SEO from '../components/Seo'
 
 import renate from '../images/therapists/renate.jpg'
 
@@ -77,6 +78,7 @@ const StickyHolder = styled.div`
 
 const TherapistRenate = () => (
   <Layout>
+    <SEO title="Renate Blacker" keywords={[`Zita West`, `IVF Chatham`, `Zita West Kent`, `Chinese herbalist Chatham`, `chronic pain Chatham`, `chronic pain Kent`, `Renate Blacker`, `acupuncturist Chatham`, `acupuncture near me`, `Chinese medicine Kent`]} />
     <TherapistWrapper>
       <TherapyHeader therapy="acupuncture" />
       <ImageBlurbContainer>

@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import NoLinkHeader from '../components/NoLinkHeader'
+import SEO from '../components/Seo'
 
 const ContactWrapper = styled.div`
   background: #ddeaf6;
@@ -81,6 +82,7 @@ const HomeButton = styled.button`
 
 const Contact = () => (
   <Layout>
+    <SEO title="contact" keywords={[`Mason Clinic`, `Mason Clinic Chatham`, `osteopath Chatham`, `osteopath Chatham Kent`, `osteopathy Chatham`, `Maidstone Road osteopath`, `osteopath near Marks and Spencer`, `osteopath near Chatham petrol station`]} />
     <ContactWrapper>
       <NoLinkHeader therapy="Contact us" />
       <Form

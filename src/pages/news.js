@@ -7,6 +7,7 @@ import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
+import SEO from '../components/Seo'
 
 const NewsWrapper = styled.div`
   background: #ddeaf6;
@@ -57,6 +58,7 @@ const BlogPostHolder = styled.li`
   :hover {
     box-shadow: 2px 2px 4px hsla(0, 0%, 30%, 0.7),
       6px 6px 8px hsla(0, 0%, 50%, 0.2);
+      transform: scale(1.01);
   }
 `
 
@@ -108,8 +110,12 @@ const BlogPost = ({ node }) => {
 
 const NewsPage = ({ data }) => (
   <Layout>
+    <SEO title="news" keywords={[`food intolerance`, `kinesiology muscle testing`, `homeopathy and pregnancy`, `neck pain`, `what to expect osteopath`, `what is osteopathy`, `osteopathy and chiropractor definition`, `womens health osteopathy`, `new baby homeopathy`, `osteopathy blog`]} />
     <NewsWrapper>
       <TherapyHeader therapy="news" />
+    <StickyHolder>
+      <Links />
+    </StickyHolder>
       <NewsContainer>
         <BlogPostList>
           {data.allContentfulBlog.edges.map(edge => (
@@ -118,9 +124,6 @@ const NewsPage = ({ data }) => (
         </BlogPostList>
       </NewsContainer>
     </NewsWrapper>
-    <StickyHolder>
-      <Links />
-    </StickyHolder>
   </Layout>
 )
 

@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import NoLinkHeader from '../components/NoLinkHeader'
 import Links from '../components/Links'
 import Therapist from '../components/Therapist'
+import SEO from '../components/Seo'
 
 import lavender from '../images/lavender.jpg'
 import suzy from '../images/therapists/suzy-cain.jpeg'
@@ -70,6 +71,7 @@ const StickyHolder = styled.div`
 
 const AllergyPage = () => (
   <Layout>
+    <SEO title="Allergy" keywords={[`allergies Chatham`, `allergies Rochester`, `allergies Kent`, `allergy testing Kent`, `allergy testing Rochester`, `allergy testing Medway`, `allergic Chatham`, `allergic Rochester`, `allergic Kent`, `allergic Medway`, `allergy testing clinic`]}/>
     <AllergyWrapper>
       <NoLinkHeader therapy="Allergy testing" />
       <HeroHolder>

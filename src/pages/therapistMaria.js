@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
+import SEO from '../components/Seo'
 
 import maria from '../images/therapists/maria2018.jpeg'
 
@@ -75,6 +76,7 @@ const StickyHolder = styled.div`
 
 const TherapistMaria = () => (
   <Layout>
+    <SEO title="Maria Mahon" keywords={[`Maria Mahon`, `facial reflexology`, `facial reflexology Chatham`, `facial reflexology benefits`, `hopi ear candling`, `reflexology Kent`, `foot massage and reflexology`, `reflexology treatment`, `feet reflexology massage`, `massage pressure points`]} />
     <TherapistWrapper>
       <TherapyHeader therapy="reflexology" />
       <ImageBlurbContainer>

@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import TherapyHeader from '../components/TherapyHeader'
 import Links from '../components/Links'
 import Therapist from '../components/Therapist'
+import SEO from '../components/Seo'
 
 import homeopathy from '../images/homeopathy.jpg'
 import suzy from '../images/therapists/suzy-cain.jpeg'
@@ -109,6 +110,7 @@ const ConditionsContainer = styled.div`
 
 const HomeopathyPage = () => (
   <Layout>
+    <SEO title="homeopathy" keywords={[`homeopathy Chatham`, `homeopathy Rochester`, `homeopathy Kent`, `homeopathy Medway`, `herbal medicine Chatham`, `herbal medicine Kent`, `herbal medicine Rochester`, `herbal medicine Medway`, `homeopathy meaning`]}/>
     <HomeopathyWrapper>
       <TherapyHeader therapy="Homeopathy" />
       <HeroHolder>
