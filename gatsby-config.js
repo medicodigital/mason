@@ -9,7 +9,9 @@ const { spaceId, accessToken } = process.env
 module.exports = {
   siteMetadata: {
     title: 'The Mason Clinic',
+    description: `The Mason Clinic, osteopathy and complementary therapy in Medway, Kent`,
     siteUrl: `http://www.masonclinic.co.uk`,
+    author: `Mason Clinic`,
   },
   plugins: [
     'gatsby-plugin-sitemap',
