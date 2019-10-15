@@ -4,6 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Link from 'gatsby-link'
 
 import Layout from '../components/Layout'
+import SEO from '../components/Seo'
 import Header from '../components/Header'
 import Links from '../components/Links'
 import Therapies from '../components/Therapies'
@@ -116,6 +117,10 @@ const Flowers = styled(Bottles)`
 
 const IndexPage = () => (
   <Layout>
+    <SEO
+      title="Homepage"
+      keywords={[`Mason`, `Clinic`, `complementary`, `therapy`, `osteopathy`]}
+    />
     <IndexWrapper>
       <Header />
       <ButtonContainer>
