@@ -149,16 +149,6 @@ const Osteopaths = () => (
           </li>
           <li>
             <ImageHolder>
-              <img src={heloise} alt="Heloise headshot" />
-              <Link to="/therapistHeloise">
-                Héloïse
-                <br />
-                Gilleman
-              </Link>
-            </ImageHolder>
-          </li>
-          <li>
-            <ImageHolder>
               <img src={ingaJ} alt="IngaJ headshot" />
               <Link to="/therapistIngaJ">
                 Inga
