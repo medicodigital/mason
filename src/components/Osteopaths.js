@@ -8,6 +8,7 @@ import andrew from '../images/therapists/andrew-headshot.jpeg'
 import inga from '../images/therapists/IngaWnov2018.jpg'
 import vincent from '../images/therapists/vincent-martino.jpeg'
 import ingaJ from '../images/therapists/ingaJ.jpeg'
+import jo from '../images/therapists/josheppard.jpeg'
 
 const OsteopathsWrapper = styled.div`
   align-items: center;
@@ -153,6 +154,16 @@ const Osteopaths = () => (
                 Inga
                 <br />
                 Jakubovskaja
+              </Link>
+            </ImageHolder>
+          </li>
+          <li>
+            <ImageHolder>
+              <img src={jo} alt="Jo headshot" />
+              <Link to="/therapistJo">
+                Jo
+                <br />
+                Sheppard
               </Link>
             </ImageHolder>
           </li>
