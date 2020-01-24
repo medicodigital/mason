@@ -28,17 +28,11 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-remark',
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        trackingId: 'UA-115080200-1',
-        // Puts tracking script in the head instead of the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: ['/preview/**', '/do-not-track/me/too/'],
+        id: "GTM-PK28HJF",
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: "gatsby" },
       },
     },
     {
@@ -50,8 +44,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId,
-        accessToken,
+        spaceId: '637dlrus9xh9',
+        accessToken: '2692befecf49eb85432fb4f158c51f9af08caf60faae2955623d15142032cfa2',
       },
     },
     {
