@@ -91,6 +91,10 @@ const Clinic = styled.div`
     width: 100%;
   }
 `
+const Frame = styled.div`
+  width: calc(100% - 60px);
+  padding: 30px;
+`
 const PicWrapper = styled.div`
   display: flex;
   width: 100vw;
@@ -176,6 +180,11 @@ const IndexPage = () => (
           <img src={flowers} alt="Flowers on shelf" />
         </Flowers>
       </PicWrapper>
+      <Frame
+        dangerouslySetInnerHTML={{
+        __html: "<iframe id='cliniko-51120306' src='https://the-mason-clinic.au1.cliniko.com/bookings?business_id=82538&appointment_type_id=466413&embedded=true' frameborder='0' scrolling='auto' width='100%' height='1000' style='pointer-events:auto'></iframe><script>window.addEventListener('message',function handleIFrameMessage(e){var clinikoBookings=document.getElementById('cliniko-51120306');if(typeof e.data!=='string')return;if(e.data.search('cliniko-bookings-resize')>-1){var height=Number(e.data.split(':')[1]);clinikoBookings.style.height=height+'px';}e.data.search('cliniko-bookings-page')>-1&&clinikoBookings.scrollIntoView();});</script>"
+        }}>
+      </Frame>
       <section id="fees">
         <Fees />
       </section>
