@@ -134,13 +134,7 @@ const OsteopathyPage = () => (
         </ImageHolder>
         <Osteopaths />
         <BlurbHolder>
-          Our osteopaths adopt an holistic approach to patient care. We provide
-          physical therapy that complements your body’s ability to heal
-          naturally. Your internal organs, blood vessels, nerves and lymphatic
-          system are supported by your musculo-skeletal system. Problems with
-          one have an adverse effect on the other. That’s why social and
-          psychological factors are important elements in our diagnosis since
-          these impact health.
+          Our Osteopaths adopt a holistic approach to patient care. Osteopaths diagnose and treat structural stresses and strains that may interfere with health.  Its aim is to positively affect the body’s nervous, circulatory and lymphatic system. Osteopathy is well known to be beneficial for aches and pains in the musculoskeletal structures but it can also help a variety of other symptoms and problems in babies, children and adults.
         </BlurbHolder>
       </HeroHolder>
       <StickyHolder>
@@ -153,12 +147,7 @@ const OsteopathyPage = () => (
           </ImageHolder>
           <BlurbHolder>
             <BlurbHeader>STRUCTURAL OSTEOPATHY</BlurbHeader>
-            Structural osteopathy is the type of osteopathy most people are
-            familiar with. It comprises a number of techniques such as muscle
-            and connective tissue stretching, rhythmic joint movement, gentle
-            release techniques and the occasional high thrust movement. It can
-            cause the occasional cracking or popping noise but is generally
-            painless.
+            Structural osteopathy is the type of osteopathy most people are familiar with. It comprises a number of techniques such as muscle and connective tissue stretching, rhythmic joint movement, gentle release techniques and the occasional high thrust movement. It can cause the occasional cracking or popping noise but is generally painless.
           </BlurbHolder>
         </BlurbPicContainer>
         <BlurbPicContainer>
@@ -167,45 +156,43 @@ const OsteopathyPage = () => (
           </ImageHolder>
           <BlurbHolder>
             <BlurbHeader>CRANIAL OSTEOPATHY</BlurbHeader>
-            Cranial osteopathy is a subtle and refined form of osteopathy. It
-            encourages the release of unwanted tensions and stresses held within
-            the head and body. Releasing these stresses provides the patient
-            with asense of well-being. Cranial osteopathy is a gentle treatment
-            for a wide range of conditions.
+            Cranial osteopathy is a subtle and refined form of osteopathy. It encourages the release of unwanted tensions and stresses held within the head and body. Releasing these stresses provides the patient with a sense of well-being. Cranial osteopathy is a gentle treatment for a wide range of conditions.
           </BlurbHolder>
         </BlurbPicContainer>
+        <BlurbHolder>
+          <BlurbHeader>WOMEN’S HEALTH OSTEOPATHY</BlurbHeader>
+          Women’s Health Osteopathy is a specialist and integrated approach, which aims to restore balance to both the physiological and psychological aspects of a women’s wellbeing. It incorporates treatment of all the body systems including the musculoskeletal, nervous, digestive and hormonal system. Women’s Health Osteopathy may be for those that look for a more holistic approach to manage symptoms or it may be an alternative alongside conventional approaches.
+          Possible symptoms that patients would present with could be:
+          <ul>
+            <li>Low back pain in pregnancy</li>
+            <li>SPD (symphysis pubis dysfunction) or PGP (pelvic girdle pain)</li>
+            <li>Stress incontinence</li>
+            <li>Pelvic organ prolapse</li>
+            <li>Sexual dysfunction</li>
+            <li>Rehabilitation after surgery</li>
+          </ul>
+        </BlurbHolder>
         <ImageHolder>
           <img src={treattable} alt="treatment table" />
         </ImageHolder>
         <BlurbHolder>
           <BlurbHeader>WHAT TO EXPECT FROM YOUR APPOINTMENT</BlurbHeader>
-          We start by reviewing your medical history and any lifestyle factors
-          that might have a bearing. This is usually followed by some simple
-          physical tests – e.g. blood pressure, pulse and reflex. We then check
-          out your general mobility before examining the painful areas in more
-          detail. If we have enough information we will provide our diagnosis
-          and recommendations. You may be asked to undress to your underclothes.
-          If this is difficult for you please let us know and we will try to
-          work around this but please wear something you are comfortable in. You
-          are welcome to bring a friend or relative along with you. We have male
-          and female osteopaths available. Let us know if you have a preference.
+          We start by reviewing your medical history and any lifestyle factors that might have a bearing. This is usually followed by some simple physical tests – e.g. blood pressure, pulse and reflex. We then check out your general mobility before examining the painful areas in more detail. If we have enough information we will provide our diagnosis and recommendations. You may be asked to undress to your underclothes.
+          If this is difficult for you please let us know and we will try to work around this but please wear something you are comfortable in. You are welcome to bring a friend or relative along with you. We have male and female osteopaths available. Let us know if you have a preference.
         </BlurbHolder>
         <ConditionsContainer>
           <h2>CONDITIONS WE ROUTINELY TREAT</h2>
           <p>
-            Our osteopaths provide effective treatment for a wide range of
-            conditions, including...
+            Our osteopaths provide effective treatment for a wide range of conditions, including...
           </p>
           <ul>
             <li>&bull; General aches and pains</li>
             <li>
-              &bull; Joint pains including hip and knee pain from osteoarthritis
-              as an adjunct to core OA treatments and exercise
+              &bull; Joint pains including hip and knee pain from osteoarthritis as an adjunct to core OA treatments and exercise
             </li>
             <li>&bull; Arthritic pain</li>
             <li>
-              &bull; General, acute & chronic backache, back pain (not arising
-              from injury or accident)
+              &bull; General, acute & chronic backache, back pain (not arising from injury or accident)
             </li>
             <li>
               &bull; Uncomplicated mechanical neck pain (as opposed to neck pain
@@ -214,9 +201,7 @@ const OsteopathyPage = () => (
             <li>&bull; Headache arising from the neck (cervicogenic)</li>
             <li>&bull; Migraine prevention</li>
             <li>
-              &bull; Frozen shoulder/ shoulder and elbow pain/ tennis elbow
-              (lateral epicondylitis) arising from associated musculoskeletal
-              conditions of the back and neck, but not isolated occurrences
+              &bull; Frozen shoulder / shoulder and elbow pain / tennis elbow (lateral epicondylitis) arising from associated musculoskeletal conditions of the back and neck, but not isolated occurrences
             </li>
             <li>&bull; Circulatory problems</li>
             <li>&bull; Cramp</li>

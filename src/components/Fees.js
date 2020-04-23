@@ -62,10 +62,6 @@ const Fees = () => (
         <p>Follow-up</p>
         <p>£42</p>
       </FeesLine>
-      <FeesBlurb>
-        First appointments are 30 to 45 minutes, while follow-up appointments
-        are 30 minutes long.
-      </FeesBlurb>
       <Link to="/acupuncture">
         <h3>ACUPUNCTURE</h3>
       </Link>
