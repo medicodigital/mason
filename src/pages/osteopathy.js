@@ -156,7 +156,8 @@ const OsteopathyPage = () => (
           </ImageHolder>
           <BlurbHolder>
             <BlurbHeader>CRANIAL OSTEOPATHY</BlurbHeader>
-            Cranial osteopathy is a subtle and refined form of osteopathy. It encourages the release of unwanted tensions and stresses held within the head and body. Releasing these stresses provides the patient with a sense of well-being. Cranial osteopathy is a gentle treatment for a wide range of conditions.
+            Cranial osteopathy is a subtle and refined form of osteopathy. It encourages the release of unwanted tensions and stresses held within the head and body. Releasing these stresses provides the patient with a sense of well-being.
+            Cranial osteopathy is a gentle treatment for a wide range of conditions.
           </BlurbHolder>
         </BlurbPicContainer>
         <BlurbHolder>
@@ -164,12 +165,12 @@ const OsteopathyPage = () => (
           Women’s Health Osteopathy is a specialist and integrated approach, which aims to restore balance to both the physiological and psychological aspects of a women’s wellbeing. It incorporates treatment of all the body systems including the musculoskeletal, nervous, digestive and hormonal system. Women’s Health Osteopathy may be for those that look for a more holistic approach to manage symptoms or it may be an alternative alongside conventional approaches.
           Possible symptoms that patients would present with could be:
           <ul>
-            <li>Low back pain in pregnancy</li>
-            <li>SPD (symphysis pubis dysfunction) or PGP (pelvic girdle pain)</li>
-            <li>Stress incontinence</li>
-            <li>Pelvic organ prolapse</li>
-            <li>Sexual dysfunction</li>
-            <li>Rehabilitation after surgery</li>
+            <li>&bull; Low back pain in pregnancy</li>
+            <li>&bull; SPD (symphysis pubis dysfunction) or PGP (pelvic girdle pain)</li>
+            <li>&bull; Stress incontinence</li>
+            <li>&bull; Pelvic organ prolapse</li>
+            <li>&bull; Sexual dysfunction</li>
+            <li>&bull; Rehabilitation after surgery</li>
           </ul>
         </BlurbHolder>
         <ImageHolder>
