@@ -60,7 +60,7 @@ const Fees = () => (
       </FeesLine>
       <FeesLine>
         <p>Follow-up</p>
-        <p>£42</p>
+        <p>£45</p>
       </FeesLine>
       <Link to="/acupuncture">
         <h3>ACUPUNCTURE</h3>
