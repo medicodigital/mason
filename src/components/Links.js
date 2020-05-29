@@ -89,7 +89,8 @@ const Links = () => (
           <h2>Message us</h2>
         </Link>
       </ContactHolder>
-      <a href="mailto:enquires@masonclinic.co.uk">
+      <ContactHolder>
+        <a href="mailto:enquires@masonclinic.co.uk">
           <h2>enquires@masonclinic.co.uk</h2>
         </a>
       </ContactHolder>
