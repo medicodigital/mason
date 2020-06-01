@@ -90,8 +90,8 @@ const Links = () => (
         </Link>
       </ContactHolder>
       <ContactHolder>
-        <a href="mailto:enquires@masonclinic.co.uk">
-          <h2>enquires@masonclinic.co.uk</h2>
+        <a href="mailto:enquiries@masonclinic.co.uk">
+          <h2>enquiries@masonclinic.co.uk</h2>
         </a>
       </ContactHolder>
     </LinksLeft>
